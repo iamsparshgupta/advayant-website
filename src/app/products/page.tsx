@@ -41,7 +41,6 @@ export default function ProductsPage() {
                   {/* FLUX Flow Essence Logo (No Square Background) */}
                   <div className="flex items-center gap-4 mb-10">
                     <div className="flex items-center justify-center relative group shrink-0 w-12 h-12">
-                      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,theme(colors.flux.500/20)_0%,transparent_100%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-pulse-soft" />
                       <svg width="42" height="42" viewBox="0 0 100 100" className="relative z-10 drop-shadow-[0_0_12px_theme(colors.flux.500/60)] group-hover:scale-110 transition-transform duration-500">
                         <defs>
                           <linearGradient id="fluxEssenceGlow" x1="0%" y1="0%" x2="100%" y2="100%">
