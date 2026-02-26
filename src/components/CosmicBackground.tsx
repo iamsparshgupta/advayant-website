@@ -8,53 +8,50 @@ export function CosmicBackground() {
                 <defs>
                     <pattern id="stars-layer-1" x="0" y="0" width="400" height="400" patternUnits="userSpaceOnUse">
                         {/* Randomized, non-uniform star placement */}
-                        <circle cx="23" cy="45" r="1.2" fill="#FFF" className="animate-pulse-soft" style={{ animationDelay: "0.2s", opacity: 0.8 }} />
-                        <circle cx="150" cy="18" r="0.8" fill="#FFF" className="animate-pulse-soft" style={{ animationDelay: "1.5s", opacity: 0.5 }} />
-                        <circle cx="312" cy="80" r="1.5" fill="#FFF" className="animate-pulse-soft" style={{ animationDelay: "0.7s", opacity: 0.9 }} />
-                        <circle cx="95" cy="190" r="0.6" fill="#FFF" className="animate-pulse-soft" style={{ animationDelay: "2.1s", opacity: 0.4 }} />
-                        <circle cx="280" cy="240" r="2.0" fill="#FFF" className="animate-pulse-soft" style={{ animationDelay: "1.1s", opacity: 1.0 }} />
-                        <circle cx="55" cy="310" r="1.0" fill="#FFF" className="animate-pulse-soft" style={{ animationDelay: "0.4s", opacity: 0.7 }} />
-                        <circle cx="190" cy="350" r="1.5" fill="#FFF" className="animate-pulse-soft" style={{ animationDelay: "1.8s", opacity: 0.8 }} />
-                        <circle cx="360" cy="380" r="0.5" fill="#FFF" className="animate-pulse-soft" style={{ animationDelay: "0.9s", opacity: 0.3 }} />
-                        <circle cx="220" cy="120" r="1.2" fill="#FFF" className="animate-pulse-soft" style={{ animationDelay: "2.5s", opacity: 0.6 }} />
-                        <circle cx="40" cy="210" r="0.8" fill="#FFF" className="animate-pulse-soft" style={{ animationDelay: "1.3s", opacity: 0.8 }} />
-                    </pattern>
-                    <pattern id="stars-layer-2" x="150" y="250" width="500" height="500" patternUnits="userSpaceOnUse">
-                        {/* Smaller, denser, drifting background stars */}
-                        <circle cx="50" cy="100" r="0.5" fill="#FFF" opacity="0.3" />
-                        <circle cx="250" cy="50" r="0.8" fill="#FFF" opacity="0.4" />
-                        <circle cx="450" cy="150" r="0.6" fill="#FFF" opacity="0.2" />
-                        <circle cx="100" cy="300" r="0.7" fill="#FFF" opacity="0.5" />
-                        <circle cx="350" cy="280" r="0.5" fill="#FFF" opacity="0.3" />
-                        <circle cx="180" cy="450" r="0.8" fill="#FFF" opacity="0.4" />
-                        <circle cx="390" cy="420" r="0.4" fill="#FFF" opacity="0.2" />
-                    </pattern>
-                </defs>
-                {/* Slow drifting animation for deep space parallax feel */}
-                <rect x="0" y="0" width="100%" height="100%" fill="url(#stars-layer-1)" className="animate-float" style={{ animationDuration: '40s' }} />
-                <rect x="0" y="0" width="100%" height="100%" fill="url(#stars-layer-2)" className="animate-float" style={{ animationDuration: '60s', animationDirection: 'reverse' }} />
-            </svg>
+        <div className="fixed inset-0 w-full h-full z-[-1] overflow-hidden bg-black selection:bg-neutral-800">
+            {/* Base Deep Space Gradient */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black via-[#050505] to-black" />
 
-            {/* Shooting Stars (Indian Cosmos) - Rare & Subtle */}
-            <div className="absolute top-0 left-0 w-full h-full pointer-events-none z-0">
-                <div className="absolute top-[5%] right-[20%] w-[150px] h-px bg-gradient-to-r from-transparent via-white/60 to-transparent opacity-0 animate-shooting-star" style={{ animationDuration: '18s', animationDelay: '5s' }} />
-                <div className="absolute top-[25%] right-[-10%] w-[200px] h-px bg-gradient-to-r from-transparent via-[#C5A55A]/50 to-transparent opacity-0 animate-shooting-star" style={{ animationDuration: '24s', animationDelay: '12s' }} />
-            </div>
+            {/* Apple/Sarvam Style Fluid Mesh Orbs */}
+            {/* Deep Indigo/Violet Glow */}
+            <div 
+                className="absolute top-[-10%] left-[-10%] w-[60%] h-[60%] rounded-full opacity-30 mix-blend-screen pointer-events-none animate-aurora-rotate"
+                style={{
+                    background: 'radial-gradient(circle, rgba(27,42,74,0.8) 0%, rgba(27,42,74,0) 70%)',
+                    filter: 'blur(80px)',
+                    animationDuration: '30s'
+                }}
+            />
 
-            {/* Subtle Dynamic Nebula (Indian Cosmic Essence) */}
-            <div className="absolute inset-0 opacity-40 mix-blend-screen overflow-hidden">
-                {/* Nebula 1 - Deep Cosmic Indigo (Advayant intelligence) */}
-                <div className="absolute top-[-10%] left-[-10%] w-[70vw] h-[70vw] rounded-[100%] bg-[radial-gradient(circle_at_center,rgba(27,42,74,0.3)_0%,transparent_60%)] animate-float blur-[80px]" style={{ animationDuration: '25s' }} />
+            {/* Subtle Saffron/Gold Accent Glow */}
+            <div 
+                className="absolute bottom-[-20%] right-[-10%] w-[70%] h-[70%] rounded-full opacity-20 mix-blend-screen pointer-events-none animate-aurora-rotate"
+                style={{
+                    background: 'radial-gradient(circle, rgba(197,165,90,0.6) 0%, rgba(197,165,90,0) 70%)',
+                    filter: 'blur(100px)',
+                    animationDuration: '45s',
+                    animationDirection: 'reverse'
+                }}
+            />
 
-                {/* Nebula 2 - Ethereal Saffron/Gold Core (Indian essence) */}
-                <div className="absolute top-[20%] right-[-10%] w-[60vw] h-[80vw] rounded-[100%] bg-[radial-gradient(ellipse_at_center,rgba(197,165,90,0.12)_0%,transparent_50%)] animate-float blur-[100px]" style={{ animationDuration: '35s', animationDirection: 'reverse' }} />
+            {/* Core Center Intelligence Glow */}
+            <div 
+                className="absolute top-[30%] left-[20%] w-[50%] h-[50%] rounded-full opacity-10 mix-blend-screen pointer-events-none animate-aurora-pulse"
+                style={{
+                    background: 'radial-gradient(circle, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 70%)',
+                    filter: 'blur(120px)',
+                    animationDuration: '20s'
+                }}
+            />
 
-                {/* Nebula 3 - Earthy Deep Orange Warp */}
-                <div className="absolute bottom-[-20%] left-[10%] w-[80vw] h-[60vw] rounded-[100%] bg-[radial-gradient(ellipse_at_center,rgba(230,126,34,0.08)_0%,transparent_60%)] animate-pulse-soft blur-[120px]" style={{ animationDuration: '20s' }} />
-            </div>
+            {/* Ultra-fine Noise Grain Texture for Premium Feel */}
+            <div 
+                className="absolute inset-0 opacity-[0.03] mix-blend-overlay pointer-events-none bg-repeat"
+                style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.8%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E")' }}
+            />
 
-            {/* Ultra-subtle geometric overlay representing structure within chaos */}
-            <div className="absolute inset-0 bg-[linear-gradient(rgba(197,165,90,0.015)_1px,transparent_1px),linear-gradient(90deg,rgba(197,165,90,0.015)_1px,transparent_1px)] bg-[size:100px_100px] [mask-image:radial-gradient(ellipse_80%_80%_at_50%_50%,#000_10%,transparent_100%)] pointer-events-none mix-blend-screen" />
+            {/* Very Subtle Top Overlay Gradient to ground the navbar */}
+            <div className="absolute top-0 left-0 right-0 h-40 bg-gradient-to-b from-black/80 to-transparent pointer-events-none" />
         </div>
     );
 }
