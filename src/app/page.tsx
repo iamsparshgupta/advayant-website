@@ -231,22 +231,22 @@ function ProductShowcase() {
                 <span className="text-[10px] font-semibold text-flux-50 uppercase tracking-widest">Flagship Product</span>
               </div>
               <div className="flex items-center gap-6 mb-6">
-                {/* FLUX Flow Spark Icon */}
-                <div className="w-16 h-16 bg-gradient-to-br from-flux-500/20 to-flux-accent-500/20 rounded-2xl flex items-center justify-center border border-white/10 backdrop-blur-md relative overflow-hidden group shrink-0 shadow-[0_0_30px_rgba(0,196,196,0.3)] hover:scale-105 transition-transform duration-500">
-                  <div className="absolute inset-0 bg-gradient-to-br from-flux-400/40 to-flux-accent-400/40 opacity-50 group-hover:opacity-100 transition-opacity duration-500 animate-pulse-soft" />
-                  <svg width="34" height="34" viewBox="0 0 100 100" className="relative z-10 drop-shadow-[0_0_12px_rgba(0,196,196,0.8)] animate-float">
+                {/* FLUX Flow Essence Logo */}
+                <div className="w-16 h-16 bg-gradient-to-br from-flux-900/40 to-black rounded-2xl flex items-center justify-center border border-flux-500/20 backdrop-blur-md relative overflow-hidden group shrink-0 shadow-[0_0_30px_rgba(0,196,196,0.15)] hover:shadow-[0_0_40px_rgba(0,196,196,0.3)] transition-all duration-500">
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,196,196,0.2)_0%,transparent_100%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-pulse-soft" />
+                  <svg width="36" height="36" viewBox="0 0 100 100" className="relative z-10 drop-shadow-[0_0_8px_rgba(0,196,196,0.6)] group-hover:scale-105 transition-transform duration-500">
                     <defs>
-                      <linearGradient id="fluxGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <linearGradient id="fluxEssenceGlow" x1="0%" y1="0%" x2="100%" y2="100%">
                         <stop offset="0%" stopColor="#e0f8f8" />
-                        <stop offset="100%" stopColor="#34d399" />
+                        <stop offset="50%" stopColor="#00c4c4" />
+                        <stop offset="100%" stopColor="#059669" />
                       </linearGradient>
                     </defs>
-                    <g fill="url(#fluxGlow)">
-                      <path d="M 50 15 L 60 45 L 50 55 L 40 45 Z" className="animate-pulse-soft" style={{ animationDelay: '0s' }} />
-                      <path d="M 85 50 L 55 60 L 45 50 L 55 40 Z" className="animate-pulse-soft" style={{ animationDelay: '0.2s' }} />
-                      <path d="M 50 85 L 40 55 L 50 45 L 60 55 Z" className="animate-pulse-soft" style={{ animationDelay: '0.4s' }} />
-                      <path d="M 15 50 L 45 40 L 55 50 L 45 60 Z" className="animate-pulse-soft" style={{ animationDelay: '0.6s' }} />
-                    </g>
+                    <path d="M 20 50 C 20 20, 45 20, 50 50 C 55 80, 80 80, 80 50 C 80 20, 55 20, 50 50 C 45 80, 20 80, 20 50 Z"
+                      fill="none" stroke="url(#fluxEssenceGlow)" strokeWidth="6" strokeLinecap="round"
+                      className="animate-dash" strokeDasharray="100 150" />
+                    <path d="M 20 50 C 20 20, 45 20, 50 50 C 55 80, 80 80, 80 50 C 80 20, 55 20, 50 50 C 45 80, 20 80, 20 50 Z"
+                      fill="none" stroke="url(#fluxEssenceGlow)" strokeWidth="2" strokeLinecap="round" opacity="0.4" />
                   </svg>
                 </div>
 
