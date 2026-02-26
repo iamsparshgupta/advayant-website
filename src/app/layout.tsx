@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { PageTransition } from "@/components/PageTransition";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -62,10 +63,42 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
           rel="stylesheet"
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Advayant Intelligence",
+              url: "https://advayant.com",
+              logo: "https://advayant.com/logo-transparent.png",
+              description:
+                "AI-powered products that solve real, everyday problems for Indian consumers.",
+              foundingDate: "2025",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Bengaluru",
+                addressCountry: "IN",
+              },
+              sameAs: [],
+              knowsAbout: [
+                "Artificial Intelligence",
+                "Financial Technology",
+                "Credit Card Optimization",
+              ],
+            }),
+          }}
+        />
       </head>
       <body className="bg-white text-neutral-800 font-sans antialiased">
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-neutral-900 focus:text-white focus:rounded-lg focus:text-sm focus:font-medium"
+        >
+          Skip to content
+        </a>
         <Navbar />
-        <main>{children}</main>
+        <main id="main-content"><PageTransition>{children}</PageTransition></main>
         <Footer />
       </body>
     </html>

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { CountUp } from "@/components/CountUp";
 
@@ -18,10 +19,13 @@ function Hero() {
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center pt-24 pb-16">
         {/* Logo */}
         <div className="animate-fade-in-up mb-6">
-          <img
+          <Image
             src="/logo-transparent.png"
             alt="Advayant Intelligence"
+            width={200}
+            height={96}
             className="h-20 sm:h-24 w-auto mx-auto object-contain"
+            priority
           />
         </div>
 

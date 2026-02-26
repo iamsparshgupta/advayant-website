@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 
@@ -15,6 +16,17 @@ export function Navbar() {
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Close mobile menu on route change
+  useEffect(() => {
+    setMobileOpen(false);
+  }, [pathname]);
+
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    document.body.style.overflow = mobileOpen ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [mobileOpen]);
 
   const navLinks = [
     { href: "/about", label: "About" },
@@ -33,10 +45,13 @@ export function Navbar() {
       <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center group shrink-0">
-          <img
+          <Image
             src="/logo-transparent.png"
             alt="Advayant Intelligence"
+            width={120}
+            height={44}
             className="h-11 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.03]"
+            priority
           />
         </Link>
 
@@ -96,19 +111,39 @@ export function Navbar() {
         </button>
       </nav>
 
-      {/* Mobile menu */}
-      {mobileOpen && (
-        <div className="md:hidden bg-white/95 backdrop-blur-2xl border-t border-neutral-100 px-6 py-6 space-y-1">
-          {navLinks.map((link) => (
+      {/* Mobile menu overlay */}
+      <div
+        className={`md:hidden fixed inset-0 top-16 z-40 transition-all duration-300 ${
+          mobileOpen ? "visible" : "invisible"
+        }`}
+      >
+        {/* Backdrop */}
+        <div
+          className={`absolute inset-0 bg-black/20 backdrop-blur-sm transition-opacity duration-300 ${
+            mobileOpen ? "opacity-100" : "opacity-0"
+          }`}
+          onClick={() => setMobileOpen(false)}
+        />
+
+        {/* Menu panel */}
+        <div
+          className={`absolute top-0 left-0 right-0 bg-white/98 backdrop-blur-2xl border-b border-neutral-200 px-6 py-6 space-y-1 shadow-xl transition-all duration-300 ${
+            mobileOpen
+              ? "translate-y-0 opacity-100"
+              : "-translate-y-4 opacity-0"
+          }`}
+        >
+          {navLinks.map((link, i) => (
             <Link
               key={link.href}
               href={link.href}
               onClick={() => setMobileOpen(false)}
-              className={`block px-4 py-3 text-base font-medium rounded-xl transition-colors ${
+              className={`block px-4 py-3 text-base font-medium rounded-xl transition-all ${
                 pathname === link.href
                   ? "text-neutral-900 bg-neutral-50"
                   : "text-neutral-600 hover:text-neutral-900 hover:bg-neutral-50"
               }`}
+              style={{ transitionDelay: mobileOpen ? `${i * 50}ms` : "0ms" }}
             >
               {link.label}
             </Link>
@@ -118,13 +153,13 @@ export function Navbar() {
               href="https://flux.advayant.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="block w-full text-center px-5 py-3 bg-neutral-900 text-white text-sm font-medium rounded-xl"
+              className="block w-full text-center px-5 py-3 bg-neutral-900 text-white text-sm font-medium rounded-xl hover:bg-neutral-800 transition-colors"
             >
               Try FLUX AI
             </a>
           </div>
         </div>
-      )}
+      </div>
     </header>
   );
 }

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -13,9 +14,11 @@ export function Footer() {
           {/* Brand */}
           <div className="md:col-span-5">
             <div className="mb-6">
-              <img
+              <Image
                 src="/logo-white.png"
                 alt="Advayant Intelligence"
+                width={150}
+                height={56}
                 className="h-14 w-auto object-contain"
               />
             </div>
