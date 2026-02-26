@@ -114,102 +114,8 @@ function Hero() {
   );
 }
 
-/* ─── PHILOSOPHY BENTO GRID ─── */
-function Philosophy() {
-  return (
-    <section className="py-32 px-6 relative z-10 bg-transparent">
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+/* ─── PHILOSOPHY BENTO GRID (REMOVED) ─── */
 
-      <div className="max-w-6xl mx-auto">
-        <ScrollReveal>
-          <div className="text-center mb-20 flex flex-col items-center">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 mb-6">
-              <div className="w-1.5 h-1.5 rounded-full bg-primary-400 shadow-[0_0_8px_rgba(0,196,196,0.8)]" />
-              <span className="text-[10px] font-semibold text-neutral-300 uppercase tracking-widest">Core Tenets</span>
-            </div>
-            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-              Engineering with <span className="text-neutral-500 italic font-medium">conviction.</span>
-            </h2>
-            <p className="text-neutral-400 max-w-xl mx-auto text-lg">
-              We don&apos;t just build apps. We build secure, private intelligence engines that fundamentally alter how Indian consumers navigate finance.
-            </p>
-          </div>
-        </ScrollReveal>
-
-        {/* Bento Grid layout */}
-        <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-4 lg:gap-6 h-auto md:h-[600px]">
-
-          {/* Card 1: Large Privacy */}
-          <div className="md:col-span-2 md:row-span-2 relative group rounded-3xl overflow-hidden glass-card p-1 border border-white/10">
-            <ScrollReveal className="h-full w-full">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary-900/40 to-black rounded-3xl z-0" />
-              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(0,196,196,0.15),transparent_50%)] z-0 transition-opacity duration-500 group-hover:opacity-100 opacity-50" />
-
-              <div className="relative z-10 h-full p-8 lg:p-12 flex flex-col justify-end">
-                <div className="absolute top-8 left-8 w-16 h-16 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center text-primary-400 backdrop-blur-md">
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2" /><path d="M7 11V7a5 5 0 0 1 10 0v4" /></svg>
-                </div>
-
-                {/* Decorative mesh */}
-                <div className="absolute top-0 right-0 w-full h-full bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:32px_32px] [mask-image:radial-gradient(ellipse_100%_100%_at_100%_0%,#000_20%,transparent_100%)] pointer-events-none" />
-
-                <div className="mt-40 md:mt-0">
-                  <div className="text-[10px] font-bold uppercase tracking-widest text-primary-400 mb-3 ml-1">AES-256 Client-Side Encryption</div>
-                  <h3 className="text-3xl lg:text-5xl font-bold text-white mb-4 tracking-tight">Privacy is a right, not a feature.</h3>
-                  <p className="text-lg text-neutral-400 max-w-lg leading-relaxed font-light">
-                    Encryption happens on your device before data reaches our servers. We literally cannot read your financial data. We don&apos;t sell it, because we don&apos;t have it.
-                  </p>
-                </div>
-              </div>
-            </ScrollReveal>
-          </div>
-
-          {/* Card 2: Top Right */}
-          <div className="md:col-span-1 md:row-span-1 relative group rounded-3xl overflow-hidden glass-card p-1 border border-white/10">
-            <ScrollReveal delay={150} className="h-full w-full">
-              <div className="absolute inset-0 bg-gradient-to-b from-white/[0.05] to-transparent z-0" />
-              <div className="absolute -top-24 -right-24 w-48 h-48 bg-accent-600/20 rounded-full blur-[40px] z-0 transition-transform duration-700 group-hover:scale-150" />
-
-              <div className="relative z-10 h-full p-8 flex flex-col">
-                <div className="w-12 h-12 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center text-white mb-6 backdrop-blur-md">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>
-                </div>
-                <h3 className="text-2xl font-bold text-white mb-2">Built for Bharat</h3>
-                <p className="text-sm text-neutral-400 leading-relaxed font-light">
-                  Our models are trained on UPI, RuPay, and intricate Indian reward structures. Not recycled Western AI.
-                </p>
-              </div>
-            </ScrollReveal>
-          </div>
-
-          {/* Card 3: Bottom Right */}
-          <div className="md:col-span-1 md:row-span-1 relative group rounded-3xl overflow-hidden glass-card p-1 border border-white/10">
-            <ScrollReveal delay={300} className="h-full w-full">
-              <div className="absolute inset-0 bg-neutral-900/50 z-0" />
-              <div className="absolute inset-0 opacity-20 transition-opacity duration-500 group-hover:opacity-40 z-0">
-                <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-                  <defs><pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.5" fill="#fff" /></pattern></defs>
-                  <rect width="100%" height="100%" fill="url(#dots)" />
-                </svg>
-              </div>
-
-              <div className="relative z-10 h-full p-8 flex flex-col justify-end">
-                <div className="w-12 h-12 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center text-white mb-6 backdrop-blur-md">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" /></svg>
-                </div>
-                <h3 className="text-2xl font-bold text-white mb-2">Silent Utility</h3>
-                <p className="text-sm text-neutral-400 leading-relaxed font-light">
-                  No ads. No dark patterns. Just quiet, powerful intelligence working in the background for you.
-                </p>
-              </div>
-            </ScrollReveal>
-          </div>
-
-        </div>
-      </div>
-    </section>
-  );
-}
 
 /* ─── PRODUCT SHOWCASE — FLUX AI (DARK MODE UI MOCK) ─── */
 function ProductShowcase() {
@@ -231,44 +137,22 @@ function ProductShowcase() {
                 <span className="text-[10px] font-semibold text-flux-50 uppercase tracking-widest">Flagship Product</span>
               </div>
               <div className="flex items-center gap-6 mb-6">
-                {/* FLUX Flow Spark Icon with Glitch Effect */}
-                <div className="w-16 h-16 bg-gradient-to-br from-flux-500/20 to-flux-accent-500/20 rounded-2xl flex items-center justify-center border border-white/10 backdrop-blur-md relative overflow-hidden group shrink-0 shadow-[0_0_30px_rgba(0,196,196,0.3)] transition-all duration-500 hover:scale-105">
-                  <div className="absolute inset-0 bg-gradient-to-br from-flux-400/40 to-flux-accent-400/40 opacity-50 group-hover:opacity-100 transition-opacity duration-500 animate-pulse-soft" />
-
-                  {/* Base SVG */}
-                  <svg width="34" height="34" viewBox="0 0 100 100" className="relative z-10 drop-shadow-[0_0_12px_rgba(0,196,196,0.8)] animate-float flex-shrink-0">
+                {/* FLUX Flow Essence Logo */}
+                <div className="w-16 h-16 bg-gradient-to-br from-flux-900/40 to-black rounded-2xl flex items-center justify-center border border-flux-500/20 backdrop-blur-md relative overflow-hidden group shrink-0 shadow-[0_0_30px_rgba(0,196,196,0.15)] hover:shadow-[0_0_40px_rgba(0,196,196,0.3)] transition-all duration-500">
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,196,196,0.2)_0%,transparent_100%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-pulse-soft" />
+                  <svg width="36" height="36" viewBox="0 0 100 100" className="relative z-10 drop-shadow-[0_0_8px_rgba(0,196,196,0.6)] group-hover:scale-105 transition-transform duration-500">
                     <defs>
-                      <linearGradient id="fluxGlowHome" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <linearGradient id="fluxEssenceGlow" x1="0%" y1="0%" x2="100%" y2="100%">
                         <stop offset="0%" stopColor="#e0f8f8" />
-                        <stop offset="100%" stopColor="#34d399" />
+                        <stop offset="50%" stopColor="#00c4c4" />
+                        <stop offset="100%" stopColor="#059669" />
                       </linearGradient>
                     </defs>
-                    <g fill="url(#fluxGlowHome)">
-                      <path d="M 50 15 L 60 45 L 50 55 L 40 45 Z" className="animate-pulse-soft" style={{ animationDelay: '0s' }} />
-                      <path d="M 85 50 L 55 60 L 45 50 L 55 40 Z" className="animate-pulse-soft" style={{ animationDelay: '0.2s' }} />
-                      <path d="M 50 85 L 40 55 L 50 45 L 60 55 Z" className="animate-pulse-soft" style={{ animationDelay: '0.4s' }} />
-                      <path d="M 15 50 L 45 40 L 55 50 L 45 60 Z" className="animate-pulse-soft" style={{ animationDelay: '0.6s' }} />
-                    </g>
-                  </svg>
-
-                  {/* Glitch Overlay 1 */}
-                  <svg width="34" height="34" viewBox="0 0 100 100" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 animate-float flex-shrink-0 opacity-0 group-hover:opacity-60 mix-blend-screen -ml-[2px] text-cyan-400" style={{ animationDuration: '0.2s' }}>
-                    <g fill="currentColor">
-                      <path d="M 50 15 L 60 45 L 50 55 L 40 45 Z" />
-                      <path d="M 85 50 L 55 60 L 45 50 L 55 40 Z" />
-                      <path d="M 50 85 L 40 55 L 50 45 L 60 55 Z" />
-                      <path d="M 15 50 L 45 40 L 55 50 L 45 60 Z" />
-                    </g>
-                  </svg>
-
-                  {/* Glitch Overlay 2 */}
-                  <svg width="34" height="34" viewBox="0 0 100 100" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 animate-float flex-shrink-0 opacity-0 group-hover:opacity-60 mix-blend-screen ml-[2px] mt-[1px] text-emerald-400" style={{ animationDuration: '0.3s' }}>
-                    <g fill="currentColor">
-                      <path d="M 50 15 L 60 45 L 50 55 L 40 45 Z" />
-                      <path d="M 85 50 L 55 60 L 45 50 L 55 40 Z" />
-                      <path d="M 50 85 L 40 55 L 50 45 L 60 55 Z" />
-                      <path d="M 15 50 L 45 40 L 55 50 L 45 60 Z" />
-                    </g>
+                    <path d="M 20 50 C 20 20, 45 20, 50 50 C 55 80, 80 80, 80 50 C 80 20, 55 20, 50 50 C 45 80, 20 80, 20 50 Z"
+                      fill="none" stroke="url(#fluxEssenceGlow)" strokeWidth="6" strokeLinecap="round"
+                      className="animate-dash" strokeDasharray="100 150" />
+                    <path d="M 20 50 C 20 20, 45 20, 50 50 C 55 80, 80 80, 80 50 C 80 20, 55 20, 50 50 C 45 80, 20 80, 20 50 Z"
+                      fill="none" stroke="url(#fluxEssenceGlow)" strokeWidth="2" strokeLinecap="round" opacity="0.4" />
                   </svg>
                 </div>
 
@@ -615,7 +499,6 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <Philosophy />
       <ProductShowcase />
       <Innovation />
       <Numbers />
