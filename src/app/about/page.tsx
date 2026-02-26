@@ -23,7 +23,7 @@ export default function AboutPage() {
           <h1 className="animate-fade-in-up animate-delay-100 text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.1] mb-8 tracking-tight">
             Intelligence built
             <br />
-            <span className="italic font-light text-neutral-400">with conviction.</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-accent-400">with conviction.</span>
           </h1>
           <p className="animate-fade-in-up animate-delay-200 text-xl text-neutral-400 max-w-2xl mx-auto leading-relaxed font-light">
             We believe that the most powerful technology shouldn&apos;t be a luxury. It should be an invisible utility that empowers every Indian consumer.
