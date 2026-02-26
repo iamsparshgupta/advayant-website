@@ -17,13 +17,13 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8">
           {/* Brand */}
           <div className="md:col-span-5">
-            <div className="mb-6">
+            <div className="mb-4 group cursor-default inline-block">
               <Image
                 src="/logo-transparent.png"
                 alt="Advayant Intelligence"
                 width={150}
                 height={56}
-                className="h-12 w-auto object-contain brightness-0 invert opacity-90"
+                className="h-14 w-auto object-contain brightness-0 invert opacity-90 transition-transform duration-500 group-hover:scale-105 [clip-path:inset(0_0_20%_0)] -mb-4"
               />
             </div>
             <p className="text-neutral-500 text-sm leading-relaxed max-w-sm mb-8">
@@ -31,13 +31,13 @@ export function Footer() {
               for Indian consumers. Intelligence, thoughtfully applied.
             </p>
             <div className="flex items-center gap-2 text-xs text-neutral-600">
-              <span className="inline-block w-1.5 h-1.5 rounded-full bg-primary-500 shadow-[0_0_8px_rgba(0,196,196,0.6)]" />
+              <span className="inline-block w-1.5 h-1.5 rounded-full bg-primary-500 shadow-[0_0_8px_theme(colors.primary.500/60)]" />
               Made in India
             </div>
           </div>
 
           {/* Company */}
-          <div className="md:col-span-3 md:col-start-7">
+          <div className="md:col-span-2 md:col-start-7">
             <h4 className="text-[11px] font-semibold uppercase tracking-widest text-neutral-400 mb-5">
               Company
             </h4>
@@ -48,9 +48,14 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/products" className="text-sm text-neutral-500 hover:text-white transition-colors link-underline">
-                  Products
-                </Link>
+                <span className="text-sm text-neutral-500 hover:text-white transition-colors cursor-pointer link-underline">
+                  Careers
+                </span>
+              </li>
+              <li>
+                <span className="text-sm text-neutral-500 hover:text-white transition-colors cursor-pointer link-underline">
+                  Newsroom
+                </span>
               </li>
               <li>
                 <Link href="/contact" className="text-sm text-neutral-500 hover:text-white transition-colors link-underline">
@@ -60,8 +65,32 @@ export function Footer() {
             </ul>
           </div>
 
+          {/* Research */}
+          <div className="md:col-span-2">
+            <h4 className="text-[11px] font-semibold uppercase tracking-widest text-neutral-400 mb-5">
+              Research
+            </h4>
+            <ul className="space-y-3.5">
+              <li>
+                <span className="text-sm text-neutral-500 hover:text-white transition-colors cursor-pointer link-underline">
+                  Publications
+                </span>
+              </li>
+              <li>
+                <span className="text-sm text-neutral-500 hover:text-white transition-colors cursor-pointer link-underline">
+                  Open Source
+                </span>
+              </li>
+              <li>
+                <span className="text-sm text-neutral-500 hover:text-white transition-colors cursor-pointer link-underline">
+                  Safety & Ethics
+                </span>
+              </li>
+            </ul>
+          </div>
+
           {/* Products */}
-          <div className="md:col-span-3">
+          <div className="md:col-span-2">
             <h4 className="text-[11px] font-semibold uppercase tracking-widest text-neutral-400 mb-5">
               Products
             </h4>

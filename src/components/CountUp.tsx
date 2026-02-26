@@ -29,29 +29,33 @@ export function CountUp({ value, className = "" }: CountUpProps) {
 
     observer.observe(el);
     return () => observer.disconnect();
-  }, [hasAnimated]);
+  }, [hasAnimated, value]);
 
   function animateValue() {
-    // Extract numeric part and suffix (e.g., "200+" -> 200, "+")
+    // Extract numeric part and suffix (e.g., "200+" -> 200, "+", or "100%" -> 100, "%")
     const match = value.match(/^(\d+)(.*)$/);
     if (!match) {
       setDisplayed(value);
       return;
     }
 
-    const target = parseInt(match[1]);
+    const target = parseInt(match[1], 10);
     const suffix = match[2];
-    const duration = 1500;
+    const duration = 2000;
     const start = performance.now();
 
     function step(now: number) {
       const elapsed = now - start;
       const progress = Math.min(elapsed / duration, 1);
-      // Ease out cubic
-      const eased = 1 - Math.pow(1 - progress, 3);
+      // Ease out expo
+      const eased = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
       const current = Math.round(eased * target);
+      
       setDisplayed(`${current}${suffix}`);
-      if (progress < 1) requestAnimationFrame(step);
+      
+      if (progress < 1) {
+        requestAnimationFrame(step);
+      }
     }
 
     requestAnimationFrame(step);

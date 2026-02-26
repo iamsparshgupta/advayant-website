@@ -9,10 +9,9 @@ import { CountUp } from "@/components/CountUp";
 function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-transparent">
-      {/* Deep Cyber Aesthetic Backgrounds */}
+      {/* Deep Aesthetic Backgrounds */}
       <div className="absolute inset-0 bg-[#000000] z-0" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,196,196,0.06)_0%,transparent_100%)] z-0" />
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_50%,#000_10%,transparent_100%)] z-0" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,theme(colors.primary.900/20)_0%,transparent_100%)] z-0" />
 
       {/* Floating Animated Orbs */}
       <div className="absolute top-1/4 right-[25%] w-[400px] h-[400px] bg-primary-600/20 rounded-full blur-[100px] animate-pulse-soft pointer-events-none z-0" />
@@ -22,20 +21,19 @@ function Hero() {
         {/* Logo */}
         <div className="animate-fade-in-up mb-8 flex justify-center">
           <div className="relative group">
-            <div className="absolute -inset-2 bg-gradient-to-r from-primary-500/0 via-primary-500/20 to-primary-500/0 blur-lg rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
             <Image
               src="/logo-transparent.png"
               alt="Advayant Intelligence"
               width={200}
               height={96}
-              className="h-20 sm:h-24 w-auto object-contain brightness-0 invert opacity-95 relative z-10 transition-transform duration-700 group-hover:scale-105"
+              className="h-24 sm:h-28 w-auto object-contain brightness-0 invert opacity-95 relative z-10 transition-transform duration-700 group-hover:scale-105 [clip-path:inset(0_0_20%_0)] -mb-8"
               priority
             />
           </div>
         </div>
 
         <div className="animate-fade-in-up animate-delay-100 flex justify-center mb-10">
-          <div className="px-4 py-1.5 rounded-full glass border border-white/5 shadow-[0_0_20px_rgba(0,196,196,0.1)] flex items-center gap-2">
+          <div className="px-4 py-1.5 rounded-full glass border border-white/5 shadow-[0_0_20px_theme(colors.primary.500/10)] flex items-center gap-2">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary-500"></span>
@@ -49,7 +47,7 @@ function Hero() {
         <h1 className="animate-fade-in-up animate-delay-200 text-5xl sm:text-7xl lg:text-[5rem] font-bold tracking-tight text-white leading-[1.05]">
           Building Intelligence
           <br />
-          <span className="bg-gradient-to-r from-white via-primary-200 to-primary-600 bg-clip-text text-transparent drop-shadow-[0_0_20px_rgba(0,196,196,0.3)]">
+          <span className="bg-gradient-to-r from-white via-primary-200 to-primary-600 bg-clip-text text-transparent drop-shadow-[0_0_20px_theme(colors.primary.500/30)]">
             for India.
           </span>
         </h1>
@@ -138,9 +136,9 @@ function ProductShowcase() {
               </div>
               <div className="flex items-center gap-6 mb-6">
                 {/* FLUX Flow Essence Logo */}
-                <div className="w-16 h-16 bg-gradient-to-br from-flux-900/40 to-black rounded-2xl flex items-center justify-center border border-flux-500/20 backdrop-blur-md relative overflow-hidden group shrink-0 shadow-[0_0_30px_rgba(0,196,196,0.15)] hover:shadow-[0_0_40px_rgba(0,196,196,0.3)] transition-all duration-500">
-                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,196,196,0.2)_0%,transparent_100%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-pulse-soft" />
-                  <svg width="36" height="36" viewBox="0 0 100 100" className="relative z-10 drop-shadow-[0_0_8px_rgba(0,196,196,0.6)] group-hover:scale-105 transition-transform duration-500">
+                <div className="w-16 h-16 bg-gradient-to-br from-flux-900/40 to-black rounded-2xl flex items-center justify-center border border-flux-500/20 backdrop-blur-md relative overflow-hidden group shrink-0 shadow-[0_0_30px_theme(colors.flux.500/15)] hover:shadow-[0_0_40px_theme(colors.flux.500/30)] transition-all duration-500">
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,theme(colors.flux.500/20)_0%,transparent_100%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-pulse-soft" />
+                  <svg width="36" height="36" viewBox="0 0 100 100" className="relative z-10 drop-shadow-[0_0_8px_theme(colors.flux.500/60)] group-hover:scale-105 transition-transform duration-500">
                     <defs>
                       <linearGradient id="fluxEssenceGlow" x1="0%" y1="0%" x2="100%" y2="100%">
                         <stop offset="0%" stopColor="#e0f8f8" />
@@ -201,8 +199,6 @@ function ProductShowcase() {
 
                   {/* UI App Content */}
                   <div className="p-6 md:p-10 relative font-outfit">
-                    {/* App bg grid */}
-                    <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:24px_24px] z-0" />
 
                     <div className="relative z-10 space-y-4">
                       {/* Search Bar mock */}
@@ -221,7 +217,7 @@ function ProductShowcase() {
                       </div>
 
                       {/* Best recommendation */}
-                      <div className="glow-border rounded-2xl shadow-[0_0_30px_rgba(0,196,196,0.15)] relative overflow-hidden">
+                      <div className="glow-border rounded-2xl shadow-[0_0_30px_theme(colors.flux.500/15)] relative overflow-hidden">
                         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-flux-400 to-flux-600" />
                         <div className="bg-neutral-950 rounded-2xl p-6 relative">
                           <div className="absolute -right-10 -top-10 w-40 h-40 bg-flux-600/10 rounded-full blur-2xl" />
@@ -292,7 +288,7 @@ function ProductShowcase() {
                   },
                 ].map((f) => (
                   <div key={f.title} className="group glass-card p-6 rounded-2xl flex gap-5 border border-white/5 hover:bg-white/5 transition-colors cursor-default">
-                    <div className="w-12 h-12 shrink-0 bg-white/5 rounded-xl border border-white/10 flex items-center justify-center text-flux-400 group-hover:bg-flux-500 group-hover:text-white transition-all duration-300 group-hover:shadow-[0_0_15px_rgba(0,196,196,0.5)] group-hover:scale-110">
+                    <div className="w-12 h-12 shrink-0 bg-white/5 rounded-xl border border-white/10 flex items-center justify-center text-flux-400 group-hover:bg-flux-500 group-hover:text-white transition-all duration-300 group-hover:shadow-[0_0_15px_theme(colors.flux.500/50)] group-hover:scale-110">
                       {f.icon}
                     </div>
                     <div>
@@ -446,7 +442,7 @@ function CTA() {
   return (
     <section className="py-32 px-6 relative overflow-hidden bg-transparent">
       {/* Complex gradient background for modern feel */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(0,196,196,0.1)_0%,transparent_50%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,theme(colors.accent.500/10)_0%,transparent_50%)]" />
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-accent-900/20 blur-[150px] rounded-full pointer-events-none" />
 
       <ScrollReveal>

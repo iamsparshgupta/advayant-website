@@ -70,13 +70,13 @@ export default function ContactPage() {
             <div className="absolute -inset-4 bg-gradient-to-br from-primary-500/10 to-accent-500/10 blur-2xl rounded-[3rem] -z-10" />
 
             <div className="glass-card bg-neutral-900/60 backdrop-blur-xl rounded-[2.5rem] p-8 sm:p-12 border border-white/10 shadow-2xl relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-[radial-gradient(circle_at_top_right,rgba(0,196,196,0.1)_0%,transparent_100%)] pointer-events-none" />
+              <div className="absolute top-0 right-0 w-64 h-64 bg-[radial-gradient(circle_at_top_right,theme(colors.accent.500/20)_0%,transparent_100%)] pointer-events-none" />
 
               <h2 className="text-2xl font-bold text-white mb-2 tracking-tight">
-                Secure Transmission
+                Send us a message
               </h2>
               <p className="text-sm text-neutral-400 mb-8 font-light">
-                Send us an encrypted message directly to our engineering team.
+                Have a question or want to work with us? Drop us a note below.
               </p>
 
               <form
@@ -88,7 +88,7 @@ export default function ContactPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-[11px] font-bold text-primary-400 uppercase tracking-widest mb-2">
-                      Identifier
+                      Name
                     </label>
                     <input
                       type="text"
@@ -101,7 +101,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <label htmlFor="email" className="block text-[11px] font-bold text-primary-400 uppercase tracking-widest mb-2">
-                      Routing Address (Email)
+                      Email Address
                     </label>
                     <input
                       type="email"
@@ -115,7 +115,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <label htmlFor="message" className="block text-[11px] font-bold text-primary-400 uppercase tracking-widest mb-2">
-                    Payload
+                    Message
                   </label>
                   <textarea
                     id="message"
@@ -132,7 +132,7 @@ export default function ContactPage() {
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/10 to-transparent translate-x-[-100%] group-hover:animate-[shimmer_1.5s_infinite]" />
                   <span className="relative z-10 flex items-center gap-2">
-                    Initialize Transfer
+                    Send Message
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">
                       <path d="M5 12h14M12 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>

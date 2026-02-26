@@ -44,27 +44,60 @@ export function Navbar() {
       >
         <nav className="px-6 h-14 flex items-center justify-between gap-8">
           {/* Logo */}
-          <Link href="/" className="flex items-center group shrink-0 gap-3">
-            {/* Cosmic animated icon */}
-            <div className="relative w-8 h-8 flex items-center justify-center">
-              {/* Outer orbit/glow */}
-              <div className="absolute inset-0 rounded-full border border-white/20 animate-[spin_10s_linear_infinite]" />
-              <div className="absolute inset-[-4px] rounded-full border border-dashed border-primary-500/30 animate-[spin_15s_linear_infinite_reverse]" />
+          <Link href="/" className="flex items-center group shrink-0 relative z-10 transition-transform duration-500 hover:scale-105">
+            <div className="h-10 sm:h-12 w-auto">
+              <svg viewBox="0 0 520 140" className="h-full w-auto text-white overflow-visible">
+                {/* Icon Group */}
+                <g transform="translate(60, 60)">
+                  {/* Arc: Radius 28, centered at (0,0), exactly 36-degree gap at -36 deg (top-right) */}
+                  <path 
+                    d="M 26.6 -8.6 A 28 28 0 1 1 16.5 -22.6" 
+                    stroke="currentColor" 
+                    strokeWidth="3.5" 
+                    fill="none" 
+                    strokeLinecap="round" 
+                  />
+                  
+                  {/* Center Nucleus Dot (Gold) */}
+                  <circle cx="0" cy="0" r="5" fill="#C5A55A"/>
+                  
+                  {/* Swooping Tail (Gold) - matching original aesthetic */}
+                  <path 
+                    d="M -18 25 Q -38 15 -28 -5" 
+                    stroke="#C5A55A" 
+                    strokeWidth="1.5" 
+                    fill="none" 
+                    strokeLinecap="round" 
+                    opacity="0.8"
+                  />
 
-              {/* Inner core */}
-              <div className="relative z-10 w-4 h-4 bg-white rounded-full shadow-[0_0_15px_rgba(255,255,255,0.8)] flex items-center justify-center overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-tr from-primary-400 to-accent-400 opacity-80 animate-pulse-soft" />
-              </div>
+                  {/* 36-Degree Ray of Gold Light Animation - shoots exactly from center dot */}
+                  <line 
+                    x1="0" y1="0" 
+                    x2="36.4" y2="-26.4" 
+                    stroke="#C5A55A" 
+                    strokeWidth="2.5" 
+                    strokeLinecap="round" 
+                    className="opacity-0 drop-shadow-[0_0_8px_#C5A55A] animate-[goldRay_2s_ease-out_infinite]"
+                  />
+                  
+                  <style>{`
+                    @keyframes goldRay {
+                      0% { stroke-dasharray: 0, 100; stroke-dashoffset: 0; opacity: 0; }
+                      20% { opacity: 1; stroke-dasharray: 20, 100; stroke-dashoffset: 0; }
+                      70% { stroke-dasharray: 35, 100; stroke-dashoffset: -35; opacity: 1; }
+                      100% { stroke-dasharray: 0, 100; stroke-dashoffset: -60; opacity: 0; }
+                    }
+                  `}</style>
+                </g>
 
-              {/* Orbital particle */}
-              <div className="absolute top-0 right-1/2 w-1.5 h-1.5 bg-accent-400 rounded-full blur-[1px] animate-[spin_3s_linear_infinite] origin-[50%_16px]" />
-            </div>
-
-            {/* Typography */}
-            <div className="flex flex-col">
-              <span className="text-xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-white via-neutral-200 to-neutral-400 group-hover:from-white group-hover:via-white group-hover:to-neutral-300 transition-colors">
-                advayant
-              </span>
+                {/* Typography (Scaled Up 1.5x to keep it large) */}
+                <text x="110" y="65" fontFamily="Georgia, 'Playfair Display', serif" fontSize="54" fontWeight="400" fill="currentColor" letterSpacing="3">advayant</text>
+                <line x1="110" y1="90" x2="177" y2="90" stroke="#C5A55A" strokeWidth="1" opacity="0.6"/>
+                <text x="186" y="94" fontFamily="'Inter', 'Helvetica', sans-serif" fontSize="15" fontWeight="400" fill="rgba(255,255,255,0.7)" letterSpacing="9">INTELLIGENCE</text>
+                <line x1="418" y1="90" x2="485" y2="90" stroke="#C5A55A" strokeWidth="1" opacity="0.6"/>
+                <circle cx="297.5" cy="115" r="3.5" fill="#C5A55A" opacity="0.8"/>
+              </svg>
             </div>
           </Link>
 

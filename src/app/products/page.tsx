@@ -8,12 +8,11 @@ export default function ProductsPage() {
       /* ─── HERO ─── */
       <section className="py-24 px-6 bg-transparent relative overflow-hidden">
         {/* Deep background mesh */}
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_0%,#000_10%,transparent_100%)] z-0" />
         <div className="absolute bottom-1/4 left-[10%] w-[500px] h-[300px] bg-flux-900/20 rounded-[100%] blur-[100px] pointer-events-none" />
 
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <div className="animate-fade-in-up inline-flex items-center gap-2 px-3 py-1 rounded-full border border-flux-500/20 bg-flux-500/10 mb-6">
-            <div className="w-1.5 h-1.5 rounded-full bg-flux-400 shadow-[0_0_8px_rgba(0,196,196,0.8)]" />
+            <div className="w-1.5 h-1.5 rounded-full bg-flux-400 shadow-[0_0_8px_theme(colors.flux.500/80)]" />
             <span className="text-[10px] font-semibold text-flux-200 uppercase tracking-widest">Ecosystem</span>
           </div>
           <h1 className="animate-fade-in-up animate-delay-100 text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6 tracking-tight">
@@ -41,9 +40,9 @@ export default function ProductsPage() {
                 <div className="p-8 sm:p-12 lg:p-16 text-white border-b lg:border-b-0 lg:border-r border-white/5">
                   {/* FLUX Flow Essence Logo */}
                   <div className="flex items-center gap-6 mb-10">
-                    <div className="w-16 h-16 bg-gradient-to-br from-flux-900/40 to-black rounded-2xl flex items-center justify-center border border-flux-500/20 backdrop-blur-md relative overflow-hidden group shrink-0 shadow-[0_0_30px_rgba(0,196,196,0.15)] hover:shadow-[0_0_40px_rgba(0,196,196,0.3)] transition-all duration-500">
-                      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,196,196,0.2)_0%,transparent_100%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-pulse-soft" />
-                      <svg width="36" height="36" viewBox="0 0 100 100" className="relative z-10 drop-shadow-[0_0_8px_rgba(0,196,196,0.6)] group-hover:scale-105 transition-transform duration-500">
+                    <div className="w-16 h-16 bg-gradient-to-br from-flux-900/40 to-black rounded-2xl flex items-center justify-center border border-flux-500/20 backdrop-blur-md relative overflow-hidden group shrink-0 shadow-[0_0_30px_theme(colors.flux.500/15)] hover:shadow-[0_0_40px_theme(colors.flux.500/30)] transition-all duration-500">
+                      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,theme(colors.flux.500/20)_0%,transparent_100%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-pulse-soft" />
+                      <svg width="36" height="36" viewBox="0 0 100 100" className="relative z-10 drop-shadow-[0_0_8px_theme(colors.flux.500/60)] group-hover:scale-105 transition-transform duration-500">
                         <defs>
                           <linearGradient id="fluxEssenceGlow" x1="0%" y1="0%" x2="100%" y2="100%">
                             <stop offset="0%" stopColor="#e0f8f8" />
@@ -124,8 +123,6 @@ export default function ProductsPage() {
 
                 {/* Visual side - Mockup */}
                 <div className="bg-neutral-950 p-8 sm:p-12 lg:p-16 flex items-center justify-center relative overflow-hidden font-outfit">
-                  {/* Subtle grid bg */}
-                  <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:24px_24px] z-0" />
 
                   <div className="space-y-4 w-full max-w-sm relative z-10">
                     <div className="bg-neutral-900 rounded-2xl p-5 border border-white/5 shadow-lg relative overflow-hidden">
@@ -135,7 +132,7 @@ export default function ProductsPage() {
                       <p className="text-sm text-neutral-400 mt-1 ml-2 font-mono">₹1,200.00</p>
                     </div>
 
-                    <div className="glow-border rounded-2xl relative shadow-[0_0_40px_rgba(0,196,196,0.15)]">
+                    <div className="glow-border rounded-2xl relative shadow-[0_0_40px_theme(colors.flux.500/15)]">
                       <div className="absolute inset-0 bg-gradient-to-r from-flux-500/10 to-flux-accent-500/10 rounded-2xl" />
                       <div className="bg-neutral-950 rounded-2xl p-6 border border-white/10 relative backdrop-blur-md">
                         <div className="flex items-center gap-2 mb-4">
@@ -186,7 +183,7 @@ export default function ProductsPage() {
 
       {/* How it works */}
       <section className="py-24 px-6 bg-transparent relative border-t border-white/5">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,196,196,0.03)_0%,transparent_100%)] z-0" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,theme(colors.primary.900/30)_0%,transparent_100%)] z-0" />
         <div className="max-w-5xl mx-auto relative z-10">
           <ScrollReveal>
             <div className="text-center mb-16">
@@ -271,7 +268,7 @@ export default function ProductsPage() {
             ].map((t, i) => (
               <ScrollReveal key={t.label} delay={i * 80}>
                 <div className="glass-card rounded-2xl p-6 border border-white/5 bg-white/[0.02] text-center h-full hover:bg-white/[0.05] transition-colors group">
-                  <div className="w-1.5 h-1.5 rounded-full bg-flux-500/50 mx-auto mb-4 group-hover:bg-flux-400 group-hover:shadow-[0_0_8px_rgba(0,196,196,0.8)] transition-all" />
+                  <div className="w-1.5 h-1.5 rounded-full bg-flux-500/50 mx-auto mb-4 group-hover:bg-flux-400 group-hover:shadow-[0_0_8px_theme(colors.flux.500/80)] transition-all" />
                   <p className="font-bold text-white text-base mb-2">{t.label}</p>
                   <p className="text-xs text-neutral-500 font-light">{t.desc}</p>
                 </div>

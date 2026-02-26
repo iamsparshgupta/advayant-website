@@ -9,7 +9,7 @@ export default function AboutPage() {
       <section className="py-32 px-6 bg-transparent relative overflow-hidden flex items-center min-h-[70vh]">
         {/* Deep starry/glowing background */}
         <div className="absolute inset-0 bg-[#000000] z-0" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(0,196,196,0.15),transparent_60%)] z-0" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,theme(colors.accent.900/20),transparent_60%)] z-0" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary-900/10 rounded-full blur-[120px] pointer-events-none" />
 
         {/* Subtle moving particles (simulated via CSS abstract shapes) */}
@@ -98,7 +98,7 @@ export default function AboutPage() {
 
       {/* Mission & Vision */}
       <section className="py-24 px-6 bg-transparent relative border-y border-white/5">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,196,196,0.03)_0%,transparent_100%)] z-0" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,theme(colors.primary.900/30)_0%,transparent_100%)] z-0" />
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10">
           <ScrollReveal delay={0} className="h-full">
             <div className="glass-card bg-neutral-900/40 rounded-[2rem] p-10 border border-white/10 h-full backdrop-blur-md relative overflow-hidden group">
@@ -224,7 +224,7 @@ export default function AboutPage() {
                 <span className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-br from-white to-neutral-500 tracking-tighter">RG</span>
               </div>
               <h4 className="text-2xl font-bold text-white mb-1">Rajeev Gupta</h4>
-              <p className="text-[11px] text-primary-400 font-bold uppercase tracking-widest mb-4">Founder & Lead Engineer</p>
+              <p className="text-[11px] text-primary-400 font-bold uppercase tracking-widest mb-4">Founder</p>
               <p className="text-sm text-neutral-400 leading-relaxed font-light">
                 Architecting at the technical intersection of predictive AI and consumer finance for the Indian ecosystem.
               </p>
@@ -235,7 +235,7 @@ export default function AboutPage() {
 
       {/* CTA */}
       <section className="py-32 px-6 bg-transparent relative overflow-hidden border-t border-white/5">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom,rgba(0,196,196,0.1)_0%,transparent_60%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom,theme(colors.accent.900/10)_0%,transparent_60%)]" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-accent-900/20 blur-[150px] rounded-full pointer-events-none" />
 
         <ScrollReveal>

@@ -14,7 +14,7 @@
   --color-neutral-900: #0a0a0a;
   --color-neutral-950: #000000;
 
-  /* Advayant Theme — Deep Cosmos (Indigo/Violet/Silver) */
+  /* Advayant Theme — Indian Dawn (Deep Indigo / Saffron Gold) */
   --color-primary-50: #eef2ff;
   --color-primary-100: #e0e7ff;
   --color-primary-200: #c7d2fe;
@@ -27,16 +27,17 @@
   --color-primary-900: #312e81;
   --color-primary-950: #1e1b4b;
 
-  --color-accent-50: #faf5ff;
-  --color-accent-100: #f3e8ff;
-  --color-accent-200: #e9d5ff;
-  --color-accent-300: #d8b4fe;
-  --color-accent-400: #c084fc;
-  --color-accent-500: #a855f7;
-  --color-accent-600: #9333ea;
-  --color-accent-700: #7e22ce;
-  --color-accent-800: #6b21a8;
-  --color-accent-900: #581c87;
+  /* Saffron / Tara Cotta Accent */
+  --color-accent-50: #fff7ed;
+  --color-accent-100: #ffedd5;
+  --color-accent-200: #fed7aa;
+  --color-accent-300: #fdba74;
+  --color-accent-400: #fb923c;
+  --color-accent-500: #f97316;
+  --color-accent-600: #ea580c;
+  --color-accent-700: #c2410c;
+  --color-accent-800: #9a3412;
+  --color-accent-900: #7c2d12;
 
   /* Flux AI Theme — Electric Intelligence (Cyan/Emerald) */
   --color-flux-50: #e0f8f8;
