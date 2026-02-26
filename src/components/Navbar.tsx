@@ -45,16 +45,26 @@ export function Navbar() {
         <nav className="px-6 h-14 flex items-center justify-between gap-8">
           {/* Logo */}
           <Link href="/" className="flex items-center group shrink-0 gap-3">
-            <div className="relative flex items-center h-8">
-              <div className="absolute inset-0 bg-[#C5A55A]/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-              <Image
-                src="/logo-white.svg"
-                alt="Advayant Intelligence"
-                width={140}
-                height={40}
-                className="h-8 w-auto object-contain relative z-10 transition-transform duration-700 group-hover:scale-105"
-                priority
-              />
+            {/* Cosmic animated icon */}
+            <div className="relative w-8 h-8 flex items-center justify-center">
+              {/* Outer orbit/glow */}
+              <div className="absolute inset-0 rounded-full border border-white/20 animate-[spin_10s_linear_infinite]" />
+              <div className="absolute inset-[-4px] rounded-full border border-dashed border-primary-500/30 animate-[spin_15s_linear_infinite_reverse]" />
+
+              {/* Inner core */}
+              <div className="relative z-10 w-4 h-4 bg-white rounded-full shadow-[0_0_15px_rgba(255,255,255,0.8)] flex items-center justify-center overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-tr from-primary-400 to-accent-400 opacity-80 animate-pulse-soft" />
+              </div>
+
+              {/* Orbital particle */}
+              <div className="absolute top-0 right-1/2 w-1.5 h-1.5 bg-accent-400 rounded-full blur-[1px] animate-[spin_3s_linear_infinite] origin-[50%_16px]" />
+            </div>
+
+            {/* Typography */}
+            <div className="flex flex-col">
+              <span className="text-xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-white via-neutral-200 to-neutral-400 group-hover:from-white group-hover:via-white group-hover:to-neutral-300 transition-colors">
+                advayant
+              </span>
             </div>
           </Link>
 

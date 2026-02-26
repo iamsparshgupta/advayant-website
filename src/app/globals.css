@@ -158,6 +158,22 @@ body {
   animation: pulse-soft 4s ease-in-out infinite;
 }
 
+@keyframes shooting-star {
+  0% {
+    transform: translateX(0) translateY(0) rotate(-45deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(-1500px) translateY(1500px) rotate(-45deg);
+    opacity: 0;
+  }
+}
+
+.animate-shooting-star {
+  animation: shooting-star linear infinite;
+}
+
 .animate-border-spin {
   animation: border-spin 4s linear infinite;
 }
