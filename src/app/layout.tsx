@@ -26,6 +26,21 @@ export const metadata: Metadata = {
     url: "https://advayant.com",
     siteName: "Advayant Intelligence",
     type: "website",
+    images: [
+      {
+        url: "https://advayant.com/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Advayant Intelligence — Building Intelligence for India",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Advayant Intelligence",
+    description:
+      "Building AI-powered intelligence products for India. Home of FLUX AI.",
+    images: ["https://advayant.com/og-image.png"],
   },
 };
 

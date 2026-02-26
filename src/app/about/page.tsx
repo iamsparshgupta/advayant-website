@@ -43,11 +43,17 @@ export default function AboutPage() {
                 year simply because they can&apos;t keep track of it all.
               </p>
               <p>
-                We started Advayant Intelligence to change that. Our name comes from
-                Sanskrit — <em className="text-primary-700 font-medium not-italic">advayant</em>, meaning &ldquo;unique,
-                unparalleled.&rdquo; It reflects our belief that the intelligence we
-                build should be unlike anything that came before.
+                We started Advayant Intelligence to change that.
               </p>
+
+              {/* Sanskrit name visual */}
+              <div className="my-10 py-8 px-6 bg-primary-50/50 rounded-2xl border border-primary-100 text-center">
+                <p className="text-3xl sm:text-4xl font-bold text-primary-800 mb-2 tracking-tight">advayant</p>
+                <p className="text-sm text-primary-500 italic mb-1">Sanskrit — &ldquo;unique, unparalleled&rdquo;</p>
+                <p className="text-xs text-neutral-400 mt-3 max-w-sm mx-auto">
+                  Our name reflects our belief: the intelligence we build should be unlike anything that came before.
+                </p>
+              </div>
               <p>
                 Our first product,{" "}
                 <strong className="text-neutral-900">FLUX AI</strong>, uses artificial
@@ -190,6 +196,41 @@ export default function AboutPage() {
               <p className="text-sm text-neutral-500 leading-relaxed">
                 Building at the intersection of AI and consumer finance for India.
               </p>
+            </div>
+          </div>
+        </ScrollReveal>
+      </section>
+
+      {/* CTA */}
+      <section className="py-24 px-6 bg-neutral-950 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary-900/20 to-accent-900/10" />
+        <ScrollReveal>
+          <div className="max-w-3xl mx-auto text-center relative z-10">
+            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
+              Ready to stop leaving money on the table?
+            </h2>
+            <p className="text-neutral-400 mb-8 max-w-xl mx-auto">
+              Join thousands of Indians who are already maximizing their credit card
+              rewards with FLUX AI — completely free.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <a
+                href="https://flux.advayant.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center justify-center px-7 py-3 bg-white text-neutral-900 text-sm font-semibold rounded-full hover:bg-neutral-100 transition-all active:scale-[0.97]"
+              >
+                Try FLUX AI — It&apos;s Free
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="ml-2 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
+                  <path d="M7 17L17 7M17 7H7M17 7v10" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </a>
+              <a
+                href="/contact"
+                className="inline-flex items-center justify-center px-7 py-3 border border-neutral-700 text-neutral-300 text-sm font-medium rounded-full hover:border-neutral-500 hover:text-white transition-all"
+              >
+                Get in Touch
+              </a>
             </div>
           </div>
         </ScrollReveal>

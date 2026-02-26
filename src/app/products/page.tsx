@@ -138,12 +138,72 @@ export default function ProductsPage() {
         </ScrollReveal>
       </section>
 
-      {/* Tech Stack */}
+      {/* How it works */}
       <section className="py-24 px-6">
         <div className="max-w-4xl mx-auto">
           <ScrollReveal>
+            <div className="text-center mb-16">
+              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-accent-500 mb-4">
+                How It Works
+              </p>
+              <h2 className="text-2xl sm:text-3xl font-bold text-neutral-900 mb-3">
+                Three steps. More rewards.
+              </h2>
+              <p className="text-neutral-400">No downloads, no credit card required. Free forever.</p>
+            </div>
+          </ScrollReveal>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+            {/* Connecting line (desktop) */}
+            <div className="hidden md:block absolute top-10 left-[20%] right-[20%] h-px bg-gradient-to-r from-neutral-200 via-neutral-300 to-neutral-200" />
+
+            {[
+              {
+                step: "1",
+                title: "Add your cards",
+                desc: "Tell FLUX which credit and debit cards you carry. We encrypt everything on your device — we never see your data.",
+                icon: (
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2" /><line x1="1" y1="10" x2="23" y2="10" /></svg>
+                ),
+              },
+              {
+                step: "2",
+                title: "Search any merchant",
+                desc: "Type where you're shopping — Amazon, Swiggy, Croma, or any merchant. FLUX understands categories automatically.",
+                icon: (
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" /></svg>
+                ),
+              },
+              {
+                step: "3",
+                title: "Swipe the right card",
+                desc: "FLUX instantly tells you which card gives the best cashback, points, or miles — and exactly how much you'll earn.",
+                icon: (
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
+                ),
+              },
+            ].map((s, i) => (
+              <ScrollReveal key={s.step} delay={i * 120}>
+                <div className="text-center relative">
+                  <div className="w-20 h-20 bg-white rounded-2xl border border-neutral-200 flex items-center justify-center mx-auto mb-5 text-neutral-400 relative z-10">
+                    {s.icon}
+                  </div>
+                  <div className="text-[10px] font-bold text-accent-500 uppercase tracking-widest mb-2">Step {s.step}</div>
+                  <h4 className="font-bold text-neutral-900 mb-2">{s.title}</h4>
+                  <p className="text-sm text-neutral-500 leading-relaxed">{s.desc}</p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Tech — reframed as user benefits */}
+      <section className="py-20 px-6 bg-neutral-50">
+        <div className="max-w-4xl mx-auto">
+          <ScrollReveal>
             <div className="text-center mb-12">
-              <p className="text-xs font-semibold uppercase tracking-[0.25em] text-accent-500 mb-3">
+              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-accent-500 mb-3">
                 Under the Hood
               </p>
               <h2 className="text-2xl sm:text-3xl font-bold text-neutral-900">
@@ -153,14 +213,14 @@ export default function ProductsPage() {
           </ScrollReveal>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              { label: "3-Tier AI", desc: "Gemini 3 + 2.5 Flash + Lite" },
-              { label: "AES-256", desc: "Zero-knowledge encryption" },
-              { label: "pgvector", desc: "Semantic search embeddings" },
-              { label: "Real-time", desc: "Live offer verification" },
+              { label: "3-Layer AI", desc: "Cross-checks every recommendation" },
+              { label: "AES-256", desc: "Bank-grade, we can't read your data" },
+              { label: "Smart Search", desc: "Understands what you mean" },
+              { label: "Real-time", desc: "Live verified offers & rates" },
             ].map((t, i) => (
               <ScrollReveal key={t.label} delay={i * 80}>
                 <div className="card-hover rounded-xl p-5 border border-neutral-200 bg-white text-center h-full">
-                  <p className="font-semibold text-neutral-900 text-sm mb-1">{t.label}</p>
+                  <p className="font-bold text-neutral-900 text-sm mb-1">{t.label}</p>
                   <p className="text-xs text-neutral-500">{t.desc}</p>
                 </div>
               </ScrollReveal>

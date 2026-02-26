@@ -49,7 +49,7 @@ export default function ContactPage() {
                 </svg>
               </div>
               <h3 className="font-semibold text-neutral-900 mb-1">Location</h3>
-              <p className="text-sm text-neutral-500">India</p>
+              <p className="text-sm text-neutral-500">Bengaluru, India</p>
             </div>
           </ScrollReveal>
         </div>
@@ -118,6 +118,30 @@ export default function ContactPage() {
             </div>
           </div>
         </ScrollReveal>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 px-6 bg-neutral-50">
+        <div className="max-w-xl mx-auto">
+          <ScrollReveal>
+            <h3 className="text-lg font-bold text-neutral-900 mb-8 text-center">
+              Frequently asked questions
+            </h3>
+            <div className="space-y-4">
+              {[
+                { q: "Is FLUX AI free?", a: "Yes, completely free. No credit card required, no hidden charges, no premium tier." },
+                { q: "How is my data protected?", a: "All data is encrypted on your device using AES-256 before it reaches our servers. We mathematically cannot read your financial information." },
+                { q: "Which banks and cards do you support?", a: "We support 200+ Indian credit and debit cards across all major banks — HDFC, SBI, ICICI, Axis, Amex, and many more." },
+                { q: "Can I suggest a feature?", a: "Absolutely! Use the contact form above or email us directly. We read every message and actively incorporate user feedback." },
+              ].map((faq, i) => (
+                <div key={i} className="bg-white rounded-xl p-5 border border-neutral-200">
+                  <h4 className="font-semibold text-neutral-900 text-sm mb-1.5">{faq.q}</h4>
+                  <p className="text-sm text-neutral-500 leading-relaxed">{faq.a}</p>
+                </div>
+              ))}
+            </div>
+          </ScrollReveal>
+        </div>
       </section>
 
       {/* Founder note */}
