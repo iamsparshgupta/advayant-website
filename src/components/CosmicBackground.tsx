@@ -1,13 +1,9 @@
+'use client';
+
 import React from 'react';
 
 export function CosmicBackground() {
     return (
-        <div className="fixed inset-0 z-[-1] pointer-events-none overflow-hidden bg-[#020617]">
-            {/* Dynamic Starfield (Asymmetric & Multi-layered) */}
-            <svg width="100%" height="100%" className="absolute inset-0 opacity-40">
-                <defs>
-                    <pattern id="stars-layer-1" x="0" y="0" width="400" height="400" patternUnits="userSpaceOnUse">
-                        {/* Randomized, non-uniform star placement */}
         <div className="fixed inset-0 w-full h-full z-[-1] overflow-hidden bg-black selection:bg-neutral-800">
             {/* Base Deep Space Gradient */}
             <div className="absolute inset-0 bg-gradient-to-b from-black via-[#050505] to-black" />
