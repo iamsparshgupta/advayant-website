@@ -51,11 +51,10 @@ export default function ProductsPage() {
                             <stop offset="100%" stopColor="#059669" />
                           </linearGradient>
                         </defs>
-                        <path d="M 20 50 C 20 20, 45 20, 50 50 C 55 80, 80 80, 80 50 C 80 20, 55 20, 50 50 C 45 80, 20 80, 20 50 Z"
-                          fill="none" stroke="url(#fluxEssenceGlow)" strokeWidth="6" strokeLinecap="round"
-                          className="animate-dash" strokeDasharray="100 150" />
-                        <path d="M 20 50 C 20 20, 45 20, 50 50 C 55 80, 80 80, 80 50 C 80 20, 55 20, 50 50 C 45 80, 20 80, 20 50 Z"
-                          fill="none" stroke="url(#fluxEssenceGlow)" strokeWidth="2" strokeLinecap="round" opacity="0.4" />
+                        <path d="M 50 15 L 60 45 L 50 55 L 40 45 Z" fill="url(#fluxEssenceGlow)" className="transition-all duration-500 group-hover:-translate-y-1" />
+                        <path d="M 85 50 L 55 60 L 45 50 L 55 40 Z" fill="url(#fluxEssenceGlow)" className="transition-all duration-500 group-hover:translate-x-1" />
+                        <path d="M 50 85 L 40 55 L 50 45 L 60 55 Z" fill="url(#fluxEssenceGlow)" className="transition-all duration-500 group-hover:translate-y-1" />
+                        <path d="M 15 50 L 45 40 L 55 50 L 45 60 Z" fill="url(#fluxEssenceGlow)" className="transition-all duration-500 group-hover:-translate-x-1" />
                       </svg>
                     </div>
                     <div>
