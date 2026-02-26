@@ -9,8 +9,8 @@ export default function AboutPage() {
       <section className="py-32 px-6 bg-transparent relative overflow-hidden flex items-center min-h-[70vh]">
         {/* Deep starry/glowing background */}
         <div className="absolute inset-0 bg-[#000000] z-0" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,theme(colors.accent.900/20),transparent_60%)] z-0" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary-900/10 rounded-full blur-[120px] pointer-events-none" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,theme(colors.neutral.900/40),transparent_60%)] z-0" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent-500/5 rounded-full blur-[120px] pointer-events-none" />
 
         {/* Subtle moving particles (simulated via CSS abstract shapes) */}
         <div className="absolute top-1/4 right-[15%] w-2 h-2 rounded-full bg-white/20 animate-pulse-soft blur-[1px]" />
