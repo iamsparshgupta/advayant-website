@@ -12,9 +12,7 @@ export const metadata: Metadata = {
   keywords: [
     "Advayant Intelligence",
     "FLUX AI",
-    "credit card optimizer",
-    "financial intelligence",
-    "India",
+    "intelligence solutions",
     "AI",
   ],
   icons: {
@@ -88,7 +86,6 @@ export default function RootLayout({
               sameAs: [],
               knowsAbout: [
                 "Artificial Intelligence",
-                "Financial Technology",
                 "Credit Card Optimization",
               ],
             }),

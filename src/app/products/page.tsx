@@ -21,7 +21,7 @@ export default function ProductsPage() {
             for <span className="text-transparent bg-clip-text bg-gradient-to-r from-flux-400 to-flux-accent-400">everyday life</span>
           </h1>
           <p className="animate-fade-in-up animate-delay-200 text-lg sm:text-xl text-neutral-400 max-w-2xl mx-auto font-light leading-relaxed">
-            Silent, powerful tools that work securely in the background to help you orchestrate smarter financial decisions.
+            Silent, powerful tools that work securely in the background to help you orchestrate smarter decisions and solve real problems.
           </p>
         </div>
       </section>
@@ -288,7 +288,7 @@ export default function ProductsPage() {
               More intelligence, <span className="italic font-medium text-neutral-500">coming soon.</span>
             </h2>
             <p className="text-neutral-400 max-w-xl mx-auto mb-16 text-lg font-light leading-relaxed">
-              We&apos;re expanding our proprietary intelligence models to solve more complex financial challenges for Indian consumers.
+              We&apos;re expanding our proprietary intelligence models to solve more complex challenges for Indian consumers across multiple domains.
             </p>
           </ScrollReveal>
 

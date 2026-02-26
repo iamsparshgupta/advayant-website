@@ -110,7 +110,7 @@ export default function AboutPage() {
               </div>
               <h3 className="text-2xl font-bold text-white mb-4 tracking-tight">Mission</h3>
               <p className="text-neutral-400 leading-relaxed font-light">
-                To build AI-powered tools that put enterprise-grade financial intelligence natively in the
+                To build AI-powered solutions that put enterprise-grade intelligence natively in the
                 hands of every Indian consumer — not just the wealthy or the
                 technically savvy.
               </p>
@@ -127,8 +127,7 @@ export default function AboutPage() {
               </div>
               <h3 className="text-2xl font-bold text-white mb-4 tracking-tight">Vision</h3>
               <p className="text-neutral-400 leading-relaxed font-light">
-                A world orchestrated by silent intelligence — where AI works securely in the background to automate
-                better financial decisions, so you literally never leave value out of reach.
+                better decisions, so you literally never leave value out of reach.
               </p>
             </div>
           </ScrollReveal>
@@ -144,10 +143,10 @@ export default function AboutPage() {
                 Innovation & R&D
               </p>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 tracking-tight">
-                Building our own financial AI
+                Building our own intelligence infrastructure
               </h2>
               <p className="text-neutral-400 max-w-xl mx-auto text-lg font-light">
-                We don&apos;t just wrap APIs. We build proprietary financial intelligence infrastructure modeled specifically for the Indian economy.
+                We don&apos;t just wrap APIs. We build proprietary AI infrastructure modeled specifically for the Indian economy.
               </p>
             </div>
           </ScrollReveal>
@@ -155,7 +154,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               { title: "Open Reward Intelligence API", desc: "India's first open, community-verified database of every card's reward structure. API-first — any fintech can query the best card for any purchase.", badge: "In Development" },
-              { title: "On-Device Financial AI", desc: "Fine-tuned models that run entirely on your phone. Sensitive financial data never leaves your device — true zero-knowledge intelligence.", badge: "R&D Phase" },
+              { title: "On-Device Intelligence", desc: "Fine-tuned models that run entirely on your phone. Sensitive data never leaves your device — true zero-knowledge intelligence.", badge: "R&D Phase" },
               { title: "Proprietary Model Suite", desc: "FluxClassifier, FluxRewardParser, FluxAnomalyNet — domain-specific AI trained on Indian financial data, replacing third-party dependency.", badge: "Training Data" },
               { title: "Multilingual Voice AI", desc: "Voice-first financial intelligence in Hindi and regional languages. Ask in your language, get the best card instantly.", badge: "2026 Roadmap" },
             ].map((item, i) => (
@@ -213,7 +212,7 @@ export default function AboutPage() {
               Built by builders.
             </h2>
             <p className="text-neutral-400 leading-relaxed max-w-xl mx-auto text-lg font-light">
-              Advayant Intelligence is led by engineers passionate about building elegant, mathematically sound solutions to everyday financial problems.
+              Advayant Intelligence is led by engineers passionate about building elegant, mathematically sound solutions to everyday consumer problems.
             </p>
           </div>
 
@@ -226,7 +225,7 @@ export default function AboutPage() {
               <h4 className="text-2xl font-bold text-white mb-1">Rajeev Gupta</h4>
               <p className="text-[11px] text-primary-400 font-bold uppercase tracking-widest mb-4">Founder</p>
               <p className="text-sm text-neutral-400 leading-relaxed font-light">
-                Architecting at the technical intersection of predictive AI and consumer finance for the Indian ecosystem.
+                Architecting at the technical intersection of predictive AI and consumer technology for the Indian ecosystem.
               </p>
             </div>
           </div>

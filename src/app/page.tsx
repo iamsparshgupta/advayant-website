@@ -53,7 +53,7 @@ function Hero() {
         </h1>
 
         <p className="animate-fade-in-up animate-delay-300 mt-8 text-lg sm:text-xl text-neutral-400 max-w-2xl mx-auto leading-relaxed font-light">
-          AI-powered financial products that solve real, everyday problems
+          AI-powered solutions that solve real, everyday problems
           for a billion Indian consumers. Silent, intelligent, and secure.
         </p>
 
@@ -364,7 +364,7 @@ function Innovation() {
               Innovation & R&D
             </p>
             <h2 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-bold text-white mb-4">
-              Building India&apos;s financial AI stack
+              Building India&apos;s AI intelligence stack
             </h2>
             <p className="text-neutral-400 max-w-lg mx-auto">
               We&apos;re not just using AI — we&apos;re building proprietary
@@ -456,7 +456,7 @@ function CTA() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-accent-400">intelligent finance?</span>
             </h2>
             <p className="text-neutral-400 text-lg sm:text-xl mb-12 max-w-xl mx-auto leading-relaxed font-light">
-              Join the quiet revolution. Experience privacy-first financial AI built explicitly for the Indian ecosystem.
+              Join the quiet revolution. Experience privacy-first intelligence built explicitly for the Indian ecosystem.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
