@@ -32,17 +32,7 @@ function Hero() {
           </div>
         </div>
 
-        <div className="animate-fade-in-up animate-delay-100 flex justify-center mb-10">
-          <div className="px-4 py-1.5 rounded-full glass border border-white/5 shadow-[0_0_20px_theme(colors.primary.500/10)] flex items-center gap-2">
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-primary-500"></span>
-            </span>
-            <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-primary-200">
-              Next-Gen AI Products Live
-            </span>
-          </div>
-        </div>
+
 
         <h1 className="animate-fade-in-up animate-delay-200 text-5xl sm:text-7xl lg:text-[5rem] font-bold tracking-tight text-white leading-[1.05]">
           Building Intelligence
