@@ -26,7 +26,7 @@ export default function ContactPage() {
         <div className="max-w-3xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4">
           <ScrollReveal delay={0}>
             <a
-              href="mailto:iamsparshgupta@yahoo.com"
+              href="mailto:hello@advayant.com"
               className="group card-hover bg-white rounded-2xl p-8 border border-neutral-200 text-center block h-full"
             >
               <div className="w-12 h-12 bg-neutral-50 rounded-xl flex items-center justify-center mx-auto mb-5 group-hover:bg-primary-50 transition-colors">
@@ -36,7 +36,7 @@ export default function ContactPage() {
                 </svg>
               </div>
               <h3 className="font-semibold text-neutral-900 mb-1">Email</h3>
-              <p className="text-sm text-neutral-500">iamsparshgupta@yahoo.com</p>
+              <p className="text-sm text-neutral-500">hello@advayant.com</p>
             </a>
           </ScrollReveal>
 
@@ -64,7 +64,7 @@ export default function ContactPage() {
                 Send us a message
               </h2>
               <form
-                action="mailto:iamsparshgupta@yahoo.com"
+                action="mailto:hello@advayant.com"
                 method="POST"
                 encType="text/plain"
                 className="space-y-5"

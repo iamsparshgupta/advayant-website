@@ -81,8 +81,8 @@ export function Footer() {
           <p className="text-xs text-neutral-600">
             &copy; {year} Advayant Intelligence Pvt. Ltd.
           </p>
-          <a href="mailto:iamsparshgupta@yahoo.com" className="text-xs text-neutral-600 hover:text-neutral-400 transition-colors">
-            iamsparshgupta@yahoo.com
+          <a href="mailto:hello@advayant.com" className="text-xs text-neutral-600 hover:text-neutral-400 transition-colors">
+            hello@advayant.com
           </a>
         </div>
       </div>
