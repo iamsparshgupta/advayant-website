@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { PageTransition } from "@/components/PageTransition";
+import { CosmicBackground } from "@/components/CosmicBackground";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -90,7 +91,8 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="bg-white text-neutral-800 font-sans antialiased">
+      <body className="bg-black text-neutral-50 font-sans antialiased">
+        <CosmicBackground />
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-neutral-900 focus:text-white focus:rounded-lg focus:text-sm focus:font-medium"
