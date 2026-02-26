@@ -41,7 +41,7 @@ function Hero() {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary-500"></span>
             </span>
             <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-primary-200">
-              Intelligence Stack 2.0 Live
+              Next-Gen AI Products Live
             </span>
           </div>
         </div>
