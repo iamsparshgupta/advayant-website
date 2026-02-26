@@ -11,11 +11,11 @@ function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-transparent">
       {/* Deep Aesthetic Backgrounds */}
       <div className="absolute inset-0 bg-[#000000] z-0" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,theme(colors.primary.900/20)_0%,transparent_100%)] z-0" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,theme(colors.neutral.900/80)_0%,transparent_100%)] z-0" />
 
       {/* Floating Animated Orbs */}
-      <div className="absolute top-1/4 right-[25%] w-[400px] h-[400px] bg-primary-600/20 rounded-full blur-[100px] animate-pulse-soft pointer-events-none z-0" />
-      <div className="absolute bottom-1/4 left-[20%] w-[350px] h-[350px] bg-accent-600/15 rounded-full blur-[90px] animate-pulse-soft pointer-events-none z-0" style={{ animationDelay: "2s" }} />
+      <div className="absolute top-1/4 right-[25%] w-[400px] h-[400px] bg-neutral-800/30 rounded-full blur-[100px] animate-pulse-soft pointer-events-none z-0" />
+      <div className="absolute bottom-1/4 left-[20%] w-[350px] h-[350px] bg-accent-900/10 rounded-full blur-[90px] animate-pulse-soft pointer-events-none z-0" style={{ animationDelay: "2s" }} />
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center pt-24 pb-16">
         {/* Logo */}
@@ -47,7 +47,7 @@ function Hero() {
         <h1 className="animate-fade-in-up animate-delay-200 text-5xl sm:text-7xl lg:text-[5rem] font-bold tracking-tight text-white leading-[1.05]">
           Building Intelligence
           <br />
-          <span className="bg-gradient-to-r from-white via-primary-200 to-primary-600 bg-clip-text text-transparent drop-shadow-[0_0_20px_theme(colors.primary.500/30)]">
+          <span className="bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">
             for India.
           </span>
         </h1>
@@ -134,11 +134,11 @@ function ProductShowcase() {
                 <div className="w-1.5 h-1.5 rounded-full bg-flux-400" />
                 <span className="text-[10px] font-semibold text-flux-50 uppercase tracking-widest">Flagship Product</span>
               </div>
-              <div className="flex items-center gap-6 mb-6">
-                {/* FLUX Flow Essence Logo */}
-                <div className="w-16 h-16 bg-gradient-to-br from-flux-900/40 to-black rounded-2xl flex items-center justify-center border border-flux-500/20 backdrop-blur-md relative overflow-hidden group shrink-0 shadow-[0_0_30px_theme(colors.flux.500/15)] hover:shadow-[0_0_40px_theme(colors.flux.500/30)] transition-all duration-500">
+              <div className="flex flex-col md:flex-row items-center gap-6 mb-8 mt-12">
+                {/* FLUX Flow Essence Logo (No Square Background) */}
+                <div className="flex items-center justify-center shrink-0 relative group w-12 h-12">
                   <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,theme(colors.flux.500/20)_0%,transparent_100%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-pulse-soft" />
-                  <svg width="36" height="36" viewBox="0 0 100 100" className="relative z-10 drop-shadow-[0_0_8px_theme(colors.flux.500/60)] group-hover:scale-105 transition-transform duration-500">
+                  <svg width="42" height="42" viewBox="0 0 100 100" className="relative z-10 drop-shadow-[0_0_12px_theme(colors.flux.500/60)] group-hover:scale-110 transition-transform duration-500">
                     <defs>
                       <linearGradient id="fluxEssenceGlow" x1="0%" y1="0%" x2="100%" y2="100%">
                         <stop offset="0%" stopColor="#e0f8f8" />
@@ -153,12 +153,12 @@ function ProductShowcase() {
                   </svg>
                 </div>
 
-                <h2 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white tracking-tight">
+                <h2 className="text-4xl sm:text-5xl lg:text-7xl font-medium text-white tracking-tight">
                   FLUX AI.
                 </h2>
               </div>
-              <p className="text-lg md:text-xl text-neutral-400 leading-relaxed font-light">
-                India&apos;s smartest credit card optimizer. Stop guessing which card to use. FLUX runs trillions of permutations to tell you exactly how to maximize your rewards.
+              <p className="text-lg md:text-xl text-neutral-300 leading-relaxed font-light">
+                India&apos;s smartest credit card optimizer. AI-powered rewards maximization, expense splitting, and real-time card suggestions.
               </p>
             </div>
 
@@ -361,7 +361,7 @@ function Innovation() {
       <div className="max-w-5xl mx-auto relative z-10">
         <ScrollReveal>
           <div className="text-center mb-16">
-            <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-primary-500 mb-4">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-accent-500 mb-4">
               Innovation & R&D
             </p>
             <h2 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-bold text-white mb-4">
@@ -379,7 +379,7 @@ function Innovation() {
             <ScrollReveal key={item.title} delay={i * 100}>
               <div className="group glass-card rounded-2xl p-8 border border-white/5 bg-white/[0.02] h-full hover:bg-white/[0.04] transition-all duration-500">
                 <div className="flex items-start justify-between mb-6">
-                  <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center text-primary-400 group-hover:text-white group-hover:bg-primary-500/20 transition-all duration-300">
+                  <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center text-accent-400 group-hover:text-white group-hover:bg-accent-500/20 transition-all duration-300">
                     {item.icon}
                   </div>
                   <span className="text-[10px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-full bg-white/5 text-neutral-400 border border-white/10">
@@ -408,7 +408,7 @@ function Numbers() {
       {/* Grid lines background */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:48px_48px] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_50%,#000_10%,transparent_100%)] pointer-events-none" />
 
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[300px] bg-primary-900/20 rounded-[100%] blur-[100px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[300px] bg-neutral-900/60 rounded-[100%] blur-[100px] pointer-events-none" />
 
       <div className="relative z-10 max-w-6xl mx-auto">
         <ScrollReveal>
@@ -427,7 +427,7 @@ function Numbers() {
                     stat.value
                   )}
                 </p>
-                <p className="text-[10px] sm:text-xs text-primary-400 tracking-widest uppercase font-semibold">{stat.label}</p>
+                <p className="text-[10px] sm:text-xs text-neutral-400 tracking-widest uppercase font-semibold">{stat.label}</p>
               </div>
             ))}
           </div>

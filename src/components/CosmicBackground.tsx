@@ -9,11 +9,11 @@ export function CosmicBackground() {
             <div className="absolute inset-0 bg-gradient-to-b from-black via-[#050505] to-black" />
 
             {/* Apple/Sarvam Style Fluid Mesh Orbs */}
-            {/* Deep Indigo/Violet Glow */}
+            {/* Deep Slate Blue Glow (Neutralized from Purple/Indigo) */}
             <div 
                 className="absolute top-[-10%] left-[-10%] w-[60%] h-[60%] rounded-full opacity-30 mix-blend-screen pointer-events-none animate-aurora-rotate"
                 style={{
-                    background: 'radial-gradient(circle, rgba(27,42,74,0.8) 0%, rgba(27,42,74,0) 70%)',
+                    background: 'radial-gradient(circle, rgba(15,23,42,0.8) 0%, rgba(15,23,42,0) 70%)',
                     filter: 'blur(80px)',
                     animationDuration: '30s'
                 }}

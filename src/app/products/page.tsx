@@ -5,7 +5,7 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 export default function ProductsPage() {
   return (
     <div className="pt-16">
-      /* ─── HERO ─── */
+      {/* ─── HERO ─── */}
       <section className="py-24 px-6 bg-transparent relative overflow-hidden">
         {/* Deep background mesh */}
         <div className="absolute bottom-1/4 left-[10%] w-[500px] h-[300px] bg-flux-900/20 rounded-[100%] blur-[100px] pointer-events-none" />
@@ -38,11 +38,11 @@ export default function ProductsPage() {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 relative z-10">
                 {/* Text side */}
                 <div className="p-8 sm:p-12 lg:p-16 text-white border-b lg:border-b-0 lg:border-r border-white/5">
-                  {/* FLUX Flow Essence Logo */}
-                  <div className="flex items-center gap-6 mb-10">
-                    <div className="w-16 h-16 bg-gradient-to-br from-flux-900/40 to-black rounded-2xl flex items-center justify-center border border-flux-500/20 backdrop-blur-md relative overflow-hidden group shrink-0 shadow-[0_0_30px_theme(colors.flux.500/15)] hover:shadow-[0_0_40px_theme(colors.flux.500/30)] transition-all duration-500">
+                  {/* FLUX Flow Essence Logo (No Square Background) */}
+                  <div className="flex items-center gap-4 mb-10">
+                    <div className="flex items-center justify-center relative group shrink-0 w-12 h-12">
                       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,theme(colors.flux.500/20)_0%,transparent_100%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-pulse-soft" />
-                      <svg width="36" height="36" viewBox="0 0 100 100" className="relative z-10 drop-shadow-[0_0_8px_theme(colors.flux.500/60)] group-hover:scale-105 transition-transform duration-500">
+                      <svg width="42" height="42" viewBox="0 0 100 100" className="relative z-10 drop-shadow-[0_0_12px_theme(colors.flux.500/60)] group-hover:scale-110 transition-transform duration-500">
                         <defs>
                           <linearGradient id="fluxEssenceGlow" x1="0%" y1="0%" x2="100%" y2="100%">
                             <stop offset="0%" stopColor="#e0f8f8" />
@@ -57,7 +57,7 @@ export default function ProductsPage() {
                       </svg>
                     </div>
                     <div>
-                      <span className="text-3xl font-bold tracking-tight">FLUX AI</span>
+                      <span className="text-3xl font-medium tracking-tight">FLUX AI</span>
                       <div className="flex items-center mt-1">
                         <span className="relative flex h-2 w-2 mr-2">
                           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
@@ -69,15 +69,13 @@ export default function ProductsPage() {
                   </div>
 
                   <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-[1.15] tracking-tight">
-                    India&apos;s smartest
+                    Maximize
                     <br />
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-neutral-300 to-neutral-500">credit card optimizer.</span>
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-neutral-300 to-neutral-500">Every Swipe.</span>
                   </h2>
 
                   <p className="text-neutral-400 leading-relaxed mb-10 text-lg font-light">
-                    FLUX analyzes your cards, understands merchant categories, and
-                    computes precisely which card to swipe — maximizing your
-                    cashback, reward points, and miles on every transaction instantly.
+                    India&apos;s smartest credit card optimizer. AI-powered rewards maximization, expense splitting, and real-time card suggestions.
                   </p>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
