@@ -35,12 +35,10 @@ export function CosmicBackground() {
                 <rect x="0" y="0" width="100%" height="100%" fill="url(#stars-layer-2)" className="animate-float" style={{ animationDuration: '60s', animationDirection: 'reverse' }} />
             </svg>
 
-            {/* Shooting Stars (Indian Cosmos) */}
+            {/* Shooting Stars (Indian Cosmos) - Rare & Subtle */}
             <div className="absolute top-0 left-0 w-full h-full pointer-events-none z-0">
-                <div className="absolute top-[-10%] right-[20%] w-[150px] h-px bg-gradient-to-r from-transparent via-white/80 to-transparent opacity-0 animate-shooting-star" style={{ animationDuration: '6s', animationDelay: '2s' }} />
-                <div className="absolute top-[-20%] right-[60%] w-[250px] h-px bg-gradient-to-r from-transparent via-[#C5A55A]/80 to-transparent opacity-0 animate-shooting-star" style={{ animationDuration: '9s', animationDelay: '7s' }} />
-                <div className="absolute top-[20%] right-[-10%] w-[100px] h-px bg-gradient-to-r from-transparent via-[#1B2A4A]/80 to-transparent opacity-0 animate-shooting-star" style={{ animationDuration: '14s', animationDelay: '0.5s' }} />
-                <div className="absolute top-[5%] right-[80%] w-[180px] h-px bg-gradient-to-r from-transparent via-[#e67e22]/60 to-transparent opacity-0 animate-shooting-star" style={{ animationDuration: '11s', animationDelay: '4s' }} />
+                <div className="absolute top-[5%] right-[20%] w-[150px] h-px bg-gradient-to-r from-transparent via-white/60 to-transparent opacity-0 animate-shooting-star" style={{ animationDuration: '18s', animationDelay: '5s' }} />
+                <div className="absolute top-[25%] right-[-10%] w-[200px] h-px bg-gradient-to-r from-transparent via-[#C5A55A]/50 to-transparent opacity-0 animate-shooting-star" style={{ animationDuration: '24s', animationDelay: '12s' }} />
             </div>
 
             {/* Subtle Dynamic Nebula (Indian Cosmic Essence) */}
