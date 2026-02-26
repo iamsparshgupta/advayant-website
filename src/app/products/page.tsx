@@ -124,15 +124,15 @@ export default function ProductsPage() {
                 </div>
 
                 {/* Visual side - Mockup */}
-                <div className="bg-neutral-950 p-8 sm:p-12 lg:p-16 flex items-center justify-center relative overflow-hidden">
+                <div className="bg-neutral-950 p-8 sm:p-12 lg:p-16 flex items-center justify-center relative overflow-hidden font-outfit">
                   {/* Subtle grid bg */}
                   <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:24px_24px] z-0" />
 
                   <div className="space-y-4 w-full max-w-sm relative z-10">
                     <div className="bg-neutral-900 rounded-2xl p-5 border border-white/5 shadow-lg relative overflow-hidden">
                       <div className="absolute top-0 left-0 w-1 h-full bg-flux-500" />
-                      <p className="text-[10px] uppercase tracking-widest text-neutral-500 mb-2 font-medium ml-2">Active Search</p>
-                      <p className="text-white font-semibold text-lg ml-2">Swiggy — Food Delivery</p>
+                      <p className="text-[10px] uppercase tracking-widest text-neutral-500 mb-2 font-medium ml-2 font-sans">Active Search</p>
+                      <p className="text-white font-semibold text-lg ml-2 tracking-tight">Swiggy — Food Delivery</p>
                       <p className="text-sm text-neutral-400 mt-1 ml-2 font-mono">₹1,200.00</p>
                     </div>
 
@@ -141,12 +141,12 @@ export default function ProductsPage() {
                       <div className="bg-neutral-950 rounded-2xl p-6 border border-white/10 relative backdrop-blur-md">
                         <div className="flex items-center gap-2 mb-4">
                           <span className="w-2 h-2 rounded-full bg-flux-400 animate-pulse" />
-                          <p className="text-[10px] uppercase tracking-[0.2em] font-bold text-flux-400">Optimal Match</p>
+                          <p className="text-[10px] uppercase tracking-[0.2em] font-bold text-flux-400 font-sans">Optimal Match</p>
                         </div>
                         <div className="flex items-end justify-between">
                           <div>
-                            <p className="text-white font-bold text-xl mb-1">HDFC Swiggy Card</p>
-                            <p className="text-xs text-neutral-400">Direct integration</p>
+                            <p className="text-white font-bold text-xl mb-1 tracking-tight">HDFC Swiggy Card</p>
+                            <p className="text-xs text-neutral-400 font-sans tracking-normal">Direct integration</p>
                           </div>
                           <div className="text-right">
                             <span className="text-white font-black text-3xl tracking-tighter">10%</span>

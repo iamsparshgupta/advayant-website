@@ -201,7 +201,7 @@ function ProductShowcase() {
                   </div>
 
                   {/* UI App Content */}
-                  <div className="p-6 md:p-10 relative">
+                  <div className="p-6 md:p-10 relative font-outfit">
                     {/* App bg grid */}
                     <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:24px_24px] z-0" />
 
@@ -211,8 +211,8 @@ function ProductShowcase() {
                         <div className="bg-neutral-950 rounded-2xl p-4 flex items-center gap-4 text-white">
                           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-flux-400"><circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" /></svg>
                           <div>
-                            <p className="font-medium text-lg">Apple Store BKC</p>
-                            <p className="text-xs text-neutral-500">Amount: ₹1,29,000</p>
+                            <p className="font-medium text-lg tracking-tight">Apple Store BKC</p>
+                            <p className="text-xs text-neutral-500 font-sans tracking-normal">Amount: ₹1,29,000</p>
                           </div>
                           <div className="ml-auto flex items-center gap-2 text-xs font-mono text-neutral-500">
                             <span className="px-2 py-1 rounded bg-white/10 uppercase border border-white/5">⌘</span>
@@ -226,21 +226,21 @@ function ProductShowcase() {
                         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-flux-400 to-flux-600" />
                         <div className="bg-neutral-950 rounded-2xl p-6 relative">
                           <div className="absolute -right-10 -top-10 w-40 h-40 bg-flux-600/10 rounded-full blur-2xl" />
-                          <p className="text-[10px] uppercase tracking-[0.2em] font-bold text-flux-400 mb-3 ml-1 flex items-center gap-2">
+                          <p className="text-[10px] uppercase tracking-[0.2em] font-bold text-flux-400 mb-3 ml-1 flex items-center gap-2 font-sans">
                             <span className="w-1.5 h-1.5 rounded-full bg-flux-400 animate-pulse" /> Optimal Card AI Match
                           </p>
                           <div className="flex items-end justify-between">
                             <div>
-                              <h4 className="text-2xl font-bold text-white mb-1">HDFC Infinia Metal</h4>
-                              <p className="text-sm text-neutral-400">Via SmartBuy Multiplier</p>
+                              <h4 className="text-2xl font-bold text-white mb-1 tracking-tight">HDFC Infinia Metal</h4>
+                              <p className="text-sm text-neutral-400 font-sans tracking-normal">Via SmartBuy Multiplier</p>
                             </div>
                             <div className="text-right">
-                              <p className="text-3xl font-bold text-white tracking-tight">16.5%</p>
-                              <p className="text-xs font-medium text-flux-400 mt-1">Reward Value</p>
+                              <p className="text-3xl font-bold text-white tracking-tighter">16.5%</p>
+                              <p className="text-xs font-medium text-flux-400 mt-1 font-sans tracking-normal">Reward Value</p>
                             </div>
                           </div>
 
-                          <div className="mt-5 pt-5 border-t border-white/10 flex justify-between items-center text-sm">
+                          <div className="mt-5 pt-5 border-t border-white/10 flex justify-between items-center text-sm font-sans tracking-normal">
                             <span className="text-neutral-400">Total savings generated</span>
                             <span className="font-mono text-green-400 font-bold bg-green-400/10 px-3 py-1 rounded-lg border border-green-400/20 shadow-[0_0_10px_rgba(7ade80,0.2)]">₹ 21,285</span>
                           </div>
@@ -250,13 +250,13 @@ function ProductShowcase() {
                       {/* Runner up */}
                       <div className="bg-neutral-950 rounded-2xl p-5 border border-white/5 flex items-center justify-between opacity-80 backdrop-blur-md">
                         <div className="flex gap-4 items-center">
-                          <div className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-neutral-500">2</div>
+                          <div className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-neutral-500 font-mono">2</div>
                           <div>
-                            <p className="text-xs text-neutral-500 mb-0.5">Runner up</p>
-                            <p className="font-medium text-white text-sm">SBI Cashback Card</p>
+                            <p className="text-xs text-neutral-500 mb-0.5 font-sans tracking-normal">Runner up</p>
+                            <p className="font-medium text-white text-sm tracking-tight">SBI Cashback Card</p>
                           </div>
                         </div>
-                        <span className="text-neutral-400 font-semibold">5.0%</span>
+                        <span className="text-neutral-400 font-semibold tracking-tighter">5.0%</span>
                       </div>
                     </div>
                   </div>
