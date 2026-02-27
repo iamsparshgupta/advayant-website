@@ -1,9 +1,16 @@
-"use client";
-
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { CountUp } from "@/components/CountUp";
+import { SpotlightCard } from "@/components/SpotlightCard";
+
+export const metadata: Metadata = {
+  title: "Advayant Intelligence — Building Intelligence for India",
+  description:
+    "AI-powered solutions that solve real, everyday problems for a billion Indian consumers.",
+  keywords: ["Advayant", "Intelligence", "AI", "India", "FLUX AI"],
+};
 
 /* ─── HERO ─── */
 function Hero() {
@@ -206,7 +213,7 @@ function ProductShowcase() {
                       </div>
 
                       {/* Best recommendation */}
-                      <div className="glow-border rounded-2xl shadow-[0_0_30px_theme(colors.flux.500/15)] relative overflow-hidden">
+                      <div className="glow-border rounded-2xl shadow-[0_0_30px_theme(colors.flux.500/15)] relative overflow-hidden animate-[float_4s_ease-in-out_infinite]">
                         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-flux-400 to-flux-600" />
                         <div className="bg-neutral-950 rounded-2xl p-6 relative">
                           <div className="absolute -right-10 -top-10 w-40 h-40 bg-flux-600/10 rounded-full blur-2xl" />
@@ -226,13 +233,15 @@ function ProductShowcase() {
 
                           <div className="mt-5 pt-5 border-t border-white/10 flex justify-between items-center text-sm font-sans tracking-normal">
                             <span className="text-neutral-400">Total savings generated</span>
-                            <span className="font-mono text-green-400 font-bold bg-green-400/10 px-3 py-1 rounded-lg border border-green-400/20 shadow-[0_0_10px_rgba(7ade80,0.2)]">₹ 21,285</span>
+                            <span className="font-mono text-green-400 font-bold bg-green-400/10 px-3 py-1 rounded-lg border border-green-400/20 shadow-[0_0_10px_rgba(7ade80,0.2)] flex items-center gap-1">
+                              ₹ <CountUp value="21,285" />
+                            </span>
                           </div>
                         </div>
                       </div>
 
                       {/* Runner up */}
-                      <div className="bg-neutral-950 rounded-2xl p-5 border border-white/5 flex items-center justify-between opacity-80 backdrop-blur-md">
+                      <div className="bg-neutral-950 rounded-2xl p-5 border border-white/5 flex items-center justify-between opacity-80 backdrop-blur-md animate-[float_5s_ease-in-out_infinite_0.5s]">
                         <div className="flex gap-4 items-center">
                           <div className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-neutral-500 font-mono">2</div>
                           <div>
@@ -366,7 +375,7 @@ function Innovation() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           {innovations.map((item, i) => (
             <ScrollReveal key={item.title} delay={i * 100}>
-              <div className="group glass-card rounded-2xl p-8 border border-white/5 bg-white/[0.02] h-full hover:bg-white/[0.04] transition-all duration-500">
+              <SpotlightCard className="group glass-card rounded-2xl p-8 border border-white/5 bg-white/[0.02] h-full transition-all duration-500">
                 <div className="flex items-start justify-between mb-6">
                   <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center text-accent-400 group-hover:text-white group-hover:bg-accent-500/20 transition-all duration-300">
                     {item.icon}
@@ -381,7 +390,7 @@ function Innovation() {
                 <p className="text-sm text-neutral-400 leading-relaxed font-light">
                   {item.description}
                 </p>
-              </div>
+              </SpotlightCard>
             </ScrollReveal>
           ))}
         </div>

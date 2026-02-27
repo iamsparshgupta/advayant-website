@@ -33,13 +33,13 @@ export function CountUp({ value, className = "" }: CountUpProps) {
 
   function animateValue() {
     // Extract numeric part and suffix (e.g., "200+" -> 200, "+", or "100%" -> 100, "%")
-    const match = value.match(/^(\d+)(.*)$/);
+    const match = value.match(/^([\d,]+)(.*)$/);
     if (!match) {
       setDisplayed(value);
       return;
     }
-
-    const target = parseInt(match[1], 10);
+    const numStr = match[1].replace(/,/g, '');
+    const target = parseInt(numStr, 10);
     const suffix = match[2];
     const duration = 2000;
     const start = performance.now();
@@ -51,7 +51,7 @@ export function CountUp({ value, className = "" }: CountUpProps) {
       const eased = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
       const current = Math.round(eased * target);
       
-      setDisplayed(`${current}${suffix}`);
+      setDisplayed(`${current.toLocaleString('en-IN')}${suffix}`);
       
       if (progress < 1) {
         requestAnimationFrame(step);
