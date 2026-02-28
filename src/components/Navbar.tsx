@@ -49,44 +49,45 @@ export function Navbar() {
               <svg viewBox="0 0 520 140" className="h-full w-auto text-white overflow-visible">
                 {/* Icon Group */}
                 <g transform="translate(60, 60)">
-                  {/* Arc: Radius 28, centered at (0,0), exactly 36-degree gap at -36 deg (top-right) */}
-                  <path 
-                    d="M 26.6 -8.6 A 28 28 0 1 1 16.5 -22.6" 
-                    stroke="currentColor" 
-                    strokeWidth="3.5" 
-                    fill="none" 
-                    strokeLinecap="round" 
-                  />
+                  {/* Advanced Mask for Perfect 3D Tapered Crescent with Small Gap */}
+                  <defs>
+                    <mask id="crescentMask">
+                      {/* Show everything initially */}
+                      <rect x="-50" y="-50" width="100" height="100" fill="white" />
+                      
+                      {/* 1. Hollow out the center. Perfect balance (1.8px at gap, 3.8px at bottom left) */}
+                      <circle cx="1" cy="-1" r="25.2" fill="black" />
+                      
+                      {/* 2. Carve a small gap. Flat cut orthogonal to the ray path looks sharp & modern. */}
+                      <g transform="rotate(-36)">
+                        <rect x="23" y="-1.8" width="10" height="3.6" fill="black" />
+                      </g>
+                    </mask>
+                  </defs>
+                  
+                  {/* Outer circle masked out into a perfect crescent */}
+                  <circle cx="0" cy="0" r="28" fill="currentColor" mask="url(#crescentMask)" />
                   
                   {/* Center Nucleus Dot (Gold) */}
                   <circle cx="0" cy="0" r="5" fill="#C5A55A"/>
-                  
-                  {/* Swooping Tail (Gold) - matching original aesthetic */}
-                  <path 
-                    d="M -18 25 Q -38 15 -28 -5" 
-                    stroke="#C5A55A" 
-                    strokeWidth="1.5" 
-                    fill="none" 
-                    strokeLinecap="round" 
-                    opacity="0.8"
-                  />
 
                   {/* 36-Degree Ray of Gold Light Animation - shoots exactly from center dot */}
-                  <line 
-                    x1="0" y1="0" 
-                    x2="36.4" y2="-26.4" 
-                    stroke="#C5A55A" 
-                    strokeWidth="2.5" 
-                    strokeLinecap="round" 
-                    className="opacity-0 drop-shadow-[0_0_8px_#C5A55A] animate-[goldRay_2s_ease-out_infinite]"
-                  />
+                  <g transform="rotate(-36)">
+                    <polygon 
+                      points="0,1.5 0,-1.5 45,0" 
+                      fill="#C5A55A" 
+                      className="opacity-0 drop-shadow-[0_0_8px_#C5A55A] animate-[goldRay_2s_ease-out_infinite]"
+                      style={{ transformOrigin: '0px 0px' }}
+                    />
+                  </g>
                   
                   <style>{`
                     @keyframes goldRay {
-                      0% { stroke-dasharray: 0, 100; stroke-dashoffset: 0; opacity: 0; }
-                      20% { opacity: 1; stroke-dasharray: 20, 100; stroke-dashoffset: 0; }
-                      70% { stroke-dasharray: 35, 100; stroke-dashoffset: -35; opacity: 1; }
-                      100% { stroke-dasharray: 0, 100; stroke-dashoffset: -60; opacity: 0; }
+                      0% { transform: scaleX(0); opacity: 0; }
+                      10% { transform: scaleX(0); opacity: 1; }
+                      40% { transform: scaleX(1); opacity: 1; }
+                      70% { transform: scaleX(1); opacity: 0; }
+                      100% { transform: scaleX(0); opacity: 0; }
                     }
                   `}</style>
                 </g>
