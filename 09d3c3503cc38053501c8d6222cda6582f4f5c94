@@ -1,0 +1,45 @@
+src/app/layout.tsx
+  01d9537c687e8d3f 15-20,73-83,105-106,111-134
+src/app/page.tsx
+  01d9537c687e8d3f 11,17-22,55,63,105-110,136,186-187,312,377,406,408,460,476,490,493
+src/components/Navbar.tsx
+  01d9537c687e8d3f 31-39,43,143-145
+src/components/Footer.tsx
+  01d9537c687e8d3f 29,51,56-58,75,80,85-86
+src/app/about/page.tsx
+  01d9537c687e8d3f 9,28,107,123,129-130,168,196,226
+src/app/contact/page.tsx
+  01d9537c687e8d3f 22,39,53,131,164
+README.md
+  01d9537c687e8d3f 1-113
+public/manifest.json
+  01d9537c687e8d3f 1-32
+src/app/globals.css
+  01d9537c687e8d3f 144,149,154,160,165,182,187,222,281,289,344-369
+src/app/products/page.tsx
+  01d9537c687e8d3f 23,77,83,237,299-300
+next.config.ts
+  01d9537c687e8d3f 5-7
+src/app/blog/page.tsx
+  01d9537c687e8d3f 1-203
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.15",
+  "base_commit_sha": "09d3c3503cc38053501c8d6222cda6582f4f5c94",
+  "prompts": {
+    "01d9537c687e8d3f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "76006d0f-d97e-4ce4-a8e5-02006c2ece69",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Sparsh <iamsparshgupta@yahoo.com>",
+      "messages": [],
+      "total_additions": 509,
+      "total_deletions": 44,
+      "accepted_lines": 502,
+      "overriden_lines": 0
+    }
+  }
+}
