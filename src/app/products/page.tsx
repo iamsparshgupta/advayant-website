@@ -20,7 +20,7 @@ export default function ProductsPage() {
             <br />
             for <span className="text-transparent bg-clip-text bg-gradient-to-r from-flux-400 to-flux-accent-400">everyday life</span>
           </h1>
-          <p className="animate-fade-in-up animate-delay-200 text-lg sm:text-xl text-neutral-400 max-w-2xl mx-auto font-light leading-relaxed">
+          <p className="animate-fade-in-up animate-delay-200 text-lg sm:text-xl text-neutral-300 max-w-2xl mx-auto font-light leading-relaxed">
             Silent, powerful tools that work securely in the background to help you orchestrate smarter decisions and solve real problems.
           </p>
         </div>
@@ -74,13 +74,13 @@ export default function ProductsPage() {
                   </h2>
 
                   <p className="text-neutral-400 leading-relaxed mb-10 text-lg font-light">
-                    India&apos;s smartest credit card optimizer. AI-powered rewards maximization, expense splitting, and real-time card suggestions.
+                    India&apos;s smartest credit card optimizer. AI-powered rewards maximization across 200+ cards including UPI-on-credit, expense splitting, and real-time card suggestions.
                   </p>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
                     {[
                       { label: "Card Engine", desc: "Best card, everywhere" },
-                      { label: "Deep Analytics", desc: "Where the money goes" },
+                      { label: "UPI on Credit", desc: "RuPay, Zagg, SuperCard Pro" },
                       { label: "Kautilya AI", desc: "Conversational finance" },
                       { label: "Smart Parsers", desc: "PDF, SMS, image import" },
                       { label: "Expense Rings", desc: "Frictionless splitting" },
@@ -234,7 +234,7 @@ export default function ProductsPage() {
                       {s.step}
                     </div>
                   </div>
-                  <h4 className="font-bold text-white mb-3 text-xl tracking-tight">{s.title}</h4>
+                  <h3 className="font-bold text-white mb-3 text-xl tracking-tight">{s.title}</h3>
                   <p className="text-sm text-neutral-400 leading-relaxed font-light">{s.desc}</p>
                 </div>
               </ScrollReveal>
@@ -296,6 +296,8 @@ export default function ProductsPage() {
             {[
               { title: "Open Financial Intelligence API", desc: "India's first open, community-verified database of every card's dynamic reward structure. Build the future of finance with us.", badge: "Developer Beta" },
               { title: "On-Device Prediction Models", desc: "Next-generation fine-tuned SLMs running natively on your smartphone. The ultimate zero-knowledge architecture.", badge: "R&D Phase" },
+              { title: "NPCI FiMI Ecosystem Integration", desc: "Leveraging NPCI's FiMI — India's first payments-specific AI model — for richer transaction categorization and smarter UPI-on-credit optimization.", badge: "Exploring" },
+              { title: "Multilingual Voice Intelligence", desc: "Voice-first financial commands in Hindi and regional languages. Ask in your language, get the optimal card instantly.", badge: "2026 Roadmap" },
             ].map((item, i) => (
               <ScrollReveal key={item.title} delay={i * 100}>
                 <div className="glass-card rounded-[2rem] p-8 border border-white/10 bg-gradient-to-br from-neutral-900 to-black h-full group hover:border-white/20 transition-colors">

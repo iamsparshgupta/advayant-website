@@ -6,7 +6,7 @@ export default function AboutPage() {
   return (
     <div className="pt-16">
       {/* Hero */}
-      <section className="py-32 px-6 bg-transparent relative overflow-hidden flex items-center min-h-[70vh]">
+      <section className="py-16 sm:py-24 lg:py-32 px-6 bg-transparent relative overflow-hidden flex items-center min-h-[70vh]">
         {/* Deep starry/glowing background */}
         <div className="absolute inset-0 bg-[#000000] z-0" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,theme(colors.neutral.900/40),transparent_60%)] z-0" />
@@ -25,7 +25,7 @@ export default function AboutPage() {
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-accent-400">with conviction.</span>
           </h1>
-          <p className="animate-fade-in-up animate-delay-200 text-xl text-neutral-400 max-w-2xl mx-auto leading-relaxed font-light">
+          <p className="animate-fade-in-up animate-delay-200 text-xl text-neutral-300 max-w-2xl mx-auto leading-relaxed font-light">
             We believe that the most powerful technology shouldn&apos;t be a luxury. It should be an invisible utility that empowers every Indian consumer.
           </p>
         </div>
@@ -104,7 +104,7 @@ export default function AboutPage() {
             <div className="glass-card bg-neutral-900/40 rounded-[2rem] p-10 border border-white/10 h-full backdrop-blur-md relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-32 h-32 bg-primary-500/10 rounded-full blur-2xl group-hover:bg-primary-500/20 transition-colors" />
               <div className="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center mb-8 border border-white/10 text-primary-400">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
                 </svg>
               </div>
@@ -120,13 +120,14 @@ export default function AboutPage() {
             <div className="glass-card bg-neutral-900/40 rounded-[2rem] p-10 border border-white/10 h-full backdrop-blur-md relative overflow-hidden group">
               <div className="absolute bottom-0 right-0 w-32 h-32 bg-accent-500/10 rounded-full blur-2xl group-hover:bg-accent-500/20 transition-colors" />
               <div className="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center mb-8 border border-white/10 text-accent-400">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z" />
                   <circle cx="12" cy="12" r="3" />
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-white mb-4 tracking-tight">Vision</h3>
-              <p className="text-neutral-400 leading-relaxed font-light">
+              <p className="text-neutral-300 leading-relaxed font-light">
+                A world where every Indian consumer has the intelligence infrastructure to make
                 better decisions, so you literally never leave value out of reach.
               </p>
             </div>
@@ -164,7 +165,7 @@ export default function AboutPage() {
                   <span className="inline-block text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-5 bg-white/5 text-neutral-400 border border-white/10">
                     {item.badge}
                   </span>
-                  <h4 className="font-bold text-white mb-3 text-xl tracking-tight">{item.title}</h4>
+                  <h3 className="font-bold text-white mb-3 text-xl tracking-tight">{item.title}</h3>
                   <p className="text-sm text-neutral-400 leading-relaxed font-light">{item.desc}</p>
                 </div>
               </ScrollReveal>
@@ -192,7 +193,7 @@ export default function AboutPage() {
             ].map((item, i) => (
               <ScrollReveal key={item.title} delay={i * 80} className="h-full">
                 <div className="glass-card bg-neutral-900/40 rounded-2xl p-6 border border-white/10 h-full backdrop-blur-md hover:bg-white/[0.04] transition-colors">
-                  <h4 className="font-bold text-white mb-3 text-lg">{item.title}</h4>
+                  <h3 className="font-bold text-white mb-3 text-lg">{item.title}</h3>
                   <p className="text-sm text-neutral-400 leading-relaxed font-light">{item.desc}</p>
                 </div>
               </ScrollReveal>
@@ -222,7 +223,7 @@ export default function AboutPage() {
               <div className="w-16 h-16 bg-gradient-to-br from-primary-900 to-black border border-white/10 rounded-2xl flex items-center justify-center mb-6 relative z-10 shadow-lg">
                 <span className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-br from-white to-neutral-500 tracking-tighter">RG</span>
               </div>
-              <h4 className="text-2xl font-bold text-white mb-1">Rajeev Gupta</h4>
+              <h3 className="text-2xl font-bold text-white mb-1">Rajeev Gupta</h3>
               <p className="text-[11px] text-primary-400 font-bold uppercase tracking-widest mb-4">Founder</p>
               <p className="text-sm text-neutral-400 leading-relaxed font-light">
                 Architecting at the technical intersection of predictive AI and consumer technology for the Indian ecosystem.

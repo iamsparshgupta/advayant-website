@@ -8,8 +8,19 @@ import { SpotlightCard } from "@/components/SpotlightCard";
 export const metadata: Metadata = {
   title: "Advayant Intelligence — Building Intelligence for India",
   description:
-    "AI-powered solutions that solve real, everyday problems for a billion Indian consumers.",
-  keywords: ["Advayant", "Intelligence", "AI", "India", "FLUX AI"],
+    "AI-powered solutions that solve real, everyday problems for a billion Indian consumers. DPDPA compliant, zero-knowledge, privacy-first.",
+  keywords: [
+    "Advayant",
+    "Intelligence",
+    "AI",
+    "India",
+    "FLUX AI",
+    "credit card optimizer",
+    "UPI credit card rewards",
+    "best credit card India",
+    "AI fintech",
+    "DPDPA compliant",
+  ],
 };
 
 /* ─── HERO ─── */
@@ -41,7 +52,7 @@ function Hero() {
 
 
 
-        <h1 className="animate-fade-in-up animate-delay-200 text-5xl sm:text-7xl lg:text-[5rem] font-bold tracking-tight text-white leading-[1.05]">
+        <h1 className="animate-fade-in-up animate-delay-200 text-4xl sm:text-6xl lg:text-[5rem] font-bold tracking-tight text-white leading-[1.05]">
           Building Intelligence
           <br />
           <span className="bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">
@@ -49,7 +60,7 @@ function Hero() {
           </span>
         </h1>
 
-        <p className="animate-fade-in-up animate-delay-300 mt-8 text-lg sm:text-xl text-neutral-400 max-w-2xl mx-auto leading-relaxed font-light">
+        <p className="animate-fade-in-up animate-delay-300 mt-8 text-lg sm:text-xl text-neutral-300 max-w-2xl mx-auto leading-relaxed font-light">
           AI-powered solutions that solve real, everyday problems
           for a billion Indian consumers. Silent, intelligent, and secure.
         </p>
@@ -91,6 +102,13 @@ function Hero() {
           </span>
           <span className="hidden sm:block w-1 h-1 rounded-full bg-neutral-700" />
           <span className="flex items-center gap-2">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-green-400">
+              <path d="M9 12l2 2 4-4" /><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+            DPDPA Compliant
+          </span>
+          <span className="hidden sm:block w-1 h-1 rounded-full bg-neutral-700" />
+          <span className="flex items-center gap-2">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-accent-400">
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
             </svg>
@@ -115,7 +133,7 @@ function Hero() {
 /* ─── PRODUCT SHOWCASE — FLUX AI (DARK MODE UI MOCK) ─── */
 function ProductShowcase() {
   return (
-    <section className="py-32 px-6 relative overflow-hidden bg-transparent">
+    <section className="py-16 sm:py-24 lg:py-32 px-6 relative overflow-hidden bg-transparent">
       {/* Decorative lines */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-flux-900 to-transparent" />
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-flux-900 to-transparent" />
@@ -165,7 +183,8 @@ function ProductShowcase() {
               className="shrink-0 flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-white/20 text-white font-medium hover:bg-white hover:text-black transition-all group"
             >
               Access FLUX Studio
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="transition-transform group-hover:translate-x-1"><path d="M5 12h14M12 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" /></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="transition-transform group-hover:translate-x-1" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" /></svg>
+              <span className="sr-only">(opens in new tab)</span>
             </a>
           </div>
         </ScrollReveal>
@@ -290,7 +309,7 @@ function ProductShowcase() {
                       {f.icon}
                     </div>
                     <div>
-                      <h4 className="font-bold text-white mb-2 text-lg">{f.title}</h4>
+                      <h3 className="font-bold text-white mb-2 text-lg">{f.title}</h3>
                       <p className="text-sm text-neutral-400 leading-relaxed font-light">{f.desc}</p>
                     </div>
                   </div>
@@ -355,7 +374,7 @@ function Innovation() {
   ];
 
   return (
-    <section className="py-32 px-6 bg-neutral-950 relative overflow-hidden">
+    <section className="py-16 sm:py-24 lg:py-32 px-6 bg-neutral-950 relative overflow-hidden">
       <div className="max-w-5xl mx-auto relative z-10">
         <ScrollReveal>
           <div className="text-center mb-16">
@@ -384,9 +403,9 @@ function Innovation() {
                     {item.badge}
                   </span>
                 </div>
-                <h4 className="font-bold text-white mb-3 text-lg">
+                <h3 className="font-bold text-white mb-3 text-lg">
                   {item.title}
-                </h4>
+                </h3>
                 <p className="text-sm text-neutral-400 leading-relaxed font-light">
                   {item.description}
                 </p>
@@ -438,7 +457,7 @@ function Numbers() {
 /* ─── CTA ─── */
 function CTA() {
   return (
-    <section className="py-32 px-6 relative overflow-hidden bg-transparent">
+    <section className="py-16 sm:py-24 lg:py-32 px-6 relative overflow-hidden bg-transparent">
       {/* Complex gradient background for modern feel */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,theme(colors.accent.500/10)_0%,transparent_50%)]" />
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-accent-900/20 blur-[150px] rounded-full pointer-events-none" />
@@ -454,7 +473,7 @@ function CTA() {
               Ready to redefine <br className="hidden sm:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-accent-400">intelligent finance?</span>
             </h2>
-            <p className="text-neutral-400 text-lg sm:text-xl mb-12 max-w-xl mx-auto leading-relaxed font-light">
+            <p className="text-neutral-300 text-lg sm:text-xl mb-12 max-w-xl mx-auto leading-relaxed font-light">
               Join the quiet revolution. Experience privacy-first intelligence built explicitly for the Indian ecosystem.
             </p>
 
@@ -468,9 +487,10 @@ function CTA() {
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/80 to-transparent translate-x-[-100%] group-hover:animate-[shimmer_1.5s_infinite]" />
                 <span className="relative z-10 flex items-center justify-center">
                   Try FLUX AI Now
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="ml-2 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="ml-2 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" aria-hidden="true">
                     <path d="M7 17L17 7M17 7H7M17 7v10" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
+                  <span className="sr-only">(opens in new tab)</span>
                 </span>
               </a>
               <Link

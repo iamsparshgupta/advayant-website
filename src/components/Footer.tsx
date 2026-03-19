@@ -26,7 +26,7 @@ export function Footer() {
                 className="h-14 w-auto object-contain brightness-0 invert opacity-90 transition-transform duration-500 group-hover:scale-105 [clip-path:inset(0_0_20%_0)] -mb-4"
               />
             </div>
-            <p className="text-neutral-500 text-sm leading-relaxed max-w-sm mb-8">
+            <p className="text-neutral-400 text-sm leading-relaxed max-w-sm mb-8">
               Building AI-powered products that solve real, everyday problems
               for Indian consumers. Intelligence, thoughtfully applied.
             </p>
@@ -48,14 +48,14 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <span className="text-sm text-neutral-500 hover:text-white transition-colors cursor-pointer link-underline">
+                <span className="text-sm text-neutral-600 cursor-default">
                   Careers
                 </span>
               </li>
               <li>
-                <span className="text-sm text-neutral-500 hover:text-white transition-colors cursor-pointer link-underline">
-                  Newsroom
-                </span>
+                <Link href="/blog" className="text-sm text-neutral-500 hover:text-white transition-colors link-underline">
+                  Blog
+                </Link>
               </li>
               <li>
                 <Link href="/contact" className="text-sm text-neutral-500 hover:text-white transition-colors link-underline">
@@ -72,18 +72,18 @@ export function Footer() {
             </h4>
             <ul className="space-y-3.5">
               <li>
-                <span className="text-sm text-neutral-500 hover:text-white transition-colors cursor-pointer link-underline">
+                <span className="text-sm text-neutral-600 cursor-default">
                   Publications
                 </span>
               </li>
               <li>
-                <span className="text-sm text-neutral-500 hover:text-white transition-colors cursor-pointer link-underline">
+                <span className="text-sm text-neutral-600 cursor-default">
                   Open Source
                 </span>
               </li>
               <li>
-                <span className="text-sm text-neutral-500 hover:text-white transition-colors cursor-pointer link-underline">
-                  Safety & Ethics
+                <span className="text-sm text-neutral-600 cursor-default">
+                  Safety &amp; Ethics
                 </span>
               </li>
             </ul>

@@ -19,7 +19,7 @@ export default function ContactPage() {
           <h1 className="animate-fade-in-up animate-delay-100 text-5xl sm:text-6xl font-bold text-white leading-tight mb-6 tracking-tight">
             Let&apos;s build <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-accent-400">together.</span>
           </h1>
-          <p className="animate-fade-in-up animate-delay-200 text-lg text-neutral-400 max-w-xl mx-auto font-light leading-relaxed">
+          <p className="animate-fade-in-up animate-delay-200 text-lg text-neutral-300 max-w-xl mx-auto font-light leading-relaxed">
             Have a question about our API, a partnership idea, or just want to say hello?
             We read every single message.
           </p>
@@ -36,7 +36,7 @@ export default function ContactPage() {
             >
               <div className="absolute inset-0 bg-gradient-to-br from-primary-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center mx-auto mb-6 border border-white/10 group-hover:border-primary-500/30 transition-colors relative z-10">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-neutral-400 group-hover:text-primary-400 transition-colors">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-neutral-400 group-hover:text-primary-400 transition-colors" aria-hidden="true">
                   <rect x="2" y="4" width="20" height="16" rx="2" />
                   <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                 </svg>
@@ -50,7 +50,7 @@ export default function ContactPage() {
             <div className="glass-card bg-neutral-900/40 rounded-3xl p-8 border border-white/10 text-center h-full hover:bg-white/[0.02] transition-colors relative overflow-hidden group">
               <div className="absolute inset-0 bg-gradient-to-br from-accent-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center mx-auto mb-6 border border-white/10 relative z-10">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-neutral-400 group-hover:text-accent-400 transition-colors">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-neutral-400 group-hover:text-accent-400 transition-colors" aria-hidden="true">
                   <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
                   <circle cx="12" cy="10" r="3" />
                 </svg>
@@ -128,7 +128,7 @@ export default function ContactPage() {
                 </div>
                 <button
                   type="submit"
-                  className="w-full px-6 py-4 bg-white text-black text-sm font-bold rounded-2xl hover:scale-[1.02] transition-all active:scale-[0.98] flex items-center justify-center gap-2 group shadow-[0_0_20px_rgba(255,255,255,0.1)] relative overflow-hidden"
+                  className="w-full px-6 py-4 bg-white text-black text-sm font-bold rounded-full hover:scale-[1.02] transition-all active:scale-[0.98] flex items-center justify-center gap-2 group shadow-[0_0_20px_rgba(255,255,255,0.1)] relative overflow-hidden"
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/10 to-transparent translate-x-[-100%] group-hover:animate-[shimmer_1.5s_infinite]" />
                   <span className="relative z-10 flex items-center gap-2">
@@ -161,7 +161,7 @@ export default function ContactPage() {
                 { q: "Can I suggest a feature?", a: "Absolutely. Use the secure form above or email us directly. We review every payload and actively incorporate user telemetry into our roadmap." },
               ].map((faq, i) => (
                 <div key={i} className="glass-card bg-neutral-900/40 rounded-2xl p-6 border border-white/10 hover:bg-white/[0.04] transition-colors group">
-                  <h4 className="font-bold text-white text-base mb-2 group-hover:text-primary-400 transition-colors">{faq.q}</h4>
+                  <h3 className="font-bold text-white text-base mb-2 group-hover:text-primary-400 transition-colors">{faq.q}</h3>
                   <p className="text-sm text-neutral-400 leading-relaxed font-light">{faq.a}</p>
                 </div>
               ))}

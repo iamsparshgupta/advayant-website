@@ -12,8 +12,12 @@ export const metadata: Metadata = {
   keywords: [
     "Advayant Intelligence",
     "FLUX AI",
-    "intelligence solutions",
-    "AI",
+    "credit card optimizer India",
+    "best credit card for rewards",
+    "UPI credit card optimizer",
+    "AI fintech India",
+    "DPDPA compliant",
+    "zero-knowledge finance",
   ],
   icons: {
     icon: "/favicon.ico",
@@ -66,6 +70,17 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet"
         />
+        {/* PWA Manifest */}
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-title" content="Advayant" />
+        {/* Hreflang for regional SEO */}
+        <link rel="alternate" hrefLang="en" href="https://advayant.com" />
+        <link rel="alternate" hrefLang="hi" href="https://advayant.com" />
+        <link rel="alternate" hrefLang="x-default" href="https://advayant.com" />
+        {/* Organization Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -87,7 +102,36 @@ export default function RootLayout({
               knowsAbout: [
                 "Artificial Intelligence",
                 "Credit Card Optimization",
+                "UPI Payments",
+                "Financial Technology",
               ],
+            }),
+          }}
+        />
+        {/* FLUX AI — SoftwareApplication Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "SoftwareApplication",
+              name: "FLUX AI",
+              applicationCategory: "FinanceApplication",
+              operatingSystem: "Web, Android, iOS",
+              url: "https://flux.advayant.com",
+              description:
+                "India's smartest credit card optimizer. AI-powered rewards maximization across 200+ cards including UPI-on-credit, expense splitting, and real-time card suggestions.",
+              offers: {
+                "@type": "Offer",
+                price: "0",
+                priceCurrency: "INR",
+              },
+              author: {
+                "@type": "Organization",
+                name: "Advayant Intelligence",
+              },
+              featureList:
+                "Credit Card Optimization, AI Chat (Kautilya), Smart Import Pipeline, Expense Rings, WhatsApp Bot, UPI-on-Credit Support",
             }),
           }}
         />
