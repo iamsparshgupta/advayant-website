@@ -1,6 +1,7 @@
 "use client";
 
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { Logo } from "@/components/Logo";
 
 export default function ProductsPage() {
   return (
@@ -13,12 +14,12 @@ export default function ProductsPage() {
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <div className="animate-fade-in-up inline-flex items-center gap-2 px-3 py-1 rounded-full border border-flux-500/20 bg-flux-500/10 mb-6">
             <div className="w-1.5 h-1.5 rounded-full bg-flux-400 shadow-[0_0_8px_theme(colors.flux.500/80)]" />
-            <span className="text-[10px] font-semibold text-flux-200 uppercase tracking-widest">Ecosystem</span>
+            <span className="text-[10px] font-semibold text-flux-200 uppercase tracking-widest">Our Ecosystem</span>
           </div>
           <h1 className="animate-fade-in-up animate-delay-100 text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6 tracking-tight">
             Intelligence built
             <br />
-            for <span className="text-transparent bg-clip-text bg-gradient-to-r from-flux-400 to-flux-accent-400">everyday life</span>
+            for <span className="text-transparent bg-clip-text bg-gradient-to-r from-flux-400 to-flux-accent-400">everyday life.</span>
           </h1>
           <p className="animate-fade-in-up animate-delay-200 text-lg sm:text-xl text-neutral-300 max-w-2xl mx-auto font-light leading-relaxed">
             Silent, powerful tools that work securely in the background to help you orchestrate smarter decisions and solve real problems.
@@ -27,7 +28,7 @@ export default function ProductsPage() {
       </section>
 
       {/* FLUX AI — Main Product */}
-      <section className="py-16 px-6 bg-transparent relative z-10">
+      <section className="py-16 px-6 bg-transparent relative z-10" id="flux-ai">
         <ScrollReveal>
           <div className="max-w-6xl mx-auto">
             <div className="bg-neutral-950 rounded-[2.5rem] overflow-hidden shadow-2xl shadow-flux-900/10 relative border border-white/10 glass-card">
@@ -38,7 +39,6 @@ export default function ProductsPage() {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 relative z-10">
                 {/* Text side */}
                 <div className="p-8 sm:p-12 lg:p-16 text-white border-b lg:border-b-0 lg:border-r border-white/5">
-                  {/* FLUX Flow Essence Logo (No Square Background) */}
                   <div className="flex items-center gap-4 mb-10">
                     <div className="flex items-center justify-center relative group shrink-0 w-12 h-12">
                       <svg width="42" height="42" viewBox="0 0 100 100" className="relative z-10 drop-shadow-[0_0_12px_theme(colors.flux.500/60)] group-hover:scale-110 transition-transform duration-500">
@@ -62,7 +62,7 @@ export default function ProductsPage() {
                           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                           <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
                         </span>
-                        <span className="text-[10px] uppercase tracking-widest text-green-400 font-medium">Live Production</span>
+                        <span className="text-[10px] uppercase tracking-widest text-green-400 font-medium">Flagship Consumer AI</span>
                       </div>
                     </div>
                   </div>
@@ -105,13 +105,13 @@ export default function ProductsPage() {
                       href="https://flux.advayant.com"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group relative inline-flex items-center px-8 py-4 bg-white text-black text-sm font-bold rounded-full hover:scale-105 transition-all shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:shadow-[0_0_30px_rgba(255,255,255,0.2)] overflow-hidden"
+                      className="group relative inline-flex items-center px-8 py-4 bg-white text-black text-sm font-bold rounded-full hover:scale-105 transition-[transform,box-shadow] duration-500 shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:shadow-[0_0_30px_rgba(255,255,255,0.25)] overflow-hidden"
                     >
-                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/10 to-transparent translate-x-[-100%] group-hover:animate-[shimmer_1.5s_infinite]" />
+                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-neutral-400/20 to-transparent translate-x-[-100%] group-hover:animate-[shimmer_1.5s_infinite]" />
                       <span className="relative z-10 flex items-center">
                         Launch FLUX Studio
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="ml-2 transition-transform group-hover:translate-x-1">
-                          <path d="M5 12h14M12 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="ml-2 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
+                          <path d="M7 17L17 7M17 7H7M17 7v10" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                       </span>
                     </a>
@@ -120,7 +120,6 @@ export default function ProductsPage() {
 
                 {/* Visual side - Mockup */}
                 <div className="bg-neutral-950 p-8 sm:p-12 lg:p-16 flex items-center justify-center relative overflow-hidden font-outfit">
-
                   <div className="space-y-4 w-full max-w-sm relative z-10">
                     <div className="bg-neutral-900 rounded-2xl p-5 border border-white/5 shadow-lg relative overflow-hidden">
                       <div className="absolute top-0 left-0 w-1 h-full bg-flux-500" />
@@ -149,19 +148,6 @@ export default function ProductsPage() {
                       </div>
                     </div>
 
-                    <div className="bg-neutral-900/80 rounded-2xl p-5 border border-white/5 backdrop-blur-sm">
-                      <div className="flex items-center justify-between">
-                        <div className="flex items-center gap-3">
-                          <div className="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-xs text-neutral-500 font-mono">2</div>
-                          <div>
-                            <p className="text-[10px] text-neutral-500 uppercase tracking-wider mb-0.5">Runner up</p>
-                            <p className="text-neutral-300 font-semibold text-sm">ICICI Amazon Pay</p>
-                          </div>
-                        </div>
-                        <span className="text-neutral-400 font-bold border border-white/10 px-2 py-1 rounded bg-white/5 text-sm">2.0%</span>
-                      </div>
-                    </div>
-
                     <div className="mt-8 bg-gradient-to-r from-flux-900/30 to-black rounded-xl p-4 border border-flux-500/20 text-center relative overflow-hidden group">
                       <div className="absolute inset-0 bg-flux-500/10 opacity-0 group-hover:opacity-100 transition-opacity" />
                       <div className="flex items-center justify-center gap-3 relative z-10">
@@ -178,31 +164,30 @@ export default function ProductsPage() {
         </ScrollReveal>
       </section>
 
-      {/* How it works */}
+      {/* How it works (Tied to FLUX) */}
       <section className="py-24 px-6 bg-transparent relative border-t border-white/5">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,theme(colors.primary.900/30)_0%,transparent_100%)] z-0" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,theme(colors.primary.900/10)_0%,transparent_100%)] z-0" />
         <div className="max-w-5xl mx-auto relative z-10">
           <ScrollReveal>
             <div className="text-center mb-16">
               <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-flux-500 mb-4">
-                How It Works
+                FLUX Workflow
               </p>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 tracking-tight">
                 Three steps. <span className="text-transparent bg-clip-text bg-gradient-to-r from-neutral-400 to-neutral-600">Maximum rewards.</span>
               </h2>
-              <p className="text-neutral-400 text-lg font-light">No downloads, no credit card required. Free forever.</p>
+              <p className="text-neutral-400 text-lg font-light">Zero downloads. Bank-grade client-side encryption.</p>
             </div>
           </ScrollReveal>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative">
-            {/* Connecting line (desktop) */}
             <div className="hidden md:block absolute top-[4.5rem] left-[15%] right-[15%] h-px bg-gradient-to-r from-transparent via-white/20 to-transparent z-0" />
 
             {[
               {
                 step: "1",
                 title: "Add your cards",
-                desc: "Tell FLUX which credit and debit cards you carry. We encrypt everything on your device — we never see your data.",
+                desc: "Tell FLUX which credit and debit cards you carry. We encrypt everything natively on your device.",
                 icon: (
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2" /><line x1="1" y1="10" x2="23" y2="10" /></svg>
                 ),
@@ -210,7 +195,7 @@ export default function ProductsPage() {
               {
                 step: "2",
                 title: "Search any merchant",
-                desc: "Type where you're shopping — Amazon, Swiggy, Croma, or any merchant. FLUX understands categories automatically.",
+                desc: "Type where you're shopping. FLUX's proprietary models understand MCCs and routing automatically.",
                 icon: (
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" /></svg>
                 ),
@@ -218,7 +203,7 @@ export default function ProductsPage() {
               {
                 step: "3",
                 title: "Swipe the right card",
-                desc: "FLUX instantly tells you which card gives the best cashback, points, or miles — and exactly how much you'll earn.",
+                desc: "FLUX instantly surfaces the math—showing you the exact card that maximizes your points or cashback.",
                 icon: (
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
                 ),
@@ -243,29 +228,29 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      {/* Tech — reframed as user benefits */}
-      <section className="py-24 px-6 bg-neutral-950 border-t border-white/5">
+      {/* Tech Base (Tied to FLUX) */}
+      <section className="py-24 px-6 bg-transparent pb-32">
         <div className="max-w-5xl mx-auto">
           <ScrollReveal>
             <div className="text-center mb-16">
               <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-flux-500 mb-3">
-                Under the Hood
+                FLUX Engine
               </p>
               <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
-                Built with precision.
+                Built with strict precision.
               </h2>
             </div>
           </ScrollReveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
               { label: "3-Layer AI", desc: "Cross-checks every recommendation" },
-              { label: "AES-256", desc: "Bank-grade, zero-knowledge" },
-              { label: "Smart Search", desc: "Context-aware categorization" },
-              { label: "Real-time", desc: "Live verified offers & rates" },
+              { label: "AES-256", desc: "Bank-grade, zero-knowledge DB" },
+              { label: "Smart Search", desc: "Context-aware category routing" },
+              { label: "Live API", desc: "Real-time verified offers & rates" },
             ].map((t, i) => (
               <ScrollReveal key={t.label} delay={i * 80}>
                 <div className="glass-card rounded-2xl p-6 border border-white/5 bg-white/[0.02] text-center h-full hover:bg-white/[0.05] transition-colors group">
-                  <div className="w-1.5 h-1.5 rounded-full bg-flux-500/50 mx-auto mb-4 group-hover:bg-flux-400 group-hover:shadow-[0_0_8px_theme(colors.flux.500/80)] transition-all" />
+                  <div className="w-1.5 h-1.5 rounded-full bg-flux-500/50 mx-auto mb-4 group-hover:bg-flux-400 transition-all" />
                   <p className="font-bold text-white text-base mb-2">{t.label}</p>
                   <p className="text-xs text-neutral-500 font-light">{t.desc}</p>
                 </div>
@@ -273,6 +258,124 @@ export default function ProductsPage() {
             ))}
           </div>
         </div>
+      </section>
+
+      {/* SHADOW LENS — Enterprise Product */}
+      <section className="py-24 px-6 bg-neutral-950 relative z-10 border-t border-white/5" id="shadow-lens">
+        <ScrollReveal>
+          <div className="max-w-6xl mx-auto mt-8">
+            <div className="bg-neutral-950 rounded-[2.5rem] overflow-hidden shadow-2xl relative border border-white/10 glass">
+              <div className="absolute -top-40 -left-40 w-96 h-96 bg-shadow-500/10 rounded-full blur-[100px] pointer-events-none" />
+              <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-shadow-accent-600/10 rounded-full blur-[100px] pointer-events-none" />
+
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 relative z-10">
+                {/* Visual side - Mockup */}
+                <div className="bg-neutral-950 p-8 sm:p-12 lg:p-16 flex items-center justify-center relative overflow-hidden font-outfit border-b lg:border-b-0 lg:border-r border-white/5 order-last lg:order-first">
+                  <div className="space-y-4 w-full max-w-sm relative z-10">
+                    <div className="bg-neutral-900 rounded-2xl p-5 border border-white/5 shadow-lg relative overflow-hidden">
+                      <div className="absolute top-0 left-0 w-1 h-full bg-neutral-500" />
+                      <div className="flex justify-between items-center mb-2">
+                        <p className="text-[10px] uppercase tracking-widest text-neutral-500 font-medium font-sans ml-2">Shadow AI Alert</p>
+                        <span className="w-2 h-2 rounded-full bg-red-500/80 animate-pulse" />
+                      </div>
+                      <p className="text-white font-semibold text-lg tracking-tight ml-2">Unauthorized LLM Ping</p>
+                      <p className="text-sm text-neutral-400 mt-1 font-mono ml-2">Model: DeepSeek-R1</p>
+                    </div>
+
+                    <div className="glow-border rounded-2xl relative shadow-[0_0_40px_theme(colors.shadow.500/15)]">
+                      <div className="bg-neutral-950 rounded-2xl p-6 border border-white/10 relative backdrop-blur-md">
+                        <div className="flex items-center gap-2 mb-4">
+                          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-white"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>
+                          <p className="text-[10px] uppercase tracking-[0.2em] font-bold text-white font-sans">Policy Enforced</p>
+                        </div>
+                        <div className="flex items-end justify-between">
+                          <div>
+                            <p className="text-white font-bold text-xl mb-1 tracking-tight">Data Masking</p>
+                            <p className="text-xs text-neutral-400 font-sans tracking-normal">PII Redacted Automatically</p>
+                          </div>
+                          <div className="text-right">
+                            <span className="text-white font-black text-3xl tracking-tighter">100%</span>
+                            <p className="text-[10px] text-neutral-400 font-medium uppercase mt-1">Secured</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Text side */}
+                <div className="p-8 sm:p-12 lg:p-16 text-white">
+                  <div className="flex items-center gap-4 mb-10">
+                    <div className="flex items-center justify-center relative shrink-0 w-12 h-12">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-10 h-10 text-white">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z" fill="currentColor" fillOpacity="0.2" />
+                        <path d="M2 17l10 5 10-5" />
+                        <path d="M2 12l10 5 10-5" />
+                        <path d="M12 12v10" />
+                      </svg>
+                    </div>
+                    <div>
+                      <span className="text-3xl font-medium tracking-tight">ShadowLens</span>
+                      <div className="flex items-center mt-1">
+                        <span className="relative flex h-2 w-2 mr-2">
+                          <span className="relative inline-flex rounded-full h-2 w-2 bg-shadow-500"></span>
+                        </span>
+                        <span className="text-[10px] uppercase tracking-widest text-shadow-400 font-medium">B2B Enterprise</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-[1.15] tracking-tight">
+                    Secure your
+                    <br />
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-shadow-300 to-shadow-500 text-shadow-400">AI Infrastructure.</span>
+                  </h2>
+
+                  <p className="text-neutral-400 leading-relaxed mb-10 text-lg font-light">
+                    The ultimate Shadow AI detection and governance platform. Gain full visibility into LLM usage, enforce data loss prevention policies, and monitor AI expenditures in real-time.
+                  </p>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
+                    {[
+                      { label: "Agentic Monitoring", desc: "Track every prompt" },
+                      { label: "LLM Firewall", desc: "Block unauthorized AI" },
+                      { label: "DLP Pipeline", desc: "Redact PII dynamically" },
+                      { label: "RBAC Controls", desc: "Enterprise permissions" },
+                    ].map((f) => (
+                      <div key={f.label} className="flex items-start gap-3 p-3 rounded-xl hover:bg-white/5 transition-colors group">
+                        <div className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-shadow-400 shrink-0 group-hover:bg-shadow-500/20 transition-all">
+                          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                            <polyline points="20 6 9 17 4 12" />
+                          </svg>
+                        </div>
+                        <div>
+                          <p className="text-sm font-semibold text-neutral-200">{f.label}</p>
+                          <p className="text-xs text-neutral-500">{f.desc}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="flex flex-wrap gap-4">
+                    <a
+                      href="https://shadowlens.advayant.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group relative inline-flex items-center px-8 py-4 bg-white text-black text-sm font-bold rounded-full hover:scale-105 transition-all shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:shadow-[0_0_30px_rgba(255,255,255,0.2)] overflow-hidden"
+                    >
+                      <span className="relative z-10 flex items-center">
+                        Launch ShadowLens
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="ml-2 transition-transform group-hover:translate-x-1">
+                          <path d="M5 12h14M12 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ScrollReveal>
       </section>
 
       {/* Coming Soon */}
@@ -300,7 +403,7 @@ export default function ProductsPage() {
               { title: "Multilingual Voice Intelligence", desc: "Voice-first financial commands in Hindi and regional languages. Ask in your language, get the optimal card instantly.", badge: "2026 Roadmap" },
             ].map((item, i) => (
               <ScrollReveal key={item.title} delay={i * 100}>
-                <div className="glass-card rounded-[2rem] p-8 border border-white/10 bg-gradient-to-br from-neutral-900 to-black h-full group hover:border-white/20 transition-colors">
+                <div className="glass-card rounded-[2rem] p-8 border border-white/10 bg-gradient-to-br from-neutral-900 to-black h-full group hover:border-white/20 transition-[border-color,transform] duration-500 hover:scale-[1.02]">
                   <div className="flex items-center justify-between mb-6">
                     <span className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-neutral-300">
                       <div className="w-1.5 h-1.5 rounded-full bg-flux-500 opacity-60" />

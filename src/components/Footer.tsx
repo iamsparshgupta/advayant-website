@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Logo } from "@/components/Logo";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -18,13 +19,7 @@ export function Footer() {
           {/* Brand */}
           <div className="md:col-span-5">
             <div className="mb-4 group cursor-default inline-block">
-              <Image
-                src="/logo-transparent.png"
-                alt="Advayant Intelligence"
-                width={150}
-                height={56}
-                className="h-14 w-auto object-contain brightness-0 invert opacity-90 transition-transform duration-500 group-hover:scale-105 [clip-path:inset(0_0_20%_0)] -mb-4"
-              />
+              <Logo className="h-10 w-auto text-white opacity-90 transition-[transform,filter] duration-500 group-hover:scale-105 group-hover:drop-shadow-[0_0_15px_rgba(255,224,130,0.3)] mb-2" />
             </div>
             <p className="text-neutral-400 text-sm leading-relaxed max-w-sm mb-8">
               Building AI-powered products that solve real, everyday problems
@@ -101,9 +96,14 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="https://flux.advayant.com/about" target="_blank" rel="noopener noreferrer" className="text-sm text-neutral-500 hover:text-white transition-colors link-underline">
-                  About FLUX
+                <a href="https://shadowlens.advayant.com" target="_blank" rel="noopener noreferrer" className="text-sm text-neutral-500 hover:text-white transition-colors link-underline">
+                  ShadowLens
                 </a>
+              </li>
+              <li>
+                <span className="text-sm text-neutral-600 cursor-default">
+                  Developer APIs
+                </span>
               </li>
             </ul>
           </div>

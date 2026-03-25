@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
-
+import { Logo } from "@/components/Logo";
 export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -56,59 +56,7 @@ export function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center group shrink-0 relative z-10 transition-transform duration-500 hover:scale-105">
             <div className="h-10 sm:h-12 w-auto">
-              <svg viewBox="0 0 520 140" className="h-full w-auto text-white overflow-visible">
-                {/* Icon Group */}
-                <g transform="translate(60, 60)">
-                  {/* Advanced Mask for Perfect 3D Tapered Crescent with Small Gap */}
-                  <defs>
-                    <mask id="crescentMask">
-                      {/* Show everything initially */}
-                      <rect x="-50" y="-50" width="100" height="100" fill="white" />
-                      
-                      {/* 1. Hollow out the center. Perfect balance (1.8px at gap, 3.8px at bottom left) */}
-                      <circle cx="1" cy="-1" r="25.2" fill="black" />
-                      
-                      {/* 2. Carve a small gap. Flat cut orthogonal to the ray path looks sharp & modern. */}
-                      <g transform="rotate(-36)">
-                        <rect x="23" y="-1.8" width="10" height="3.6" fill="black" />
-                      </g>
-                    </mask>
-                  </defs>
-                  
-                  {/* Outer circle masked out into a perfect crescent */}
-                  <circle cx="0" cy="0" r="28" fill="currentColor" mask="url(#crescentMask)" />
-                  
-                  {/* Center Nucleus Dot (Gold) */}
-                  <circle cx="0" cy="0" r="5" fill="#C5A55A"/>
-
-                  {/* 36-Degree Ray of Gold Light Animation - shoots exactly from center dot */}
-                  <g transform="rotate(-36)">
-                    <polygon 
-                      points="0,1.5 0,-1.5 45,0" 
-                      fill="#C5A55A" 
-                      className="opacity-0 drop-shadow-[0_0_8px_#C5A55A] animate-[goldRay_2s_ease-out_infinite]"
-                      style={{ transformOrigin: '0px 0px' }}
-                    />
-                  </g>
-                  
-                  <style>{`
-                    @keyframes goldRay {
-                      0% { transform: scaleX(0); opacity: 0; }
-                      10% { transform: scaleX(0); opacity: 1; }
-                      40% { transform: scaleX(1); opacity: 1; }
-                      70% { transform: scaleX(1); opacity: 0; }
-                      100% { transform: scaleX(0); opacity: 0; }
-                    }
-                  `}</style>
-                </g>
-
-                {/* Typography (Scaled Up 1.5x to keep it large) */}
-                <text x="110" y="65" fontFamily="Georgia, 'Playfair Display', serif" fontSize="54" fontWeight="400" fill="currentColor" letterSpacing="3">advayant</text>
-                <line x1="110" y1="90" x2="177" y2="90" stroke="#C5A55A" strokeWidth="1" opacity="0.6"/>
-                <text x="186" y="94" fontFamily="'Inter', 'Helvetica', sans-serif" fontSize="15" fontWeight="400" fill="rgba(255,255,255,0.7)" letterSpacing="9">INTELLIGENCE</text>
-                <line x1="418" y1="90" x2="485" y2="90" stroke="#C5A55A" strokeWidth="1" opacity="0.6"/>
-                <circle cx="297.5" cy="115" r="3.5" fill="#C5A55A" opacity="0.8"/>
-              </svg>
+              <Logo className="h-full w-auto text-white overflow-visible transition-transform duration-500 hover:drop-shadow-[0_0_12px_rgba(255,224,130,0.5)]" />
             </div>
           </Link>
 
@@ -127,6 +75,14 @@ export function Navbar() {
               </Link>
             ))}
             <div className="w-px h-4 bg-white/10 mx-3" />
+            <a
+              href="https://shadowlens.advayant.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-5 py-1.5 border border-white/20 text-white text-sm font-semibold rounded-full hover:bg-white/10 transition-all active:scale-[0.97] mr-2"
+            >
+              ShadowLens
+            </a>
             <a
               href="https://flux.advayant.com"
               target="_blank"
@@ -202,7 +158,15 @@ export function Navbar() {
               {link.label}
             </Link>
           ))}
-          <div className="pt-4 mt-2 border-t border-white/10">
+          <div className="pt-4 mt-2 border-t border-white/10 flex flex-col gap-2">
+            <a
+              href="https://shadowlens.advayant.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full text-center px-5 py-3 border border-white/20 text-white text-sm font-semibold rounded-xl hover:bg-white/10 transition-colors"
+            >
+              ShadowLens
+            </a>
             <a
               href="https://flux.advayant.com"
               target="_blank"

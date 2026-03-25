@@ -50,6 +50,17 @@
   --color-flux-accent-500: #10b981;
   --color-flux-accent-600: #059669;
 
+  /* ShadowLens Theme — Enterprise Security (Crimson/Rose) */
+  --color-shadow-50: #fff1f2;
+  --color-shadow-400: #fb7185;
+  --color-shadow-500: #f43f5e;
+  --color-shadow-600: #e11d48;
+  --color-shadow-900: #881337;
+
+  --color-shadow-accent-400: #f472b6;
+  --color-shadow-accent-500: #ec4899;
+  --color-shadow-accent-600: #db2777;
+
   --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
   --font-outfit: "Outfit", ui-sans-serif, system-ui, -apple-system, sans-serif;
 }

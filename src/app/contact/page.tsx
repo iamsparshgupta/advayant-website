@@ -155,10 +155,10 @@ export default function ContactPage() {
             </h3>
             <div className="space-y-4">
               {[
-                { q: "Is FLUX AI free?", a: "Yes, completely free. No credit card required, no hidden charges, no premium tier. We believe optimization should be accessible." },
-                { q: "How is my data protected?", a: "With absolute cryptographic certainty. All data is encrypted on your device using AES-256 before it reaches our servers. We mathematically cannot read your financial information." },
-                { q: "Which banks and cards do you support?", a: "We support the top 200+ Indian credit and debit cards across all major issuers — HDFC, SBI Card, ICICI, Axis, Amex, Standard Chartered, and more." },
-                { q: "Can I suggest a feature?", a: "Absolutely. Use the secure form above or email us directly. We review every payload and actively incorporate user telemetry into our roadmap." },
+                { q: "Is FLUX AI free to use?", a: "Yes, our consumer application FLUX AI is completely free. No credit card required, no hidden charges. We believe optimization should be accessible to every Indian." },
+                { q: "How is ShadowLens priced for enterprises?", a: "ShadowLens uses a custom B2B pricing model based on API telemetry volume and the number of active corporate seats. Contact us above for a tailored quote." },
+                { q: "How is my data protected?", a: "With absolute cryptographic certainty. For FLUX AI, all data is encrypted on-device. For ShadowLens, our DLP pipeline runs fully within your VPC, ensuring zero data egress." },
+                { q: "Can I suggest a feature or partnership?", a: "Absolutely. Use the secure form above or email us directly. We review every payload and actively incorporate user feedback into our development roadmap." },
               ].map((faq, i) => (
                 <div key={i} className="glass-card bg-neutral-900/40 rounded-2xl p-6 border border-white/10 hover:bg-white/[0.04] transition-colors group">
                   <h3 className="font-bold text-white text-base mb-2 group-hover:text-primary-400 transition-colors">{faq.q}</h3>

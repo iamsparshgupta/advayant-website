@@ -4,6 +4,7 @@ import Image from "next/image";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { CountUp } from "@/components/CountUp";
 import { SpotlightCard } from "@/components/SpotlightCard";
+import { Logo } from "@/components/Logo";
 
 export const metadata: Metadata = {
   title: "Advayant Intelligence — Building Intelligence for India",
@@ -39,13 +40,8 @@ function Hero() {
         {/* Logo */}
         <div className="animate-fade-in-up mb-8 flex justify-center">
           <div className="relative group">
-            <Image
-              src="/logo-transparent.png"
-              alt="Advayant Intelligence"
-              width={200}
-              height={96}
-              className="h-24 sm:h-28 w-auto object-contain brightness-0 invert opacity-95 relative z-10 transition-transform duration-700 group-hover:scale-105 [clip-path:inset(0_0_20%_0)] -mb-8"
-              priority
+            <Logo 
+              className="h-20 sm:h-24 w-auto text-white opacity-95 relative z-10 transition-[transform,filter] duration-700 group-hover:scale-105 group-hover:drop-shadow-[0_0_30px_rgba(197,165,90,0.4)] -mb-4 mx-auto"
             />
           </div>
         </div>
@@ -324,6 +320,184 @@ function ProductShowcase() {
   );
 }
 
+/* ─── PRODUCT SHOWCASE — SHADOW LENS ─── */
+function ShadowLensShowcase() {
+  return (
+    <section className="py-16 sm:py-24 lg:py-32 px-6 relative overflow-hidden bg-transparent">
+      {/* Decorative lines */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-neutral-800 to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-neutral-800 to-transparent" />
+
+      {/* Ambient background glow */}
+      <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[800px] h-[800px] bg-neutral-800/20 rounded-full blur-[150px] pointer-events-none" />
+
+      <div className="max-w-6xl mx-auto relative z-10">
+        <ScrollReveal>
+          <div className="mb-16 md:mb-24 flex flex-col md:flex-row md:items-end justify-between gap-8">
+            <div className="max-w-2xl">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-neutral-500/30 bg-neutral-500/10 mb-6">
+                <div className="w-1.5 h-1.5 rounded-full bg-neutral-400" />
+                <span className="text-[10px] font-semibold text-neutral-50 uppercase tracking-widest">Enterprise Product</span>
+              </div>
+              <div className="flex flex-col md:flex-row items-center gap-6 mb-8 mt-12">
+                <div className="flex items-center justify-center shrink-0 relative group w-12 h-12">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-12 h-12 text-white drop-shadow-[0_0_12px_theme(colors.neutral.500/60)] group-hover:scale-110 transition-transform duration-500">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z" fill="currentColor" fillOpacity="0.2" className="transition-all duration-500 group-hover:-translate-y-1" />
+                    <path d="M2 17l10 5 10-5" />
+                    <path d="M2 12l10 5 10-5" />
+                    <path d="M12 12v10" />
+                  </svg>
+                </div>
+
+                <h2 className="text-4xl sm:text-5xl lg:text-7xl font-medium text-white tracking-tight">
+                  ShadowLens.
+                </h2>
+              </div>
+              <p className="text-lg md:text-xl text-neutral-300 leading-relaxed font-light">
+                The ultimate Shadow AI detection and governance platform. Gain visibility into LLM usage, enforce DLP policies, and monitor real-time AI compliance.
+              </p>
+            </div>
+
+            <a
+              href="https://shadowlens.advayant.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="shrink-0 flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-white/20 text-white font-medium hover:bg-white hover:text-black transition-all group"
+            >
+              Access Platform
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="transition-transform group-hover:translate-x-1" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" /></svg>
+              <span className="sr-only">(opens in new tab)</span>
+            </a>
+          </div>
+        </ScrollReveal>
+
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+
+          {/* Features Text (Left Side Now) */}
+          <div className="lg:col-span-5 relative z-20 order-last lg:order-first">
+            <ScrollReveal direction="left">
+              <div className="space-y-4">
+                {[
+                  {
+                    title: "Agentic Monitoring",
+                    desc: "Track every prompt invisibly across your network to discover unsanctioned AI tools instantly.",
+                    icon: (
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M2 12A10 10 0 0 0 22 12" /><path d="M12 22A10 10 0 0 0 12 2" /><path d="M12 12m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /></svg>
+                    ),
+                  },
+                  {
+                    title: "LLM Firewall",
+                    desc: "Block active connections to high-risk models or dynamically redact PII before it hits third-party APIs.",
+                    icon: (
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>
+                    ),
+                  },
+                  {
+                    title: "Cost Analytics",
+                    desc: "Centralize your organization's entire API expenditure into beautiful real-time operational dashboards.",
+                    icon: (
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12" /></svg>
+                    ),
+                  },
+                ].map((f) => (
+                  <div key={f.title} className="group glass-card p-6 rounded-2xl flex gap-5 border border-white/5 hover:bg-white/5 transition-colors cursor-default">
+                    <div className="w-12 h-12 shrink-0 bg-white/5 rounded-xl border border-white/10 flex items-center justify-center text-white group-hover:bg-white/20 group-hover:shadow-[0_0_15px_theme(colors.neutral.500/50)] group-hover:scale-110 transition-all duration-300">
+                      {f.icon}
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-white mb-2 text-lg">{f.title}</h3>
+                      <p className="text-sm text-neutral-400 leading-relaxed font-light">{f.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </ScrollReveal>
+          </div>
+
+          {/* Visual — Mockup (Right Side) */}
+          <div className="lg:col-span-7 relative group order-first lg:order-last">
+            <ScrollReveal direction="right" className="relative z-10">
+              {/* Glow behind mockup container */}
+              <div className="absolute -inset-1 rounded-[2.5rem] bg-gradient-to-bl from-neutral-600/30 to-black blur-xl opacity-50 group-hover:opacity-100 transition-opacity duration-700" />
+
+              <div className="relative rounded-[2rem] bg-neutral-950 border border-white/10 p-2 shadow-2xl overflow-hidden glass">
+                <div className="bg-neutral-900 rounded-[1.5rem] overflow-hidden border border-white/5">
+                  <div className="h-12 border-b border-white/5 flex items-center px-6 gap-2 bg-neutral-950/50">
+                    <div className="flex gap-1.5">
+                      <div className="w-3 h-3 rounded-full bg-red-500/80" />
+                      <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
+                      <div className="w-3 h-3 rounded-full bg-green-500/80" />
+                    </div>
+                    <div className="mx-auto flex h-7 items-center rounded-md bg-white/5 px-4 text-xs font-medium text-neutral-400 border border-white/5 shadow-inner">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="mr-2 opacity-50"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" /></svg>
+                      shadowlens.advayant.com/dashboard
+                    </div>
+                  </div>
+
+                  <div className="p-6 md:p-10 relative font-outfit">
+                    <div className="relative z-10 space-y-4">
+                      {/* Alert Mock */}
+                      <div className="glow-border rounded-2xl">
+                        <div className="bg-neutral-950 rounded-2xl p-4 flex items-center gap-4 text-white">
+                          <span className="relative flex h-3 w-3">
+                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                            <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+                          </span>
+                          <div>
+                            <p className="font-medium text-lg tracking-tight">Data Exfiltration Blocked</p>
+                            <p className="text-xs text-neutral-500 font-sans tracking-normal">Unsanctioned: ChatGPT Web</p>
+                          </div>
+                          <div className="ml-auto flex items-center gap-2 text-xs text-red-500">
+                            <span className="px-2 py-1 rounded bg-red-500/10 border border-red-500/20">Critical</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Main Metric */}
+                      <div className="glow-border rounded-2xl shadow-[0_0_30px_theme(colors.neutral.500/15)] relative overflow-hidden animate-[float_4s_ease-in-out_infinite]">
+                        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-neutral-500 to-white" />
+                        <div className="bg-neutral-950 rounded-2xl p-6 relative">
+                          <p className="text-[10px] uppercase tracking-[0.2em] font-bold text-neutral-300 mb-3 ml-1 flex items-center gap-2 font-sans">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg> Data Loss Prevention
+                          </p>
+                          <div className="flex items-end justify-between">
+                            <div>
+                              <h4 className="text-2xl font-bold text-white mb-1 tracking-tight">Financial PII Redacted</h4>
+                              <p className="text-sm text-neutral-400 font-sans tracking-normal">Prompt injected with CC details</p>
+                            </div>
+                            <div className="text-right">
+                               <p className="text-3xl font-bold text-white tracking-tighter">100%</p>
+                              <p className="text-xs font-medium text-neutral-400 mt-1 font-sans tracking-normal">Secured</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Runner up Mock */}
+                      <div className="bg-neutral-950 rounded-2xl p-5 border border-white/5 flex items-center justify-between opacity-80 backdrop-blur-md animate-[float_5s_ease-in-out_infinite_0.5s]">
+                        <div className="flex gap-4 items-center">
+                          <div className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-neutral-500 font-mono">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12" /></svg>
+                          </div>
+                          <div>
+                            <p className="text-xs text-neutral-500 mb-0.5 font-sans tracking-normal">Real-time Analytics</p>
+                            <p className="font-medium text-white text-sm tracking-tight">API Cost Surpassed Limit</p>
+                          </div>
+                        </div>
+                        <span className="text-orange-400 font-semibold text-xs border border-orange-500/20 bg-orange-500/10 px-2 py-1 rounded">Warn</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 /* ─── INNOVATION ─── */
 function Innovation() {
   const innovations = [
@@ -471,10 +645,10 @@ function CTA() {
 
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight tracking-tight">
               Ready to redefine <br className="hidden sm:block" />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-accent-400">intelligent finance?</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-accent-400">your intelligence stack?</span>
             </h2>
             <p className="text-neutral-300 text-lg sm:text-xl mb-12 max-w-xl mx-auto leading-relaxed font-light">
-              Join the quiet revolution. Experience privacy-first intelligence built explicitly for the Indian ecosystem.
+              Experience privacy-first AI built explicitly for modern compliance and the Indian ecosystem.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
@@ -493,12 +667,14 @@ function CTA() {
                   <span className="sr-only">(opens in new tab)</span>
                 </span>
               </a>
-              <Link
-                href="/contact"
-                className="px-8 py-4 glass text-white text-sm font-medium rounded-full hover:bg-white/10 transition-all border border-white/10 w-full sm:w-auto"
+              <a
+                href="https://shadowlens.advayant.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 glass text-white text-sm font-medium rounded-full hover:bg-neutral-900 transition-all border border-white/10 w-full sm:w-auto text-center"
               >
-                Contact Engineering
-              </Link>
+                Launch ShadowLens
+              </a>
             </div>
           </div>
         </div>
@@ -513,8 +689,9 @@ export default function HomePage() {
     <>
       <Hero />
       <ProductShowcase />
-      <Innovation />
       <Numbers />
+      <ShadowLensShowcase />
+      <Innovation />
       <CTA />
     </>
   );

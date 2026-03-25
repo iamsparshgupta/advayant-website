@@ -77,13 +77,18 @@ export default function AboutPage() {
               </div>
 
               <p>
-                Our flagship engine, <strong className="text-white font-semibold flex items-center inline-flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />FLUX AI</strong>, uses state-of-the-art predictive
+                Our consumer flagship, <strong className="text-white font-semibold flex items-center inline-flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />FLUX AI</strong>, uses state-of-the-art predictive
                 intelligence to instantly compute which card to use for any
                 purchase — maximizing your rewards natively, without the spreadsheet
                 gymnastics.
               </p>
+              <br />
               <p>
-                But FLUX is merely the foundation.
+                Simultaneously, our enterprise platform, <strong className="text-white font-semibold flex items-center inline-flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-neutral-300" />ShadowLens</strong>, secures corporate infrastructure by detecting unauthorized AI usage and enforcing strict zero-knowledge data loss prevention policies across the Indian B2B sector.
+              </p>
+              <br />
+              <p>
+                Both products are built on our core philosophy:
               </p>
               <p>
                 We&apos;re orchestrating a complete suite of intelligent tools that empower Indian
