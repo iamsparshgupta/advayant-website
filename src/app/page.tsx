@@ -5,6 +5,7 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import { CountUp } from "@/components/CountUp";
 import { SpotlightCard } from "@/components/SpotlightCard";
 import { Logo } from "@/components/Logo";
+import { KlaryxLogo } from "@/components/KlaryxLogo";
 
 export const metadata: Metadata = {
   title: "Advayant Intelligence — Building Intelligence for India",
@@ -341,12 +342,7 @@ function KlaryxShowcase() {
               </div>
               <div className="flex flex-col md:flex-row items-center gap-6 mb-8 mt-12">
                 <div className="flex items-center justify-center shrink-0 relative group w-12 h-12">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-12 h-12 text-white drop-shadow-[0_0_12px_theme(colors.neutral.500/60)] group-hover:scale-110 transition-transform duration-500">
-                    <path d="M12 2L2 7l10 5 10-5-10-5z" fill="currentColor" fillOpacity="0.2" className="transition-all duration-500 group-hover:-translate-y-1" />
-                    <path d="M2 17l10 5 10-5" />
-                    <path d="M2 12l10 5 10-5" />
-                    <path d="M12 12v10" />
-                  </svg>
+                  <KlaryxLogo className="w-12 h-12 text-white drop-shadow-[0_0_12px_theme(colors.klaryx.400/60)] group-hover:scale-110 transition-transform duration-500" />
                 </div>
 
                 <h2 className="text-4xl sm:text-5xl lg:text-7xl font-medium text-white tracking-tight">

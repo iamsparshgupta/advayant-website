@@ -2,6 +2,7 @@
 
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { Logo } from "@/components/Logo";
+import { KlaryxLogo } from "@/components/KlaryxLogo";
 
 export default function ProductsPage() {
   return (
@@ -307,12 +308,7 @@ export default function ProductsPage() {
                 <div className="p-8 sm:p-12 lg:p-16 text-white">
                   <div className="flex items-center gap-4 mb-10">
                     <div className="flex items-center justify-center relative shrink-0 w-12 h-12">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-10 h-10 text-white">
-                        <path d="M12 2L2 7l10 5 10-5-10-5z" fill="currentColor" fillOpacity="0.2" />
-                        <path d="M2 17l10 5 10-5" />
-                        <path d="M2 12l10 5 10-5" />
-                        <path d="M12 12v10" />
-                      </svg>
+                      <KlaryxLogo className="w-10 h-10 text-white" />
                     </div>
                     <div>
                       <span className="text-3xl font-medium tracking-tight">Klaryx</span>
