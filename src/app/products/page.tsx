@@ -260,13 +260,13 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      {/* SHADOW LENS — Enterprise Product */}
-      <section className="py-24 px-6 bg-neutral-950 relative z-10 border-t border-white/5" id="shadow-lens">
+      {/* KLARYX — Enterprise Product */}
+      <section className="py-24 px-6 bg-neutral-950 relative z-10 border-t border-white/5" id="klaryx">
         <ScrollReveal>
           <div className="max-w-6xl mx-auto mt-8">
             <div className="bg-neutral-950 rounded-[2.5rem] overflow-hidden shadow-2xl relative border border-white/10 glass">
-              <div className="absolute -top-40 -left-40 w-96 h-96 bg-shadow-500/10 rounded-full blur-[100px] pointer-events-none" />
-              <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-shadow-accent-600/10 rounded-full blur-[100px] pointer-events-none" />
+              <div className="absolute -top-40 -left-40 w-96 h-96 bg-klaryx-500/10 rounded-full blur-[100px] pointer-events-none" />
+              <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-klaryx-accent-600/10 rounded-full blur-[100px] pointer-events-none" />
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 relative z-10">
                 {/* Visual side - Mockup */}
@@ -275,14 +275,14 @@ export default function ProductsPage() {
                     <div className="bg-neutral-900 rounded-2xl p-5 border border-white/5 shadow-lg relative overflow-hidden">
                       <div className="absolute top-0 left-0 w-1 h-full bg-neutral-500" />
                       <div className="flex justify-between items-center mb-2">
-                        <p className="text-[10px] uppercase tracking-widest text-neutral-500 font-medium font-sans ml-2">Shadow AI Alert</p>
+                        <p className="text-[10px] uppercase tracking-widest text-neutral-500 font-medium font-sans ml-2">AI Governance Alert</p>
                         <span className="w-2 h-2 rounded-full bg-red-500/80 animate-pulse" />
                       </div>
                       <p className="text-white font-semibold text-lg tracking-tight ml-2">Unauthorized LLM Ping</p>
                       <p className="text-sm text-neutral-400 mt-1 font-mono ml-2">Model: DeepSeek-R1</p>
                     </div>
 
-                    <div className="glow-border rounded-2xl relative shadow-[0_0_40px_theme(colors.shadow.500/15)]">
+                    <div className="glow-border rounded-2xl relative shadow-[0_0_40px_theme(colors.klaryx.500/15)]">
                       <div className="bg-neutral-950 rounded-2xl p-6 border border-white/10 relative backdrop-blur-md">
                         <div className="flex items-center gap-2 mb-4">
                           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-white"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>
@@ -315,12 +315,12 @@ export default function ProductsPage() {
                       </svg>
                     </div>
                     <div>
-                      <span className="text-3xl font-medium tracking-tight">ShadowLens</span>
+                      <span className="text-3xl font-medium tracking-tight">Klaryx</span>
                       <div className="flex items-center mt-1">
                         <span className="relative flex h-2 w-2 mr-2">
-                          <span className="relative inline-flex rounded-full h-2 w-2 bg-shadow-500"></span>
+                          <span className="relative inline-flex rounded-full h-2 w-2 bg-klaryx-500"></span>
                         </span>
-                        <span className="text-[10px] uppercase tracking-widest text-shadow-400 font-medium">B2B Enterprise</span>
+                        <span className="text-[10px] uppercase tracking-widest text-klaryx-400 font-medium">B2B Enterprise</span>
                       </div>
                     </div>
                   </div>
@@ -328,7 +328,7 @@ export default function ProductsPage() {
                   <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-[1.15] tracking-tight">
                     Secure your
                     <br />
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-shadow-300 to-shadow-500 text-shadow-400">AI Infrastructure.</span>
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-klaryx-300 to-klaryx-500 text-klaryx-400">AI Infrastructure.</span>
                   </h2>
 
                   <p className="text-neutral-400 leading-relaxed mb-10 text-lg font-light">
@@ -343,7 +343,7 @@ export default function ProductsPage() {
                       { label: "RBAC Controls", desc: "Enterprise permissions" },
                     ].map((f) => (
                       <div key={f.label} className="flex items-start gap-3 p-3 rounded-xl hover:bg-white/5 transition-colors group">
-                        <div className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-shadow-400 shrink-0 group-hover:bg-shadow-500/20 transition-all">
+                        <div className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-klaryx-400 shrink-0 group-hover:bg-klaryx-500/20 transition-all">
                           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                             <polyline points="20 6 9 17 4 12" />
                           </svg>
@@ -358,13 +358,13 @@ export default function ProductsPage() {
 
                   <div className="flex flex-wrap gap-4">
                     <a
-                      href="https://shadowlens.advayant.com"
+                      href="https://klaryx.advayant.com"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="group relative inline-flex items-center px-8 py-4 bg-white text-black text-sm font-bold rounded-full hover:scale-105 transition-all shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:shadow-[0_0_30px_rgba(255,255,255,0.2)] overflow-hidden"
                     >
                       <span className="relative z-10 flex items-center">
-                        Launch ShadowLens
+                        Launch Klaryx
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="ml-2 transition-transform group-hover:translate-x-1">
                           <path d="M5 12h14M12 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>

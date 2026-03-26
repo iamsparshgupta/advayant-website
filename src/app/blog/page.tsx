@@ -5,9 +5,9 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 export const metadata: Metadata = {
   title: "Blog — Advayant Intelligence | AI Security & Financial Intelligence",
   description:
-    "Expert insights on securing enterprise AI infrastructure, Shadow AI governance, and maximizing consumer financial intelligence.",
+    "Expert insights on securing enterprise AI infrastructure, AI governance, and maximizing consumer financial intelligence.",
   keywords: [
-    "Shadow AI",
+    "AI governance",
     "LLM governance",
     "credit card rewards optimization",
     "Enterprise AI security",
@@ -21,7 +21,7 @@ const posts = [
     slug: "rise-of-shadow-ai-enterprises",
     title: "The Rise of Shadow AI in Modern Enterprises",
     excerpt:
-      "Employees are pasting sensitive corporate data into unsanctioned public LLMs. We measure the actual cost of Shadow AI and how agentic monitoring can instantly illuminate your blind spots.",
+      "Employees are pasting sensitive corporate data into unsanctioned public LLMs. We measure the actual cost of Shadow AI and how Klaryx's agentic monitoring can instantly illuminate your blind spots.",
     category: "AI Security",
     readTime: "6 min read",
     date: "2026-03-24",
@@ -57,7 +57,7 @@ const posts = [
     slug: "securing-corporate-data-rogue-prompts",
     title: "Securing Corporate R&D from Rogue Prompts",
     excerpt:
-      "A single prompt can expose months of proprietary research. Learn how ShadowLens implements instantaneous RBAC controls to govern exactly what code can be passed to AI models.",
+      "A single prompt can expose months of proprietary research. Learn how Klaryx implements instantaneous RBAC controls to govern exactly what code can be passed to AI models.",
     category: "AI Security",
     readTime: "5 min read",
     date: "2026-02-28",
@@ -102,7 +102,7 @@ export default function BlogPage() {
             </span>
           </h1>
           <p className="animate-fade-in-up animate-delay-200 text-lg sm:text-xl text-neutral-400 max-w-2xl mx-auto font-light leading-relaxed">
-            Expert guides on enterprise AI governance, Shadow AI mitigation,
+            Expert guides on enterprise AI governance, AI threat mitigation,
             maximizing credit card rewards, and making smarter decisions with AI.
           </p>
         </div>
@@ -181,13 +181,13 @@ export default function BlogPage() {
               
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
-                  href="https://shadowlens.advayant.com"
+                  href="https://klaryx.advayant.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group relative inline-flex items-center px-8 py-4 bg-white text-black text-sm font-bold rounded-full hover:scale-105 transition-all shadow-[0_0_20px_rgba(255,255,255,0.1)] overflow-hidden w-full sm:w-auto justify-center"
                 >
                   <span className="relative z-10 flex items-center">
-                    Launch ShadowLens
+                    Launch Klaryx
                   </span>
                 </a>
                 <a

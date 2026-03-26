@@ -84,7 +84,7 @@ export default function AboutPage() {
               </p>
               <br />
               <p>
-                Simultaneously, our enterprise platform, <strong className="text-white font-semibold flex items-center inline-flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-neutral-300" />ShadowLens</strong>, secures corporate infrastructure by detecting unauthorized AI usage and enforcing strict zero-knowledge data loss prevention policies across the Indian B2B sector.
+                Simultaneously, our enterprise platform, <strong className="text-white font-semibold flex items-center inline-flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-neutral-300" />Klaryx</strong>, secures corporate infrastructure by detecting unauthorized AI usage and enforcing strict zero-knowledge data loss prevention policies across the Indian B2B sector.
               </p>
               <br />
               <p>

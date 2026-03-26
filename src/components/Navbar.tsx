@@ -76,12 +76,12 @@ export function Navbar() {
             ))}
             <div className="w-px h-4 bg-white/10 mx-3" />
             <a
-              href="https://shadowlens.advayant.com"
+              href="https://klaryx.advayant.com"
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-1.5 border border-white/20 text-white text-sm font-semibold rounded-full hover:bg-white/10 transition-all active:scale-[0.97] mr-2"
             >
-              ShadowLens
+              Klaryx
             </a>
             <a
               href="https://flux.advayant.com"
@@ -160,12 +160,12 @@ export function Navbar() {
           ))}
           <div className="pt-4 mt-2 border-t border-white/10 flex flex-col gap-2">
             <a
-              href="https://shadowlens.advayant.com"
+              href="https://klaryx.advayant.com"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full text-center px-5 py-3 border border-white/20 text-white text-sm font-semibold rounded-xl hover:bg-white/10 transition-colors"
             >
-              ShadowLens
+              Klaryx
             </a>
             <a
               href="https://flux.advayant.com"

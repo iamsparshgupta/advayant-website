@@ -96,8 +96,8 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="https://shadowlens.advayant.com" target="_blank" rel="noopener noreferrer" className="text-sm text-neutral-500 hover:text-white transition-colors link-underline">
-                  ShadowLens
+                <a href="https://klaryx.advayant.com" target="_blank" rel="noopener noreferrer" className="text-sm text-neutral-500 hover:text-white transition-colors link-underline">
+                  Klaryx
                 </a>
               </li>
               <li>

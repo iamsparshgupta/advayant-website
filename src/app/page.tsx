@@ -320,8 +320,8 @@ function ProductShowcase() {
   );
 }
 
-/* ─── PRODUCT SHOWCASE — SHADOW LENS ─── */
-function ShadowLensShowcase() {
+/* ─── PRODUCT SHOWCASE — KLARYX ─── */
+function KlaryxShowcase() {
   return (
     <section className="py-16 sm:py-24 lg:py-32 px-6 relative overflow-hidden bg-transparent">
       {/* Decorative lines */}
@@ -350,7 +350,7 @@ function ShadowLensShowcase() {
                 </div>
 
                 <h2 className="text-4xl sm:text-5xl lg:text-7xl font-medium text-white tracking-tight">
-                  ShadowLens.
+                  Klaryx.
                 </h2>
               </div>
               <p className="text-lg md:text-xl text-neutral-300 leading-relaxed font-light">
@@ -359,7 +359,7 @@ function ShadowLensShowcase() {
             </div>
 
             <a
-              href="https://shadowlens.advayant.com"
+              href="https://klaryx.advayant.com"
               target="_blank"
               rel="noopener noreferrer"
               className="shrink-0 flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-white/20 text-white font-medium hover:bg-white hover:text-black transition-all group"
@@ -430,7 +430,7 @@ function ShadowLensShowcase() {
                     </div>
                     <div className="mx-auto flex h-7 items-center rounded-md bg-white/5 px-4 text-xs font-medium text-neutral-400 border border-white/5 shadow-inner">
                       <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="mr-2 opacity-50"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" /></svg>
-                      shadowlens.advayant.com/dashboard
+                      klaryx.advayant.com/dashboard
                     </div>
                   </div>
 
@@ -668,12 +668,12 @@ function CTA() {
                 </span>
               </a>
               <a
-                href="https://shadowlens.advayant.com"
+                href="https://klaryx.advayant.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-4 glass text-white text-sm font-medium rounded-full hover:bg-neutral-900 transition-all border border-white/10 w-full sm:w-auto text-center"
               >
-                Launch ShadowLens
+                Launch Klaryx
               </a>
             </div>
           </div>
@@ -690,7 +690,7 @@ export default function HomePage() {
       <Hero />
       <ProductShowcase />
       <Numbers />
-      <ShadowLensShowcase />
+      <KlaryxShowcase />
       <Innovation />
       <CTA />
     </>
