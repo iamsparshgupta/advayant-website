@@ -84,7 +84,7 @@ npm run start
 ### Design System
 - Premium dark mode (pure black background)
 - Glassmorphism with backdrop blur effects
-- Three color palettes: Neutral, Primary (Indigo/Saffron), FLUX (Cyan/Emerald)
+- Four color palettes: Neutral, Primary (Indigo/Saffron), FLUX (Cyan/Emerald), Klaryx (Electric Blue/Indigo)
 - Scroll-reveal entrance animations with staggered delays
 - Fonts: Inter (body), Outfit (product UI), Georgia (logo)
 

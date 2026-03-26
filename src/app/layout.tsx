@@ -6,6 +6,7 @@ import { CosmicBackground } from "@/components/CosmicBackground";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://advayant.com"),
   title: "Advayant Intelligence — Building Intelligence for India",
   description:
     "Advayant Intelligence builds AI-powered products that solve real problems for Indian consumers. Our first product, FLUX AI, is India's smartest credit card optimizer.",
@@ -20,8 +21,17 @@ export const metadata: Metadata = {
     "zero-knowledge finance",
   ],
   icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
+    icon: [
+      { url: "/favicon.ico", sizes: "32x32" },
+      { url: "/icon-16.png", sizes: "16x16", type: "image/png" },
+      { url: "/icon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/icon-48.png", sizes: "48x48", type: "image/png" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
   },
   openGraph: {
     title: "Advayant Intelligence",
@@ -32,9 +42,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://advayant.com/og-image.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
+        type: "image/png",
         alt: "Advayant Intelligence — Building Intelligence for India",
       },
     ],
@@ -44,7 +55,7 @@ export const metadata: Metadata = {
     title: "Advayant Intelligence",
     description:
       "Building AI-powered intelligence products for India. Home of FLUX AI.",
-    images: ["https://advayant.com/og-image.png"],
+    images: ["/og-image.png"],
   },
 };
 
