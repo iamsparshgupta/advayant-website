@@ -1,0 +1,37 @@
+src/app/blog/page.tsx
+  01d9537c687e8d3f 8,10,24,60,105,184,190
+src/components/Footer.tsx
+  01d9537c687e8d3f 99-100
+src/app/globals.css
+  01d9537c687e8d3f 53-59,61-63
+src/components/Navbar.tsx
+  01d9537c687e8d3f 79,84,163,168
+src/app/page.tsx
+  01d9537c687e8d3f 323-324,353,362,433,671,676,693
+src/app/about/page.tsx
+  01d9537c687e8d3f 87
+src/app/products/page.tsx
+  01d9537c687e8d3f 263-264,268-269,278,285,318,321,323,331,346,361,367
+src/app/contact/page.tsx
+  01d9537c687e8d3f 159-160
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.19",
+  "base_commit_sha": "676362c8cf04108f9a1332dff0151bd0225b68d0",
+  "prompts": {
+    "01d9537c687e8d3f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "76006d0f-d97e-4ce4-a8e5-02006c2ece69",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Sparsh <iamsparshgupta@yahoo.com>",
+      "messages": [],
+      "total_additions": 47,
+      "total_deletions": 46,
+      "accepted_lines": 47,
+      "overriden_lines": 0
+    }
+  }
+}
