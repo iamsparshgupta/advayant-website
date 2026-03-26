@@ -1,0 +1,31 @@
+src/app/layout.tsx
+  01d9537c687e8d3f 9,24-34,45,48,58
+README.md
+  01d9537c687e8d3f 87
+src/app/icon.svg
+  01d9537c687e8d3f 1-25
+public/logo-mark.svg
+  01d9537c687e8d3f 1-23
+public/manifest.json
+  01d9537c687e8d3f 12-16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.19",
+  "base_commit_sha": "67b801fa6cf5b399a005222ef241ae537bb09f82",
+  "prompts": {
+    "01d9537c687e8d3f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "76006d0f-d97e-4ce4-a8e5-02006c2ece69",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Sparsh <iamsparshgupta@yahoo.com>",
+      "messages": [],
+      "total_additions": 70,
+      "total_deletions": 11,
+      "accepted_lines": 70,
+      "overriden_lines": 0
+    }
+  }
+}
