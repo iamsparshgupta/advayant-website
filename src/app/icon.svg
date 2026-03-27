@@ -1,40 +1,17 @@
-<svg viewBox="0 0 140 240" xmlns="http://www.w3.org/2000/svg" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-40 -40 80 80">
   <defs>
-    <linearGradient id="facet-purple" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#A855F7" />
-      <stop offset="100%" stop-color="#E9D8FD" />
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082"/>
+      <stop offset="100%" stop-color="#C5A55A"/>
     </linearGradient>
-    <linearGradient id="facet-blue" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#06B6D4" />
-      <stop offset="100%" stop-color="#E0F2FE" />
-    </linearGradient>
+    <mask id="m">
+      <rect x="-50" y="-50" width="100" height="100" fill="white"/>
+      <circle cx="1" cy="-1" r="25.2" fill="black"/>
+      <g transform="rotate(-36)">
+        <rect x="23" y="-1.8" width="10" height="3.6" fill="black"/>
+      </g>
+    </mask>
   </defs>
-
-  {/* Side Facets (The "Frame") */}
-  {/* Top Left */}
-  <path d="M 70 5 L 10 90 L 45 90 L 70 45 Z" fill="url(#facet-purple)" opacity="0.95" />
-  {/* Bottom Left */}
-  <path d="M 10 90 L 70 235 L 70 200 L 45 90 Z" fill="url(#facet-purple)" opacity="0.7" />
-  {/* Top Right */}
-  <path d="M 70 5 L 130 90 L 95 90 L 70 45 Z" fill="url(#facet-blue)" opacity="0.95" />
-  {/* Bottom Right */}
-  <path d="M 130 90 L 70 235 L 70 200 L 95 90 Z" fill="url(#facet-blue)" opacity="0.7" />
-
-  {/* Central White Shard */}
-  <path d="M 70 45 L 45 90 L 70 200 L 95 90 Z" fill="white" fill-opacity="0.98" />
-
-  {/* Detailed Outlines (The "Mechanical" look) */}
-  <g stroke="white" stroke-opacity="0.25" stroke-width="0.8">
-    {/* Outer Diamond */}
-    <path d="M 70 5 L 130 90 L 70 235 L 10 90 Z" stroke-opacity="0.15" />
-    {/* Inner Diamond */}
-    <path d="M 70 45 L 95 90 L 70 200 L 45 90 Z" />
-    {/* Facet Connection Lines */}
-    <path d="M 70 5 L 70 45" />
-    <path d="M 130 90 L 95 90" />
-    <path d="M 70 235 L 70 200" />
-    <path d="M 10 90 L 45 90" />
-    {/* Core Split line */}
-    <path d="M 70 45 L 70 200" stroke-opacity="0.3" />
-  </g>
+  <circle cx="0" cy="0" r="28" fill="url(#g)" mask="url(#m)" />
+  <circle cx="0" cy="0" r="5" fill="#C5A55A"/>
 </svg>

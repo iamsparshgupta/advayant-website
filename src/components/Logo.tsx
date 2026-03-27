@@ -1,53 +1,61 @@
 import React from "react";
 
-interface LogoProps extends React.HTMLProps<HTMLDivElement> {}
+interface LogoProps extends React.SVGProps<SVGSVGElement> {}
 
 export function Logo({ className, ...props }: LogoProps) {
   return (
-    <div className={`flex items-center gap-6 ${className}`} {...props}>
-      <svg 
-        viewBox="0 0 140 240" 
-        className="h-10 w-auto text-white overflow-visible" 
-        xmlns="http://www.w3.org/2000/svg" 
-        fill="none"
-      >
+    <svg viewBox="0 0 520 140" className={className || "h-full w-auto text-white overflow-visible"} {...props}>
+      {/* Icon Group */}
+      <g transform="translate(60, 60)">
+        {/* Advanced Mask for Perfect 3D Tapered Crescent with Small Gap */}
         <defs>
-          <linearGradient id="shard-purple" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stopColor="#A855F7" />
-            <stop offset="100%" stopColor="#E9D8FD" />
-          </linearGradient>
-          <linearGradient id="shard-blue" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stopColor="#06B6D4" />
-            <stop offset="100%" stopColor="#E0F2FE" />
-          </linearGradient>
+          <mask id="crescentMask">
+            {/* Show everything initially */}
+            <rect x="-50" y="-50" width="100" height="100" fill="white" />
+            
+            {/* 1. Hollow out the center. Perfect balance (1.8px at gap, 3.8px at bottom left) */}
+            <circle cx="1" cy="-1" r="25.2" fill="black" />
+            
+            {/* 2. Carve a small gap. Flat cut orthogonal to the ray path looks sharp & modern. */}
+            <g transform="rotate(-36)">
+              <rect x="23" y="-1.8" width="10" height="3.6" fill="black" />
+            </g>
+          </mask>
         </defs>
+        
+        {/* Outer circle masked out into a perfect crescent */}
+        <circle cx="0" cy="0" r="28" fill="currentColor" mask="url(#crescentMask)" />
+        
+        {/* Center Nucleus Dot (Gold) */}
+        <circle cx="0" cy="0" r="5" fill="#C5A55A"/>
 
-        {/* Side Facets */}
-        <path d="M 70 5 L 10 90 L 45 90 L 70 45 Z" fill="url(#shard-purple)" opacity="0.95" />
-        <path d="M 10 90 L 70 235 L 70 200 L 45 90 Z" fill="url(#shard-purple)" opacity="0.7" />
-        <path d="M 70 5 L 130 90 L 95 90 L 70 45 Z" fill="url(#shard-blue)" opacity="0.95" />
-        <path d="M 130 90 L 70 235 L 70 200 L 95 90 Z" fill="url(#shard-blue)" opacity="0.7" />
-
-        {/* Central White Shard */}
-        <path d="M 70 45 L 45 90 L 70 200 L 95 90 Z" fill="white" fillOpacity="0.98" />
-
-        {/* Outlines */}
-        <g stroke="white" strokeOpacity="0.25" strokeWidth="1.5">
-          <path d="M 70 5 L 130 90 L 70 235 L 10 90 Z" strokeOpacity="0.15" />
-          <path d="M 70 45 L 95 90 L 70 200 L 45 90 Z" />
+        {/* 36-Degree Ray of Gold Light Animation - shoots exactly from center dot */}
+        <g transform="rotate(-36)">
+          <polygon 
+            points="0,1.5 0,-1.5 45,0" 
+            fill="#C5A55A" 
+            className="opacity-0 drop-shadow-[0_0_8px_#C5A55A] animate-[goldRay_2s_ease-out_infinite]"
+            style={{ transformOrigin: '0px 0px' }}
+          />
         </g>
-      </svg>
-      <div className="flex flex-col">
-        <span className="font-outfit text-4xl font-light tracking-tight text-white leading-none">
-          advayant
-        </span>
-        <div className="flex items-center gap-3 mt-1.5">
-          <div className="h-px w-8 bg-gradient-to-r from-pryz-500 to-transparent opacity-40" />
-          <span className="font-space-grotesk text-[10px] font-bold tracking-[0.6em] text-neutral-500 uppercase leading-none">
-            INTELLIGENCE
-          </span>
-        </div>
-      </div>
-    </div>
+        
+        <style>{`
+          @keyframes goldRay {
+            0% { transform: scaleX(0); opacity: 0; }
+            10% { transform: scaleX(0); opacity: 1; }
+            40% { transform: scaleX(1); opacity: 1; }
+            70% { transform: scaleX(1); opacity: 0; }
+            100% { transform: scaleX(0); opacity: 0; }
+          }
+        `}</style>
+      </g>
+
+      {/* Typography (Scaled Up 1.5x to keep it large) */}
+      <text x="110" y="65" fontFamily="Georgia, 'Playfair Display', serif" fontSize="54" fontWeight="400" fill="currentColor" letterSpacing="3">advayant</text>
+      <line x1="110" y1="90" x2="177" y2="90" stroke="#C5A55A" strokeWidth="1" opacity="0.6"/>
+      <text x="186" y="94" fontFamily="'Inter', 'Helvetica', sans-serif" fontSize="15" fontWeight="400" fill="currentColor" opacity="0.7" letterSpacing="9">INTELLIGENCE</text>
+      <line x1="418" y1="90" x2="485" y2="90" stroke="#C5A55A" strokeWidth="1" opacity="0.6"/>
+      <circle cx="297.5" cy="115" r="3.5" fill="#C5A55A" opacity="0.8"/>
+    </svg>
   );
 }

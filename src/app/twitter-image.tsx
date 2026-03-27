@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og';
 
 export const runtime = 'edge';
-export const alt = 'Pryz AI | The Next Evolution of Personal Intelligence';
+export const alt = 'Advayant Intelligence | Building Intelligence for India';
 export const size = {
   width: 1200,
   height: 630,
@@ -32,7 +32,7 @@ export default function Image() {
             left: '-10%',
             width: '40%',
             height: '40%',
-            background: 'radial-gradient(circle, rgba(168, 85, 247, 0.15) 0%, transparent 70%)',
+            background: 'radial-gradient(circle, rgba(197, 165, 90, 0.1) 0%, transparent 70%)',
             borderRadius: '100%',
           }}
         />
@@ -43,19 +43,31 @@ export default function Image() {
             right: '-10%',
             width: '40%',
             height: '40%',
-            background: 'radial-gradient(circle, rgba(6, 182, 212, 0.15) 0%, transparent 70%)',
+            background: 'radial-gradient(circle, rgba(197, 165, 90, 0.1) 0%, transparent 70%)',
             borderRadius: '100%',
           }}
         />
 
-        {/* Logo Shard (Simplified for OG) */}
+        {/* Advayant Logo Icon (Golden Crescent) */}
         <div style={{ display: 'flex', marginBottom: '40px' }}>
-          <svg width="120" height="200" viewBox="0 0 140 240" fill="none">
-            <path d="M 70 5 L 10 90 L 45 90 L 70 45 Z" fill="#A855F7" opacity="0.95" />
-            <path d="M 10 90 L 70 235 L 70 200 L 45 90 Z" fill="#A855F7" opacity="0.7" />
-            <path d="M 70 5 L 130 90 L 95 90 L 70 45 Z" fill="#06B6D4" opacity="0.95" />
-            <path d="M 130 90 L 70 235 L 70 200 L 95 90 Z" fill="#06B6D4" opacity="0.7" />
-            <path d="M 70 45 L 45 90 L 70 200 L 95 90 Z" fill="white" />
+          <svg width="200" height="200" viewBox="-40 -40 80 80">
+            <defs>
+              <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#FFE082"/>
+                <stop offset="100%" stopColor="#C5A55A"/>
+              </linearGradient>
+              <mask id="m">
+                <rect x="-50" y="-50" width="100" height="100" fill="white"/>
+                <circle cx="1" cy="-1" r="25.2" fill="black"/>
+                <g transform="rotate(-36)">
+                  <rect x="23" y="-1.8" width="10" height="3.6" fill="black"/>
+                </g>
+              </mask>
+            </defs>
+            <circle cx="0" cy="0" r="28" fill="url(#g)" mask="url(#m)" />
+            <circle cx="0" cy="0" r="5" fill="#C5A55A"/>
+            {/* Added a subtle glow behind */}
+            <circle cx="0" cy="0" r="35" fill="none" stroke="#C5A55A" strokeWidth="0.5" opacity="0.2" />
           </svg>
         </div>
 
@@ -66,36 +78,41 @@ export default function Image() {
             color: 'white',
             textAlign: 'center',
             marginBottom: '16px',
-            textTransform: 'uppercase',
-            letterSpacing: '0.2em'
+            textTransform: 'lowercase',
+            letterSpacing: '0.1em'
           }}
         >
-          Pryz AI
+          advayant
         </div>
         <div
           style={{
-            fontSize: 32,
+            fontSize: 24,
             color: '#a3a3a3',
             textAlign: 'center',
             maxWidth: '800px',
             lineHeight: 1.4,
             fontWeight: 400,
+            letterSpacing: '0.6em',
+            textTransform: 'uppercase'
           }}
         >
-          Intelligence optimized for every swipe. <br/>
-          Secure. Private. Predictive.
+          Intelligence
         </div>
         
         <div style={{
           position: 'absolute',
-          bottom: '40px',
-          left: '40px',
+          bottom: '80px',
+          padding: '12px 24px',
+          background: 'rgba(255,255,255,0.05)',
+          borderRadius: '40px',
+          border: '1px solid rgba(255,255,255,0.1)',
           display: 'flex',
           alignItems: 'center',
-          gap: '8px'
+          gap: '12px'
         }}>
-          <div style={{ width: '8px', height: '8px', background: '#A855F7', borderRadius: '100%' }} />
-          <div style={{ color: '#525252', fontSize: '14px', fontWeight: 600, letterSpacing: '0.1em' }}>ADVAYANT INTELLIGENCE</div>
+          <div style={{ color: 'white', fontSize: '20px', fontWeight: 600 }}>Home of Pryz AI</div>
+          <div style={{ width: '6px', height: '6px', background: '#A855F7', borderRadius: '100%' }} />
+          <div style={{ color: '#a3a3a3', fontSize: '20px' }}>& Klaryx</div>
         </div>
       </div>
     ),
