@@ -21,13 +21,8 @@ export const metadata: Metadata = {
     "zero-knowledge finance",
   ],
   icons: {
-    icon: [
-      { url: "/favicon.ico", sizes: "32x32" },
-      { url: "/icon.svg", type: "image/svg+xml" },
-    ],
-    apple: [
-      { url: "/icon.svg", type: "image/svg+xml" },
-    ],
+    icon: "/icon.svg",
+    apple: "/icon.svg",
   },
   openGraph: {
     title: "Advayant Intelligence",
