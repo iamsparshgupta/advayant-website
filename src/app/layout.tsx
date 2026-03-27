@@ -9,10 +9,10 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://advayant.com"),
   title: "Advayant Intelligence — Building Intelligence for India",
   description:
-    "Advayant Intelligence builds AI-powered products that solve real problems for Indian consumers. Our first product, FLUX AI, is India's smartest credit card optimizer.",
+    "Advayant Intelligence builds AI-powered products that solve real problems for Indian consumers. Our first product, Pryz AI, is India's most advanced credit card optimization engine.",
   keywords: [
     "Advayant Intelligence",
-    "FLUX AI",
+    "Pryz AI",
     "credit card optimizer India",
     "best credit card for rewards",
     "UPI credit card optimizer",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Advayant Intelligence",
     description:
-      "Building AI-powered intelligence products for India. Home of FLUX AI.",
+      "Building AI-powered intelligence products for India. Home of Pryz AI.",
     url: "https://advayant.com",
     siteName: "Advayant Intelligence",
     type: "website",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Advayant Intelligence",
     description:
-      "Building AI-powered intelligence products for India. Home of FLUX AI.",
+      "Building AI-powered intelligence products for India. Home of Pryz AI.",
     images: ["/og-image.png"],
   },
 };
@@ -119,19 +119,19 @@ export default function RootLayout({
             }),
           }}
         />
-        {/* FLUX AI — SoftwareApplication Structured Data */}
+        {/* Pryz AI — SoftwareApplication Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "SoftwareApplication",
-              name: "FLUX AI",
+              name: "Pryz AI",
               applicationCategory: "FinanceApplication",
               operatingSystem: "Web, Android, iOS",
-              url: "https://flux.advayant.com",
+              url: "https://pryz.advayant.com",
               description:
-                "India's smartest credit card optimizer. AI-powered rewards maximization across 200+ cards including UPI-on-credit, expense splitting, and real-time card suggestions.",
+                "India's most advanced credit card optimization engine. AI-powered rewards maximization across 200+ cards including UPI-on-credit, expense splitting, and real-time card suggestions.",
               offers: {
                 "@type": "Offer",
                 price: "0",

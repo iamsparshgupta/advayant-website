@@ -91,8 +91,8 @@ export function Footer() {
             </h4>
             <ul className="space-y-3.5">
               <li>
-                <a href="https://flux.advayant.com" target="_blank" rel="noopener noreferrer" className="text-sm text-neutral-500 hover:text-white transition-colors link-underline">
-                  FLUX AI
+                <a href="https://pryz.advayant.com" target="_blank" rel="noopener noreferrer" className="text-sm text-neutral-500 hover:text-white transition-colors link-underline">
+                  Pryz
                 </a>
               </li>
               <li>

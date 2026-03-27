@@ -155,9 +155,9 @@ export default function ContactPage() {
             </h3>
             <div className="space-y-4">
               {[
-                { q: "Is FLUX AI free to use?", a: "Yes, our consumer application FLUX AI is completely free. No credit card required, no hidden charges. We believe optimization should be accessible to every Indian." },
+                { q: "Is Pryz AI free to use?", a: "Yes, our consumer application Pryz AI is completely free. No credit card required, no hidden charges. We believe optimization should be accessible to every Indian." },
                 { q: "How is Klaryx priced for enterprises?", a: "Klaryx uses a custom B2B pricing model based on API telemetry volume and the number of active corporate seats. Contact us above for a tailored quote." },
-                { q: "How is my data protected?", a: "With absolute cryptographic certainty. For FLUX AI, all data is encrypted on-device. For Klaryx, our DLP pipeline runs fully within your VPC, ensuring zero data egress." },
+                { q: "How is my data protected?", a: "With absolute cryptographic certainty. For Pryz AI, all data is encrypted on-device. For Klaryx, our DLP pipeline runs fully within your VPC, ensuring zero data egress." },
                 { q: "Can I suggest a feature or partnership?", a: "Absolutely. Use the secure form above or email us directly. We review every payload and actively incorporate user feedback into our development roadmap." },
               ].map((faq, i) => (
                 <div key={i} className="glass-card bg-neutral-900/40 rounded-2xl p-6 border border-white/10 hover:bg-white/[0.04] transition-colors group">

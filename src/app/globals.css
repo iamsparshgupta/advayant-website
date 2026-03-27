@@ -39,16 +39,16 @@
   --color-accent-800: #9a3412;
   --color-accent-900: #7c2d12;
 
-  /* Flux AI Theme — Electric Intelligence (Cyan/Emerald) */
-  --color-flux-50: #e0f8f8;
-  --color-flux-400: #26cece;
-  --color-flux-500: #00c4c4;
-  --color-flux-600: #009d9d;
-  --color-flux-900: #002727;
+  /* Pryz AI Theme — Geometric Intelligence (Indigo/Purple) */
+  --color-pryz-50: #eef2ff;
+  --color-pryz-400: #818cf8;
+  --color-pryz-500: #6366f1;
+  --color-pryz-600: #4f46e5;
+  --color-pryz-900: #1e1b4b;
 
-  --color-flux-accent-400: #34d399;
-  --color-flux-accent-500: #10b981;
-  --color-flux-accent-600: #059669;
+  --color-pryz-accent-400: #c084fc;
+  --color-pryz-accent-500: #a855f7;
+  --color-pryz-accent-600: #9333ea;
 
   /* Klaryx Theme — Enterprise Security (Electric Blue / Indigo) */
   --color-klaryx-50: #eff6ff;

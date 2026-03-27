@@ -84,12 +84,12 @@ export function Navbar() {
               Klaryx
             </a>
             <a
-              href="https://flux.advayant.com"
+              href="https://pryz.advayant.com"
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-1.5 bg-white text-black text-sm font-semibold rounded-full hover:bg-neutral-200 transition-all hover:shadow-[0_0_15px_rgba(255,255,255,0.3)] active:scale-[0.97]"
             >
-              Try FLUX AI
+              Try Pryz
             </a>
           </div>
 
@@ -168,12 +168,12 @@ export function Navbar() {
               Klaryx
             </a>
             <a
-              href="https://flux.advayant.com"
+              href="https://pryz.advayant.com"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full text-center px-5 py-3 bg-white text-black text-sm font-semibold rounded-xl hover:bg-neutral-200 transition-colors"
             >
-              Try FLUX AI
+              Try Pryz
             </a>
           </div>
         </div>

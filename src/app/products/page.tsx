@@ -2,6 +2,7 @@
 
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { Logo } from "@/components/Logo";
+import { PryzLogo } from "@/components/PryzLogo";
 import { KlaryxLogo } from "@/components/KlaryxLogo";
 
 export default function ProductsPage() {
@@ -10,17 +11,17 @@ export default function ProductsPage() {
       {/* ─── HERO ─── */}
       <section className="py-24 px-6 bg-transparent relative overflow-hidden">
         {/* Deep background mesh */}
-        <div className="absolute bottom-1/4 left-[10%] w-[500px] h-[300px] bg-flux-900/20 rounded-[100%] blur-[100px] pointer-events-none" />
+        <div className="absolute bottom-1/4 left-[10%] w-[500px] h-[300px] bg-pryz-900/20 rounded-[100%] blur-[100px] pointer-events-none" />
 
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <div className="animate-fade-in-up inline-flex items-center gap-2 px-3 py-1 rounded-full border border-flux-500/20 bg-flux-500/10 mb-6">
-            <div className="w-1.5 h-1.5 rounded-full bg-flux-400 shadow-[0_0_8px_theme(colors.flux.500/80)]" />
-            <span className="text-[10px] font-semibold text-flux-200 uppercase tracking-widest">Our Ecosystem</span>
+          <div className="animate-fade-in-up inline-flex items-center gap-2 px-3 py-1 rounded-full border border-pryz-500/20 bg-pryz-500/10 mb-6">
+            <div className="w-1.5 h-1.5 rounded-full bg-pryz-400 shadow-[0_0_8px_theme(colors.pryz.500/80)]" />
+            <span className="text-[10px] font-semibold text-pryz-200 uppercase tracking-widest">Our Ecosystem</span>
           </div>
           <h1 className="animate-fade-in-up animate-delay-100 text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6 tracking-tight">
             Intelligence built
             <br />
-            for <span className="text-transparent bg-clip-text bg-gradient-to-r from-flux-400 to-flux-accent-400">everyday life.</span>
+            for <span className="text-transparent bg-clip-text bg-gradient-to-r from-pryz-400 to-pryz-accent-400">everyday life.</span>
           </h1>
           <p className="animate-fade-in-up animate-delay-200 text-lg sm:text-xl text-neutral-300 max-w-2xl mx-auto font-light leading-relaxed">
             Silent, powerful tools that work securely in the background to help you orchestrate smarter decisions and solve real problems.
@@ -28,36 +29,24 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      {/* FLUX AI — Main Product */}
-      <section className="py-16 px-6 bg-transparent relative z-10" id="flux-ai">
+      {/* Pryz AI — Main Product */}
+      <section className="py-16 px-6 bg-transparent relative z-10" id="pryz-ai">
         <ScrollReveal>
           <div className="max-w-6xl mx-auto">
-            <div className="bg-neutral-950 rounded-[2.5rem] overflow-hidden shadow-2xl shadow-flux-900/10 relative border border-white/10 glass-card">
+            <div className="bg-neutral-950 rounded-[2.5rem] overflow-hidden shadow-2xl shadow-pryz-900/10 relative border border-white/10 glass-card">
               {/* Subtle glows over card */}
-              <div className="absolute -top-40 -right-40 w-96 h-96 bg-flux-600/10 rounded-full blur-[100px] pointer-events-none" />
-              <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-flux-accent-600/10 rounded-full blur-[100px] pointer-events-none" />
+              <div className="absolute -top-40 -right-40 w-96 h-96 bg-pryz-600/10 rounded-full blur-[100px] pointer-events-none" />
+              <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-pryz-accent-600/10 rounded-full blur-[100px] pointer-events-none" />
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 relative z-10">
                 {/* Text side */}
                 <div className="p-8 sm:p-12 lg:p-16 text-white border-b lg:border-b-0 lg:border-r border-white/5">
                   <div className="flex items-center gap-4 mb-10">
                     <div className="flex items-center justify-center relative group shrink-0 w-12 h-12">
-                      <svg width="42" height="42" viewBox="0 0 100 100" className="relative z-10 drop-shadow-[0_0_12px_theme(colors.flux.500/60)] group-hover:scale-110 transition-transform duration-500">
-                        <defs>
-                          <linearGradient id="fluxEssenceGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" stopColor="#e0f8f8" />
-                            <stop offset="50%" stopColor="#00c4c4" />
-                            <stop offset="100%" stopColor="#059669" />
-                          </linearGradient>
-                        </defs>
-                        <path d="M 50 15 L 60 45 L 50 55 L 40 45 Z" fill="url(#fluxEssenceGlow)" className="transition-all duration-500 group-hover:-translate-y-1" />
-                        <path d="M 85 50 L 55 60 L 45 50 L 55 40 Z" fill="url(#fluxEssenceGlow)" className="transition-all duration-500 group-hover:translate-x-1" />
-                        <path d="M 50 85 L 40 55 L 50 45 L 60 55 Z" fill="url(#fluxEssenceGlow)" className="transition-all duration-500 group-hover:translate-y-1" />
-                        <path d="M 15 50 L 45 40 L 55 50 L 45 60 Z" fill="url(#fluxEssenceGlow)" className="transition-all duration-500 group-hover:-translate-x-1" />
-                      </svg>
+                      <PryzLogo className="w-10 h-10 relative z-10 drop-shadow-[0_0_12px_theme(colors.pryz.500/60)] group-hover:scale-110 transition-transform duration-500" />
                     </div>
                     <div>
-                      <span className="text-3xl font-medium tracking-tight">FLUX AI</span>
+                      <span className="text-3xl font-medium tracking-tight">Pryz AI</span>
                       <div className="flex items-center mt-1">
                         <span className="relative flex h-2 w-2 mr-2">
                           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
@@ -75,7 +64,7 @@ export default function ProductsPage() {
                   </h2>
 
                   <p className="text-neutral-400 leading-relaxed mb-10 text-lg font-light">
-                    India&apos;s smartest credit card optimizer. AI-powered rewards maximization across 200+ cards including UPI-on-credit, expense splitting, and real-time card suggestions.
+                    India&apos;s most advanced card optimization engine. AI-powered rewards maximization across 200+ cards including UPI-on-credit, expense splitting, and real-time card suggestions.
                   </p>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
@@ -88,7 +77,7 @@ export default function ProductsPage() {
                       { label: "Fast Access", desc: "WhatsApp native bot" },
                     ].map((f) => (
                       <div key={f.label} className="flex items-start gap-3 p-3 rounded-xl hover:bg-white/5 transition-colors group">
-                        <div className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-flux-400 shrink-0 group-hover:bg-flux-500/20 transition-all">
+                        <div className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-pryz-400 shrink-0 group-hover:bg-pryz-500/20 transition-all">
                           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                             <polyline points="20 6 9 17 4 12" />
                           </svg>
@@ -103,14 +92,14 @@ export default function ProductsPage() {
 
                   <div className="flex flex-wrap gap-4">
                     <a
-                      href="https://flux.advayant.com"
+                      href="https://pryz.advayant.com"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="group relative inline-flex items-center px-8 py-4 bg-white text-black text-sm font-bold rounded-full hover:scale-105 transition-[transform,box-shadow] duration-500 shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:shadow-[0_0_30px_rgba(255,255,255,0.25)] overflow-hidden"
                     >
                       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-neutral-400/20 to-transparent translate-x-[-100%] group-hover:animate-[shimmer_1.5s_infinite]" />
                       <span className="relative z-10 flex items-center">
-                        Launch FLUX Studio
+                        Launch Pryz Studio
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="ml-2 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
                           <path d="M7 17L17 7M17 7H7M17 7v10" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
@@ -123,18 +112,18 @@ export default function ProductsPage() {
                 <div className="bg-neutral-950 p-8 sm:p-12 lg:p-16 flex items-center justify-center relative overflow-hidden font-outfit">
                   <div className="space-y-4 w-full max-w-sm relative z-10">
                     <div className="bg-neutral-900 rounded-2xl p-5 border border-white/5 shadow-lg relative overflow-hidden">
-                      <div className="absolute top-0 left-0 w-1 h-full bg-flux-500" />
+                      <div className="absolute top-0 left-0 w-1 h-full bg-pryz-500" />
                       <p className="text-[10px] uppercase tracking-widest text-neutral-500 mb-2 font-medium ml-2 font-sans">Active Search</p>
                       <p className="text-white font-semibold text-lg ml-2 tracking-tight">Swiggy — Food Delivery</p>
                       <p className="text-sm text-neutral-400 mt-1 ml-2 font-mono">₹1,200.00</p>
                     </div>
 
-                    <div className="glow-border rounded-2xl relative shadow-[0_0_40px_theme(colors.flux.500/15)]">
-                      <div className="absolute inset-0 bg-gradient-to-r from-flux-500/10 to-flux-accent-500/10 rounded-2xl" />
+                    <div className="glow-border rounded-2xl relative shadow-[0_0_40px_theme(colors.pryz.500/15)]">
+                      <div className="absolute inset-0 bg-gradient-to-r from-pryz-500/10 to-pryz-accent-500/10 rounded-2xl" />
                       <div className="bg-neutral-950 rounded-2xl p-6 border border-white/10 relative backdrop-blur-md">
                         <div className="flex items-center gap-2 mb-4">
-                          <span className="w-2 h-2 rounded-full bg-flux-400 animate-pulse" />
-                          <p className="text-[10px] uppercase tracking-[0.2em] font-bold text-flux-400 font-sans">Optimal Match</p>
+                          <span className="w-2 h-2 rounded-full bg-pryz-400 animate-pulse" />
+                          <p className="text-[10px] uppercase tracking-[0.2em] font-bold text-pryz-400 font-sans">Optimal Match</p>
                         </div>
                         <div className="flex items-end justify-between">
                           <div>
@@ -143,18 +132,18 @@ export default function ProductsPage() {
                           </div>
                           <div className="text-right">
                             <span className="text-white font-black text-3xl tracking-tighter">10%</span>
-                            <p className="text-[10px] text-flux-400 font-medium uppercase mt-1">Cashback</p>
+                            <p className="text-[10px] text-pryz-400 font-medium uppercase mt-1">Cashback</p>
                           </div>
                         </div>
                       </div>
                     </div>
 
-                    <div className="mt-8 bg-gradient-to-r from-flux-900/30 to-black rounded-xl p-4 border border-flux-500/20 text-center relative overflow-hidden group">
-                      <div className="absolute inset-0 bg-flux-500/10 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <div className="mt-8 bg-gradient-to-r from-pryz-900/30 to-black rounded-xl p-4 border border-pryz-500/20 text-center relative overflow-hidden group">
+                      <div className="absolute inset-0 bg-pryz-500/10 opacity-0 group-hover:opacity-100 transition-opacity" />
                       <div className="flex items-center justify-center gap-3 relative z-10">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-flux-400"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg>
-                        <p className="text-[11px] uppercase tracking-widest text-flux-200/60 font-medium">Extra Value Unlocked</p>
-                        <p className="text-2xl font-black text-flux-400 tracking-tighter ml-auto">₹96</p>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-pryz-400"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg>
+                        <p className="text-[11px] uppercase tracking-widest text-pryz-200/60 font-medium">Extra Value Unlocked</p>
+                        <p className="text-2xl font-black text-pryz-400 tracking-tighter ml-auto">₹96</p>
                       </div>
                     </div>
                   </div>
@@ -165,14 +154,14 @@ export default function ProductsPage() {
         </ScrollReveal>
       </section>
 
-      {/* How it works (Tied to FLUX) */}
+      {/* How it works (Tied to Pryz) */}
       <section className="py-24 px-6 bg-transparent relative border-t border-white/5">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,theme(colors.primary.900/10)_0%,transparent_100%)] z-0" />
         <div className="max-w-5xl mx-auto relative z-10">
           <ScrollReveal>
             <div className="text-center mb-16">
-              <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-flux-500 mb-4">
-                FLUX Workflow
+              <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-pryz-500 mb-4">
+                Pryz Workflow
               </p>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 tracking-tight">
                 Three steps. <span className="text-transparent bg-clip-text bg-gradient-to-r from-neutral-400 to-neutral-600">Maximum rewards.</span>
@@ -188,7 +177,7 @@ export default function ProductsPage() {
               {
                 step: "1",
                 title: "Add your cards",
-                desc: "Tell FLUX which credit and debit cards you carry. We encrypt everything natively on your device.",
+                desc: "Tell Pryz which credit and debit cards you carry. We encrypt everything natively on your device.",
                 icon: (
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2" /><line x1="1" y1="10" x2="23" y2="10" /></svg>
                 ),
@@ -196,7 +185,7 @@ export default function ProductsPage() {
               {
                 step: "2",
                 title: "Search any merchant",
-                desc: "Type where you're shopping. FLUX's proprietary models understand MCCs and routing automatically.",
+                desc: "Type where you're shopping. Pryz's proprietary models understand MCCs and routing automatically.",
                 icon: (
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" /></svg>
                 ),
@@ -204,7 +193,7 @@ export default function ProductsPage() {
               {
                 step: "3",
                 title: "Swipe the right card",
-                desc: "FLUX instantly surfaces the math—showing you the exact card that maximizes your points or cashback.",
+                desc: "Pryz instantly surfaces the math—showing you the exact card that maximizes your points or cashback.",
                 icon: (
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
                 ),
@@ -212,11 +201,11 @@ export default function ProductsPage() {
             ].map((s, i) => (
               <ScrollReveal key={s.step} delay={i * 120} className="relative z-10">
                 <div className="glass-card rounded-[2rem] p-8 border border-white/5 h-full hover:bg-white/[0.02] transition-colors relative overflow-hidden group">
-                  <div className="absolute -top-10 -right-10 w-32 h-32 bg-flux-500/10 rounded-full blur-2xl group-hover:bg-flux-500/20 transition-colors" />
+                  <div className="absolute -top-10 -right-10 w-32 h-32 bg-pryz-500/10 rounded-full blur-2xl group-hover:bg-pryz-500/20 transition-colors" />
 
-                  <div className="w-16 h-16 bg-neutral-900 rounded-2xl border border-white/10 flex items-center justify-center mb-8 text-flux-400 relative z-10 shadow-[0_0_15px_rgba(0,0,0,0.5)]">
+                  <div className="w-16 h-16 bg-neutral-900 rounded-2xl border border-white/10 flex items-center justify-center mb-8 text-pryz-400 relative z-10 shadow-[0_0_15px_rgba(0,0,0,0.5)]">
                     {s.icon}
-                    <div className="absolute -bottom-2 -right-2 w-6 h-6 rounded-full bg-flux-500 text-black flex items-center justify-center text-[10px] font-bold">
+                    <div className="absolute -bottom-2 -right-2 w-6 h-6 rounded-full bg-pryz-500 text-black flex items-center justify-center text-[10px] font-bold">
                       {s.step}
                     </div>
                   </div>
@@ -229,13 +218,13 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      {/* Tech Base (Tied to FLUX) */}
+      {/* Tech Base (Tied to Pryz) */}
       <section className="py-24 px-6 bg-transparent pb-32">
         <div className="max-w-5xl mx-auto">
           <ScrollReveal>
             <div className="text-center mb-16">
-              <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-flux-500 mb-3">
-                FLUX Engine
+              <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-pryz-500 mb-3">
+                Pryz Engine
               </p>
               <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
                 Built with strict precision.
@@ -251,7 +240,7 @@ export default function ProductsPage() {
             ].map((t, i) => (
               <ScrollReveal key={t.label} delay={i * 80}>
                 <div className="glass-card rounded-2xl p-6 border border-white/5 bg-white/[0.02] text-center h-full hover:bg-white/[0.05] transition-colors group">
-                  <div className="w-1.5 h-1.5 rounded-full bg-flux-500/50 mx-auto mb-4 group-hover:bg-flux-400 transition-all" />
+                  <div className="w-1.5 h-1.5 rounded-full bg-pryz-500/50 mx-auto mb-4 group-hover:bg-pryz-400 transition-all" />
                   <p className="font-bold text-white text-base mb-2">{t.label}</p>
                   <p className="text-xs text-neutral-500 font-light">{t.desc}</p>
                 </div>
@@ -376,11 +365,11 @@ export default function ProductsPage() {
 
       {/* Coming Soon */}
       <section className="py-24 px-6 bg-transparent border-t border-white/5 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-flux-900/10 rounded-full blur-[120px] pointer-events-none" />
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-pryz-900/10 rounded-full blur-[120px] pointer-events-none" />
 
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <ScrollReveal>
-            <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-flux-500 mb-4">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-pryz-500 mb-4">
               What&apos;s Next
             </p>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 tracking-tight">
@@ -402,10 +391,10 @@ export default function ProductsPage() {
                 <div className="glass-card rounded-[2rem] p-8 border border-white/10 bg-gradient-to-br from-neutral-900 to-black h-full group hover:border-white/20 transition-[border-color,transform] duration-500 hover:scale-[1.02]">
                   <div className="flex items-center justify-between mb-6">
                     <span className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-neutral-300">
-                      <div className="w-1.5 h-1.5 rounded-full bg-flux-500 opacity-60" />
+                      <div className="w-1.5 h-1.5 rounded-full bg-pryz-500 opacity-60" />
                       {item.badge}
                     </span>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-neutral-600 group-hover:text-flux-400 transition-colors"><path d="M5 12h14M12 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-neutral-600 group-hover:text-pryz-400 transition-colors"><path d="M5 12h14M12 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" /></svg>
                   </div>
                   <h4 className="font-bold text-white mb-3 text-xl tracking-tight">{item.title}</h4>
                   <p className="text-sm text-neutral-400 leading-relaxed font-light">{item.desc}</p>

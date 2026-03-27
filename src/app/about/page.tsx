@@ -77,7 +77,7 @@ export default function AboutPage() {
               </div>
 
               <p>
-                Our consumer flagship, <strong className="text-white font-semibold flex items-center inline-flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />FLUX AI</strong>, uses state-of-the-art predictive
+                Our consumer flagship, <strong className="text-white font-semibold flex items-center inline-flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-indigo-500 animate-pulse" />Pryz AI</strong>, uses state-of-the-art predictive
                 intelligence to instantly compute which card to use for any
                 purchase — maximizing your rewards natively, without the spreadsheet
                 gymnastics.
@@ -161,7 +161,7 @@ export default function AboutPage() {
             {[
               { title: "Open Reward Intelligence API", desc: "India's first open, community-verified database of every card's reward structure. API-first — any fintech can query the best card for any purchase.", badge: "In Development" },
               { title: "On-Device Intelligence", desc: "Fine-tuned models that run entirely on your phone. Sensitive data never leaves your device — true zero-knowledge intelligence.", badge: "R&D Phase" },
-              { title: "Proprietary Model Suite", desc: "FluxClassifier, FluxRewardParser, FluxAnomalyNet — domain-specific AI trained on Indian financial data, replacing third-party dependency.", badge: "Training Data" },
+              { title: "Proprietary Model Suite", desc: "PryzClassifier, PryzRewardParser, PryzAnomalyNet — domain-specific AI trained on Indian financial data, replacing third-party dependency.", badge: "Training Data" },
               { title: "Multilingual Voice AI", desc: "Voice-first financial intelligence in Hindi and regional languages. Ask in your language, get the best card instantly.", badge: "2026 Roadmap" },
             ].map((item, i) => (
               <ScrollReveal key={item.title} delay={i * 80} className="h-full">
@@ -249,18 +249,18 @@ export default function AboutPage() {
               Ready to stop leaving <br className="hidden sm:block" /><span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-accent-400">money on the table?</span>
             </h2>
             <p className="text-neutral-400 mb-10 max-w-xl mx-auto text-lg font-light leading-relaxed">
-              Join thousands of Indians deploying FLUX AI to orchestrate and maximize their credit card rewards — automatically, securely, and completely free.
+              Join thousands of Indians deploying Pryz AI to orchestrate and maximize their credit card rewards — automatically, securely, and completely free.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://flux.advayant.com"
+                href="https://pryz.advayant.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative px-8 py-4 bg-white text-black text-sm font-bold rounded-full overflow-hidden transition-all hover:scale-105 shadow-[0_0_20px_rgba(255,255,255,0.1)] w-full sm:w-auto flex justify-center items-center"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/10 to-transparent translate-x-[-100%] group-hover:animate-[shimmer_1.5s_infinite]" />
                 <span className="relative z-10 flex items-center">
-                  Try FLUX AI — It&apos;s Free
+                  Try Pryz AI — It&apos;s Free
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="ml-2 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">
                     <path d="M7 17L17 7M17 7H7M17 7v10" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>

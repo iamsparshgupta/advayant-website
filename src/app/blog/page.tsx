@@ -27,10 +27,10 @@ const posts = [
     date: "2026-03-24",
   },
   {
-    slug: "how-flux-ai-saves-you-money",
-    title: "How FLUX AI Saves You Money on Every Transaction",
+    slug: "how-pryz-ai-saves-you-money",
+    title: "How Pryz AI Saves You Money on Every Transaction",
     excerpt:
-      "Most Indians leave thousands of rupees on the table every year by swiping the wrong card. Here's how FLUX AI's 3-layer intelligence engine finds the optimal card for every purchase — automatically.",
+      "Most Indians leave thousands of rupees on the table every year by swiping the wrong card. Here's how Pryz AI's 3-layer intelligence engine finds the optimal card for every purchase — automatically.",
     category: "Product Deep Dive",
     readTime: "4 min read",
     date: "2026-03-18",
@@ -74,7 +74,7 @@ const posts = [
 ];
 
 const categoryColors: Record<string, string> = {
-  "Card Guides": "text-flux-400 bg-flux-500/10 border-flux-500/20",
+  "Card Guides": "text-pryz-400 bg-pryz-500/10 border-pryz-500/20",
   "UPI & Payments": "text-green-400 bg-green-500/10 border-green-500/20",
   "Product Deep Dive": "text-primary-400 bg-primary-500/10 border-primary-500/20",
   "AI Security": "text-white bg-white/10 border-white/20",
@@ -191,12 +191,12 @@ export default function BlogPage() {
                   </span>
                 </a>
                 <a
-                  href="https://flux.advayant.com"
+                  href="https://pryz.advayant.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-8 py-4 glass text-white text-sm font-medium rounded-full hover:bg-neutral-900 transition-all border border-white/10 w-full sm:w-auto text-center"
                 >
-                  Try FLUX AI Free
+                  Try Pryz AI Free
                 </a>
               </div>
             </div>

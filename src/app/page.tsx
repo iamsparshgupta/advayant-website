@@ -5,6 +5,7 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import { CountUp } from "@/components/CountUp";
 import { SpotlightCard } from "@/components/SpotlightCard";
 import { Logo } from "@/components/Logo";
+import { PryzLogo } from "@/components/PryzLogo";
 import { KlaryxLogo } from "@/components/KlaryxLogo";
 
 export const metadata: Metadata = {
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
     "Intelligence",
     "AI",
     "India",
-    "FLUX AI",
+    "Pryz AI",
     "credit card optimizer",
     "UPI credit card rewards",
     "best credit card India",
@@ -127,59 +128,47 @@ function Hero() {
 /* ─── PHILOSOPHY BENTO GRID (REMOVED) ─── */
 
 
-/* ─── PRODUCT SHOWCASE — FLUX AI (DARK MODE UI MOCK) ─── */
+/* ─── PRODUCT SHOWCASE — Pryz AI (DARK MODE UI MOCK) ─── */
 function ProductShowcase() {
   return (
     <section className="py-16 sm:py-24 lg:py-32 px-6 relative overflow-hidden bg-transparent">
       {/* Decorative lines */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-flux-900 to-transparent" />
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-flux-900 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-pryz-900 to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-pryz-900 to-transparent" />
 
       {/* Ambient background glow */}
-      <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[800px] h-[800px] bg-flux-900/20 rounded-full blur-[150px] pointer-events-none" />
+      <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[800px] h-[800px] bg-pryz-900/20 rounded-full blur-[150px] pointer-events-none" />
 
       <div className="max-w-6xl mx-auto relative z-10">
         <ScrollReveal>
           <div className="mb-16 md:mb-24 flex flex-col md:flex-row md:items-end justify-between gap-8">
             <div className="max-w-2xl">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-flux-500/30 bg-flux-500/10 mb-6">
-                <div className="w-1.5 h-1.5 rounded-full bg-flux-400" />
-                <span className="text-[10px] font-semibold text-flux-50 uppercase tracking-widest">Flagship Product</span>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-pryz-500/30 bg-pryz-500/10 mb-6">
+                <div className="w-1.5 h-1.5 rounded-full bg-pryz-400" />
+                <span className="text-[10px] font-semibold text-pryz-50 uppercase tracking-widest">Flagship Product</span>
               </div>
               <div className="flex flex-col md:flex-row items-center gap-6 mb-8 mt-12">
-                {/* FLUX Flow Essence Logo (No Square Background) */}
+                {/* Pryz Shard Logo */}
                 <div className="flex items-center justify-center shrink-0 relative group w-12 h-12">
-                  <svg width="42" height="42" viewBox="0 0 100 100" className="relative z-10 drop-shadow-[0_0_12px_theme(colors.flux.500/60)] group-hover:scale-110 transition-transform duration-500">
-                    <defs>
-                      <linearGradient id="fluxEssenceGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stopColor="#e0f8f8" />
-                        <stop offset="50%" stopColor="#00c4c4" />
-                        <stop offset="100%" stopColor="#059669" />
-                      </linearGradient>
-                    </defs>
-                    <path d="M 50 15 L 60 45 L 50 55 L 40 45 Z" fill="url(#fluxEssenceGlow)" className="transition-all duration-500 group-hover:-translate-y-1" />
-                    <path d="M 85 50 L 55 60 L 45 50 L 55 40 Z" fill="url(#fluxEssenceGlow)" className="transition-all duration-500 group-hover:translate-x-1" />
-                    <path d="M 50 85 L 40 55 L 50 45 L 60 55 Z" fill="url(#fluxEssenceGlow)" className="transition-all duration-500 group-hover:translate-y-1" />
-                    <path d="M 15 50 L 45 40 L 55 50 L 45 60 Z" fill="url(#fluxEssenceGlow)" className="transition-all duration-500 group-hover:-translate-x-1" />
-                  </svg>
+                  <PryzLogo className="w-10 h-10 relative z-10 drop-shadow-[0_0_12px_theme(colors.pryz.500/60)] group-hover:scale-110 transition-transform duration-500" />
                 </div>
 
                 <h2 className="text-4xl sm:text-5xl lg:text-7xl font-medium text-white tracking-tight">
-                  FLUX AI.
+                  Pryz AI.
                 </h2>
               </div>
               <p className="text-lg md:text-xl text-neutral-300 leading-relaxed font-light">
-                India&apos;s smartest credit card optimizer. AI-powered rewards maximization, expense splitting, and real-time card suggestions.
+                India&apos;s most advanced card optimization engine. See deeper into your rewards, earn more with precision math, and automate your financial maneuvers.
               </p>
             </div>
 
             <a
-              href="https://flux.advayant.com"
+              href="https://pryz.advayant.com"
               target="_blank"
               rel="noopener noreferrer"
               className="shrink-0 flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-white/20 text-white font-medium hover:bg-white hover:text-black transition-all group"
             >
-              Access FLUX Studio
+              Access Pryz Studio
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="transition-transform group-hover:translate-x-1" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" /></svg>
               <span className="sr-only">(opens in new tab)</span>
             </a>
@@ -192,7 +181,7 @@ function ProductShowcase() {
           <div className="lg:col-span-7 relative group">
             <ScrollReveal direction="left" className="relative z-10">
               {/* Glow behind mockup container */}
-              <div className="absolute -inset-1 rounded-[2.5rem] bg-gradient-to-br from-flux-500/30 to-flux-accent-500/20 blur-xl opacity-50 group-hover:opacity-100 transition-opacity duration-700" />
+              <div className="absolute -inset-1 rounded-[2.5rem] bg-gradient-to-br from-pryz-500/30 to-pryz-accent-500/20 blur-xl opacity-50 group-hover:opacity-100 transition-opacity duration-700" />
 
               <div className="relative rounded-[2rem] bg-neutral-950 border border-white/10 p-2 shadow-2xl overflow-hidden glass">
                 {/* Mac OS like top bar */}
@@ -205,7 +194,7 @@ function ProductShowcase() {
                     </div>
                     <div className="mx-auto flex h-7 items-center rounded-md bg-white/5 px-4 text-xs font-medium text-neutral-400 border border-white/5 shadow-inner">
                       <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="mr-2 opacity-50"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" /></svg>
-                      flux.advayant.com/optimize
+                      pryz.advayant.com/optimize
                     </div>
                   </div>
 
@@ -216,7 +205,7 @@ function ProductShowcase() {
                       {/* Search Bar mock */}
                       <div className="glow-border rounded-2xl">
                         <div className="bg-neutral-950 rounded-2xl p-4 flex items-center gap-4 text-white">
-                          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-flux-400"><circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" /></svg>
+                          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-pryz-400"><circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" /></svg>
                           <div>
                             <p className="font-medium text-lg tracking-tight">Apple Store BKC</p>
                             <p className="text-xs text-neutral-500 font-sans tracking-normal">Amount: ₹1,29,000</p>
@@ -229,12 +218,12 @@ function ProductShowcase() {
                       </div>
 
                       {/* Best recommendation */}
-                      <div className="glow-border rounded-2xl shadow-[0_0_30px_theme(colors.flux.500/15)] relative overflow-hidden animate-[float_4s_ease-in-out_infinite]">
-                        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-flux-400 to-flux-600" />
+                      <div className="glow-border rounded-2xl shadow-[0_0_30px_theme(colors.pryz.500/15)] relative overflow-hidden animate-[float_4s_ease-in-out_infinite]">
+                        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-pryz-400 to-pryz-600" />
                         <div className="bg-neutral-950 rounded-2xl p-6 relative">
-                          <div className="absolute -right-10 -top-10 w-40 h-40 bg-flux-600/10 rounded-full blur-2xl" />
-                          <p className="text-[10px] uppercase tracking-[0.2em] font-bold text-flux-400 mb-3 ml-1 flex items-center gap-2 font-sans">
-                            <span className="w-1.5 h-1.5 rounded-full bg-flux-400 animate-pulse" /> Optimal Card AI Match
+                          <div className="absolute -right-10 -top-10 w-40 h-40 bg-pryz-600/10 rounded-full blur-2xl" />
+                          <p className="text-[10px] uppercase tracking-[0.2em] font-bold text-pryz-400 mb-3 ml-1 flex items-center gap-2 font-sans">
+                            <span className="w-1.5 h-1.5 rounded-full bg-pryz-400 animate-pulse" /> Optimal Card AI Match
                           </p>
                           <div className="flex items-end justify-between">
                             <div>
@@ -243,7 +232,7 @@ function ProductShowcase() {
                             </div>
                             <div className="text-right">
                               <p className="text-3xl font-bold text-white tracking-tighter">16.5%</p>
-                              <p className="text-xs font-medium text-flux-400 mt-1 font-sans tracking-normal">Reward Value</p>
+                              <p className="text-xs font-medium text-pryz-400 mt-1 font-sans tracking-normal">Reward Value</p>
                             </div>
                           </div>
 
@@ -281,7 +270,7 @@ function ProductShowcase() {
                 {[
                   {
                     title: "Instant Optimization",
-                    desc: "Don't memorize reward charts. Tell us the merchant and amount — FLUX runs the math instantly to find the best card.",
+                    desc: "Don't memorize reward charts. Tell us the merchant and amount — Pryz runs the math instantly to find the best card.",
                     icon: (
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" /></svg>
                     ),
@@ -295,14 +284,14 @@ function ProductShowcase() {
                   },
                   {
                     title: "Smart Import Pipeline",
-                    desc: "Feed it bank statements, screenshots, or raw text. FLUX's proprietary OCR and parsers extract transaction data flawlessly.",
+                    desc: "Feed it bank statements, screenshots, or raw text. Pryz's proprietary OCR and parsers extract transaction data flawlessly.",
                     icon: (
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2h7M16 5l3 3-3 3M19 8H9" /></svg>
                     ),
                   },
                 ].map((f) => (
                   <div key={f.title} className="group glass-card p-6 rounded-2xl flex gap-5 border border-white/5 hover:bg-white/5 transition-colors cursor-default">
-                    <div className="w-12 h-12 shrink-0 bg-white/5 rounded-xl border border-white/10 flex items-center justify-center text-flux-400 group-hover:bg-flux-500 group-hover:text-white transition-all duration-300 group-hover:shadow-[0_0_15px_theme(colors.flux.500/50)] group-hover:scale-110">
+                    <div className="w-12 h-12 shrink-0 bg-white/5 rounded-xl border border-white/10 flex items-center justify-center text-pryz-400 group-hover:bg-pryz-500 group-hover:text-white transition-all duration-300 group-hover:shadow-[0_0_15px_theme(colors.pryz.500/50)] group-hover:scale-110">
                       {f.icon}
                     </div>
                     <div>
@@ -522,7 +511,7 @@ function Innovation() {
     {
       title: "Proprietary Model Suite",
       description:
-        "FluxClassifier, FluxRewardParser, FluxAnomalyNet — domain-specific AI trained on Indian financial data.",
+        "PryzClassifier, PryzRewardParser, PryzAnomalyNet — domain-specific AI trained on Indian financial data.",
       badge: "Training",
       icon: (
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -649,14 +638,14 @@ function CTA() {
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
               <a
-                href="https://flux.advayant.com"
+                href="https://pryz.advayant.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative px-8 py-4 bg-white text-black text-sm font-semibold rounded-full overflow-hidden transition-all hover:scale-105 shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:shadow-[0_0_40px_rgba(255,255,255,0.25)] w-full sm:w-auto"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/80 to-transparent translate-x-[-100%] group-hover:animate-[shimmer_1.5s_infinite]" />
                 <span className="relative z-10 flex items-center justify-center">
-                  Try FLUX AI Now
+                  Try Pryz AI Now
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="ml-2 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" aria-hidden="true">
                     <path d="M7 17L17 7M17 7H7M17 7v10" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
