@@ -23,26 +23,22 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "32x32" },
-      { url: "/icon-16.png", sizes: "16x16", type: "image/png" },
-      { url: "/icon-32.png", sizes: "32x32", type: "image/png" },
-      { url: "/icon-48.png", sizes: "48x48", type: "image/png" },
-      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
-      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
+      { url: "/icon.svg", type: "image/svg+xml" },
     ],
     apple: [
-      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+      { url: "/icon.svg", type: "image/svg+xml" },
     ],
   },
   openGraph: {
     title: "Advayant Intelligence",
     description:
-      "Building AI-powered intelligence products for India. Home of Pryz AI.",
+      "Building the next generation of personal and enterprise intelligence for India. Home of Pryz AI.",
     url: "https://advayant.com",
     siteName: "Advayant Intelligence",
     type: "website",
     images: [
       {
-        url: "/og-image.png",
+        url: "/opengraph-image",
         width: 1200,
         height: 630,
         type: "image/png",
@@ -54,8 +50,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Advayant Intelligence",
     description:
-      "Building AI-powered intelligence products for India. Home of Pryz AI.",
-    images: ["/og-image.png"],
+      "Building the next generation of personal and enterprise intelligence for India. Home of Pryz AI.",
+    images: ["/twitter-image"],
   },
 };
 
