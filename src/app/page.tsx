@@ -39,28 +39,29 @@ function Hero() {
       <div className="absolute bottom-1/4 left-[20%] w-[350px] h-[350px] bg-accent-900/10 rounded-full blur-[90px] animate-pulse-soft pointer-events-none z-0" style={{ animationDelay: "2s" }} />
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center pt-24 pb-16">
-        {/* Logo */}
-        <div className="animate-fade-in-up mb-8 flex justify-center">
+        {/* Logo with Premium Glow */}
+        <div className="animate-fade-in-up mb-12 flex justify-center relative">
+          <div className="absolute inset-0 bg-primary-500/20 blur-[100px] rounded-full scale-150 animate-pulse-soft pointer-events-none" />
+          <div className="absolute inset-0 bg-accent-500/10 blur-[80px] rounded-full translate-y-12 animate-pulse-soft pointer-events-none" style={{ animationDelay: '1s' }} />
+          
           <div className="relative group">
             <Logo 
-              className="h-20 sm:h-24 w-auto text-white opacity-95 relative z-10 transition-[transform,filter] duration-700 group-hover:scale-105 group-hover:drop-shadow-[0_0_30px_rgba(197,165,90,0.4)] -mb-4 mx-auto"
+              className="h-24 sm:h-28 w-auto text-white opacity-95 relative z-10 transition-[transform,filter] duration-700 group-hover:scale-105 group-hover:drop-shadow-[0_0_40px_rgba(197,165,90,0.5)] -mb-4 mx-auto"
             />
           </div>
         </div>
 
-
-
-        <h1 className="animate-fade-in-up animate-delay-200 text-4xl sm:text-6xl lg:text-[5rem] font-bold tracking-tight text-white leading-[1.05]">
-          Building Intelligence
+        <h1 className="animate-fade-in-up animate-delay-200 text-5xl sm:text-7xl lg:text-[6rem] font-bold tracking-[-0.03em] text-white leading-[0.95] mb-8">
+          Building intelligence
           <br />
-          <span className="bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-primary-400 via-accent-300 to-primary-400 bg-clip-text text-transparent animate-gradient">
             for India.
           </span>
         </h1>
 
-        <p className="animate-fade-in-up animate-delay-300 mt-8 text-lg sm:text-xl text-neutral-300 max-w-2xl mx-auto leading-relaxed font-light">
-          AI-powered solutions that solve real, everyday problems
-          for a billion Indian consumers. Silent, intelligent, and secure.
+        <p className="animate-fade-in-up animate-delay-300 mt-6 text-lg sm:text-xl text-neutral-400 max-w-2xl mx-auto leading-relaxed font-light tracking-wide">
+          Category-defining AI solutions that solve complex everyday 
+          problems for billions. Secure, silent, and sovereign.
         </p>
 
         <div className="animate-fade-in-up animate-delay-400 mt-12 flex flex-col sm:flex-row items-center justify-center gap-5">

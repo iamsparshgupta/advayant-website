@@ -143,17 +143,22 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="bg-black text-neutral-50 font-sans antialiased">
-        <CosmicBackground />
-        <a
-          href="#main-content"
-          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-neutral-900 focus:text-white focus:rounded-lg focus:text-sm focus:font-medium"
-        >
-          Skip to content
-        </a>
-        <Navbar />
-        <main id="main-content"><PageTransition>{children}</PageTransition></main>
-        <Footer />
+      <body className="font-sans antialiased text-white selection:bg-primary-500/30">
+        <div className="relative min-h-screen bg-black overflow-x-hidden selection:bg-primary-500/30">
+          <div className="fixed inset-0 bg-grid opacity-20 pointer-events-none z-0" />
+          <CosmicBackground />
+          <a
+            href="#main-content"
+            className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-neutral-900 focus:text-white focus:rounded-lg focus:text-sm focus:font-medium"
+          >
+            Skip to content
+          </a>
+          <Navbar />
+          <main id="main-content" className="relative z-10 flex flex-col min-h-screen">
+            <PageTransition>{children}</PageTransition>
+          </main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

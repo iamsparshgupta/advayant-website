@@ -47,8 +47,8 @@ export function Navbar() {
   return (
     <div className="fixed top-6 left-0 w-full z-50 flex justify-center px-4 pointer-events-none">
       <header
-        className={`pointer-events-auto transition-all duration-500 rounded-full ${scrolled
-          ? "glass shadow-xl shadow-black/20"
+        className={`pointer-events-auto transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] rounded-full ${scrolled
+          ? "glass shadow-2xl shadow-black/80 scale-[1.02]"
           : "bg-transparent"
           }`}
       >
