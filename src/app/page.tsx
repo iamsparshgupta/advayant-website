@@ -159,7 +159,7 @@ function ProductShowcase() {
                 </h2>
               </div>
               <p className="text-lg md:text-xl text-neutral-300 leading-relaxed font-light">
-                India&apos;s most advanced card optimization engine. See deeper into your rewards, earn more with precision math, and automate your financial maneuvers.
+                India&apos;s most advanced card optimization engine. 230+ cards across 38 banks, WhatsApp &amp; Telegram bots, expense circles, and 18 Kautilya AI financial intelligence tools.
               </p>
             </div>
 
@@ -270,22 +270,22 @@ function ProductShowcase() {
               <div className="space-y-4">
                 {[
                   {
-                    title: "Instant Optimization",
-                    desc: "Don't memorize reward charts. Tell us the merchant and amount — Pryz runs the math instantly to find the best card.",
+                    title: "230+ Card Engine",
+                    desc: "Covers 38 banks including PSU, fintech, and foreign cards. MCC-aware routing finds the optimal card for any merchant instantly.",
                     icon: (
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" /></svg>
                     ),
                   },
                   {
-                    title: "AI Chat — Kautilya",
-                    desc: "An intelligent, conversational interface to your finances. Ask natural language questions, get precise financial maneuvers.",
+                    title: "Kautilya AI — 18 Tools",
+                    desc: "Fee waiver status, leakage reports, spending forecasts, anomaly detection, offer stacking, and more — conversational financial intelligence.",
                     icon: (
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" /></svg>
                     ),
                   },
                   {
-                    title: "Smart Import Pipeline",
-                    desc: "Feed it bank statements, screenshots, or raw text. Pryz's proprietary OCR and parsers extract transaction data flawlessly.",
+                    title: "WhatsApp & Telegram",
+                    desc: "Full circle management — create expenses, settle up, track balances — all from your messaging app with Kautilya AI built in.",
                     icon: (
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2h7M16 5l3 3-3 3M19 8H9" /></svg>
                     ),
@@ -340,7 +340,7 @@ function KlaryxShowcase() {
                 </h2>
               </div>
               <p className="text-lg md:text-xl text-neutral-300 leading-relaxed font-light">
-                The ultimate Shadow AI detection and governance platform. Gain visibility into LLM usage, enforce DLP policies, and monitor real-time AI compliance.
+                EU AI Act compliant in 24 hours. The enterprise AI governance platform with AISPM, SIEM integration, compliance reporting, and FinOps intelligence across your entire organization.
               </p>
             </div>
 
@@ -365,22 +365,22 @@ function KlaryxShowcase() {
               <div className="space-y-4">
                 {[
                   {
-                    title: "Agentic Monitoring",
-                    desc: "Track every prompt invisibly across your network to discover unsanctioned AI tools instantly.",
+                    title: "AISPM + SIEM",
+                    desc: "AI Security Posture Management with Splunk and Azure Sentinel integration. Detect 200+ AI tools across browsers, CLI, and IDEs.",
                     icon: (
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M2 12A10 10 0 0 0 22 12" /><path d="M12 22A10 10 0 0 0 12 2" /><path d="M12 12m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /></svg>
                     ),
                   },
                   {
-                    title: "LLM Firewall",
-                    desc: "Block active connections to high-risk models or dynamically redact PII before it hits third-party APIs.",
+                    title: "Compliance Reporting",
+                    desc: "Six report templates including EU AI Act and NIST AI RMF. Evidence vault with automated compliance workflows.",
                     icon: (
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>
                     ),
                   },
                   {
-                    title: "Cost Analytics",
-                    desc: "Centralize your organization's entire API expenditure into beautiful real-time operational dashboards.",
+                    title: "FinOps Intelligence",
+                    desc: "Centralize AI and cloud spend across AWS, GCP, and Azure. Real-time cost dashboards with per-team breakdowns.",
                     icon: (
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12" /></svg>
                     ),
@@ -430,8 +430,8 @@ function KlaryxShowcase() {
                             <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
                           </span>
                           <div>
-                            <p className="font-medium text-lg tracking-tight">Data Exfiltration Blocked</p>
-                            <p className="text-xs text-neutral-500 font-sans tracking-normal">Unsanctioned: ChatGPT Web</p>
+                            <p className="font-medium text-lg tracking-tight">EU AI Act Violation Blocked</p>
+                            <p className="text-xs text-neutral-500 font-sans tracking-normal">Unsanctioned: DeepSeek-R1</p>
                           </div>
                           <div className="ml-auto flex items-center gap-2 text-xs text-red-500">
                             <span className="px-2 py-1 rounded bg-red-500/10 border border-red-500/20">Critical</span>
@@ -488,10 +488,10 @@ function KlaryxShowcase() {
 function Innovation() {
   const innovations = [
     {
-      title: "Open Reward Intelligence API",
+      title: "PryzSDK — Embedded Intelligence",
       description:
-        "India's first open, community-verified database of every card's reward structure. Any app can query the best card for any purchase.",
-      badge: "In Development",
+        "Drop-in SDK for any fintech to offer card optimization. PryzSDK widget for consumers, PryzCorporateSDK for B2B corporate card programs.",
+      badge: "Beta",
       icon: (
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
           <polyline points="16 18 22 12 16 6" /><polyline points="8 6 2 12 8 18" />
@@ -501,7 +501,7 @@ function Innovation() {
     {
       title: "On-Device Financial AI",
       description:
-        "Fine-tuned models that run entirely on your phone. Sensitive data never leaves your device — true zero-knowledge.",
+        "Fine-tuned SLMs running natively on your phone via Capacitor. Sensitive data never leaves your device — true zero-knowledge.",
       badge: "R&D Phase",
       icon: (
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -510,10 +510,10 @@ function Innovation() {
       ),
     },
     {
-      title: "Proprietary Model Suite",
+      title: "Klaryx DNS Proxy",
       description:
-        "PryzClassifier, PryzRewardParser, PryzAnomalyNet — domain-specific AI trained on Indian financial data.",
-      badge: "Training",
+        "Detect shadow AI from VS Code, local LLMs, and CLI tools — not just browsers. Network-level visibility for the enterprise.",
+      badge: "Shipping",
       icon: (
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
           <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
@@ -521,10 +521,10 @@ function Innovation() {
       ),
     },
     {
-      title: "Multilingual Voice AI",
+      title: "NPCI FiMI Integration",
       description:
-        "Voice-first financial intelligence in Hindi and regional languages. Ask in your language, get the best card.",
-      badge: "2026",
+        "Leveraging India's first payments-specific AI model for richer transaction categorization and smarter UPI-on-credit optimization.",
+      badge: "Exploring",
       icon: (
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
           <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" /><path d="M19 10v2a7 7 0 0 1-14 0v-2" /><line x1="12" y1="19" x2="12" y2="23" /><line x1="8" y1="23" x2="16" y2="23" />
@@ -591,7 +591,7 @@ function Numbers() {
         <ScrollReveal>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 text-center divide-x divide-white/5">
             {[
-              { value: "200+", label: "Indian Cards Supported", animate: true },
+              { value: "230+", label: "Indian Cards Supported", animate: true },
               { value: "100%", label: "Client-Side Encrypted", animate: true },
               { value: "Zero", label: "Data Sold to Anyone", animate: false },
               { value: "3-Tier", label: "AI Intelligence Stack", animate: false },

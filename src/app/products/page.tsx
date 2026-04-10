@@ -64,17 +64,17 @@ export default function ProductsPage() {
                   </h2>
 
                   <p className="text-neutral-400 leading-relaxed mb-10 text-lg font-light">
-                    India&apos;s most advanced card optimization engine. AI-powered rewards maximization across 200+ cards including UPI-on-credit, expense splitting, and real-time card suggestions.
+                    India&apos;s most advanced card optimization engine. AI-powered rewards maximization across 230+ cards from 38 banks, with WhatsApp &amp; Telegram bots, expense circles, and 18 Kautilya AI financial tools.
                   </p>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
                     {[
-                      { label: "Card Engine", desc: "Best card, everywhere" },
-                      { label: "UPI on Credit", desc: "RuPay, Zagg, SuperCard Pro" },
-                      { label: "Kautilya AI", desc: "Conversational finance" },
-                      { label: "Smart Parsers", desc: "PDF, SMS, image import" },
-                      { label: "Expense Rings", desc: "Frictionless splitting" },
-                      { label: "Fast Access", desc: "WhatsApp native bot" },
+                      { label: "230+ Card Engine", desc: "38 banks, MCC-aware routing" },
+                      { label: "Kautilya AI", desc: "18 financial intelligence tools" },
+                      { label: "WhatsApp & Telegram", desc: "Full circle management bots" },
+                      { label: "Email Auto-Import", desc: "18+ bank-specific parsers" },
+                      { label: "Community & Loyalty", desc: "Social + reward tracking" },
+                      { label: "Google OAuth", desc: "One-tap sign-in + UPI" },
                     ].map((f) => (
                       <div key={f.label} className="flex items-start gap-3 p-3 rounded-xl hover:bg-white/5 transition-colors group">
                         <div className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-pryz-400 shrink-0 group-hover:bg-pryz-500/20 transition-all">
@@ -233,10 +233,10 @@ export default function ProductsPage() {
           </ScrollReveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
-              { label: "3-Layer AI", desc: "Cross-checks every recommendation" },
+              { label: "Gemini 3 AI", desc: "Latest-gen models for precision" },
               { label: "AES-256", desc: "Bank-grade, zero-knowledge DB" },
-              { label: "Smart Search", desc: "Context-aware category routing" },
-              { label: "Live API", desc: "Real-time verified offers & rates" },
+              { label: "MCC Routing", desc: "Context-aware card matching" },
+              { label: "Multi-Platform", desc: "Web, Android, iOS via Capacitor" },
             ].map((t, i) => (
               <ScrollReveal key={t.label} delay={i * 80}>
                 <div className="glass-card rounded-2xl p-6 border border-white/5 bg-white/[0.02] text-center h-full hover:bg-white/[0.05] transition-colors group">
@@ -317,15 +317,17 @@ export default function ProductsPage() {
                   </h2>
 
                   <p className="text-neutral-400 leading-relaxed mb-10 text-lg font-light">
-                    The ultimate Shadow AI detection and governance platform. Gain full visibility into LLM usage, enforce data loss prevention policies, and monitor AI expenditures in real-time.
+                    EU AI Act compliant in 24 hours. The enterprise AISPM platform with compliance reporting, SIEM integration, FinOps intelligence, MSSP portal, and DLP enforcement — deployed in a single day.
                   </p>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
                     {[
-                      { label: "Agentic Monitoring", desc: "Track every prompt" },
-                      { label: "LLM Firewall", desc: "Block unauthorized AI" },
-                      { label: "DLP Pipeline", desc: "Redact PII dynamically" },
-                      { label: "RBAC Controls", desc: "Enterprise permissions" },
+                      { label: "AISPM + SIEM", desc: "Splunk & Sentinel integration" },
+                      { label: "Compliance Vault", desc: "EU AI Act & NIST reports" },
+                      { label: "FinOps Dashboard", desc: "AWS, GCP, Azure cost tracking" },
+                      { label: "MSSP Portal", desc: "Multi-tenant client management" },
+                      { label: "Semantic DLP", desc: "AI-powered PII redaction" },
+                      { label: "SAML & Entra ID", desc: "Enterprise SSO integration" },
                     ].map((f) => (
                       <div key={f.label} className="flex items-start gap-3 p-3 rounded-xl hover:bg-white/5 transition-colors group">
                         <div className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-klaryx-400 shrink-0 group-hover:bg-klaryx-500/20 transition-all">

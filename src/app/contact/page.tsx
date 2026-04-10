@@ -156,7 +156,7 @@ export default function ContactPage() {
             <div className="space-y-4">
               {[
                 { q: "Is Pryz AI free to use?", a: "Yes, our consumer application Pryz AI is completely free. No credit card required, no hidden charges. We believe optimization should be accessible to every Indian." },
-                { q: "How is Klaryx priced for enterprises?", a: "Klaryx uses a custom B2B pricing model based on API telemetry volume and the number of active corporate seats. Contact us above for a tailored quote." },
+                { q: "How is Klaryx priced for enterprises?", a: "Klaryx offers three tiers: Starter at $499/mo, Professional at $1,499/mo, and Enterprise at $3,999/mo — plus an MSSP tier for managed security service providers. Contact us for a tailored quote." },
                 { q: "How is my data protected?", a: "With absolute cryptographic certainty. For Pryz AI, all data is encrypted on-device. For Klaryx, our DLP pipeline runs fully within your VPC, ensuring zero data egress." },
                 { q: "Can I suggest a feature or partnership?", a: "Absolutely. Use the secure form above or email us directly. We review every payload and actively incorporate user feedback into our development roadmap." },
               ].map((faq, i) => (

@@ -84,7 +84,7 @@ export default function AboutPage() {
               </p>
               <br />
               <p>
-                Simultaneously, our enterprise platform, <strong className="text-white font-semibold flex items-center inline-flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-klaryx-500 shadow-[0_0_8px_theme(colors.klaryx.500/80)]" />Klaryx</strong>, secures corporate infrastructure by detecting unauthorized AI usage and enforcing strict zero-knowledge data loss prevention policies across the Indian B2B sector.
+                Simultaneously, our enterprise platform, <strong className="text-white font-semibold flex items-center inline-flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-klaryx-500 shadow-[0_0_8px_theme(colors.klaryx.500/80)]" />Klaryx</strong>, is a compliance-first AISPM platform that makes enterprises EU AI Act compliant in 24 hours — with SIEM integration, FinOps intelligence, MSSP portals, and semantic DLP enforcement.
               </p>
               <br />
               <p>
@@ -192,7 +192,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { title: "Zero-Knowledge Architecture", desc: "Your data is encrypted client-side with your password. We cannot read your financial data — even if compelled by law." },
-              { title: "India-Specific Intelligence", desc: "Our models understand UPI, RuPay, HDFC SmartBuy, Axis GrabDeals, and 200+ complex Indian card structures." },
+              { title: "India-Specific Intelligence", desc: "Our models understand UPI, RuPay, HDFC SmartBuy, Axis GrabDeals, and 230+ card structures across 38 Indian banks." },
               { title: "No Data Selling. No Ads.", desc: "We make money by building products worth paying for. Your data is absolutely never sold, shared, or brokered." },
               { title: "Open & Transparent", desc: "We're building the Open Reward Intelligence API — a free, open database of every card's dynamic reward structure." },
             ].map((item, i) => (

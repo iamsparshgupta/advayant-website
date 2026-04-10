@@ -106,6 +106,9 @@ export default function RootLayout({
                 "Credit Card Optimization",
                 "UPI Payments",
                 "Financial Technology",
+                "AI Governance",
+                "Enterprise AI Security",
+                "Shadow AI Detection",
               ],
             }),
           }}
@@ -122,7 +125,7 @@ export default function RootLayout({
               operatingSystem: "Web, Android, iOS",
               url: "https://pryz.advayant.com",
               description:
-                "India's most advanced credit card optimization engine. AI-powered rewards maximization across 200+ cards including UPI-on-credit, expense splitting, and real-time card suggestions.",
+                "India's most advanced card optimization engine. AI-powered rewards maximization across 230+ cards from 38 banks, with WhatsApp and Telegram bots, expense circles, and 18 Kautilya AI financial intelligence tools.",
               offers: {
                 "@type": "Offer",
                 price: "0",
@@ -133,7 +136,7 @@ export default function RootLayout({
                 name: "Advayant Intelligence",
               },
               featureList:
-                "Credit Card Optimization, AI Chat (Kautilya), Smart Import Pipeline, Expense Rings, WhatsApp Bot, UPI-on-Credit Support",
+                "Credit Card Optimization, Kautilya AI (18 Tools), WhatsApp & Telegram Bots, Expense Circles, Email Auto-Import, Community, Loyalty Tracking, Credit Score, UPI-on-Credit, Google OAuth",
             }),
           }}
         />

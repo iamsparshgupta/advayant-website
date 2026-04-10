@@ -1,8 +1,8 @@
 # Advayant Intelligence — Building Intelligence for India
 
-Corporate website for **Advayant Intelligence**, an AI-powered fintech company building intelligent products for Indian consumers. Home of **FLUX AI** — India's smartest credit card optimizer.
+Corporate website for **Advayant Intelligence**, an AI-powered company building intelligent products for Indian consumers and enterprises. Home of **Pryz AI** and **Klaryx**.
 
-**Live:** [advayant.com](https://advayant.com) | **FLUX AI:** [flux.advayant.com](https://flux.advayant.com)
+**Live:** [advayant.com](https://advayant.com) | **Pryz AI:** [pryz.advayant.com](https://pryz.advayant.com) | **Klaryx:** [klaryx.advayant.com](https://klaryx.advayant.com)
 
 ---
 
@@ -25,7 +25,7 @@ src/
 │   ├── layout.tsx          # Root layout, metadata, structured data, PWA config
 │   ├── page.tsx            # Homepage (Hero, Product Showcase, Innovation, Numbers, CTA)
 │   ├── globals.css         # Theme, animations, glass effects, scroll reveals
-│   ├── products/page.tsx   # FLUX AI product page with features, how-it-works, roadmap
+│   ├── products/page.tsx   # Pryz AI + Klaryx product pages with features, how-it-works, roadmap
 │   ├── about/page.tsx      # Company story, mission, team, differentiators
 │   ├── blog/page.tsx       # Blog index with SEO-optimized article cards
 │   ├── contact/page.tsx    # Contact form, FAQ, founder message
@@ -65,13 +65,21 @@ npm run start
 
 ## Key Features
 
-### FLUX AI Product
-- **Credit Card Optimization** — Best card recommendation for any merchant/amount across 200+ Indian cards
-- **UPI on Credit** — Full support for RuPay UPI, Zagg, SuperCard Pro, and other UPI-on-credit products
-- **AI Chat (Kautilya)** — Conversational financial intelligence with natural language
-- **Smart Import Pipeline** — Proprietary OCR/parsers for bank statements, screenshots, SMS
-- **Expense Rings** — Collaborative expense splitting
-- **WhatsApp Bot** — Native WhatsApp integration
+### Pryz AI — Consumer Financial Intelligence
+- **Card Optimization** — Best card recommendation across 230+ cards from 38 Indian banks with MCC-aware routing
+- **Kautilya AI** — 18 financial intelligence tools: fee waiver, leakage reports, anomaly detection, offer stacking, and more
+- **WhatsApp & Telegram Bots** — Full circle management (create, expense, settle, join, leave) from messaging apps
+- **Email Auto-Import** — 18+ bank-specific parsers with PDF password hints and bank-specific few-shot AI
+- **Community & Social** — Posts, replies, voting, challenges, loyalty tracking, brand deals
+- **Multi-Platform** — Web, Android, iOS via Capacitor with Google OAuth
+
+### Klaryx — Enterprise AI Governance
+- **AISPM** — AI Security Posture Management detecting 200+ AI tools across browsers, CLI, and IDEs
+- **Compliance Reporting** — 6 templates including EU AI Act and NIST AI RMF with evidence vault
+- **FinOps Intelligence** — Cloud cost tracking across AWS, GCP, and Azure
+- **MSSP Portal** — Multi-tenant client management for managed security providers
+- **SIEM Integration** — Splunk and Azure Sentinel webhooks for alerting
+- **SAML & Entra ID** — Enterprise SSO with Microsoft Azure AD integration
 
 ### Website Features
 - **DPDPA Compliant** — Zero-knowledge architecture, fully compliant with India's Digital Personal Data Protection Act 2025
@@ -84,7 +92,7 @@ npm run start
 ### Design System
 - Premium dark mode (pure black background)
 - Glassmorphism with backdrop blur effects
-- Four color palettes: Neutral, Primary (Indigo/Saffron), FLUX (Cyan/Emerald), Klaryx (Electric Blue/Indigo)
+- Four color palettes: Neutral, Primary (Indigo/Saffron), Pryz (Cyan/Emerald), Klaryx (Electric Blue/Indigo)
 - Scroll-reveal entrance animations with staggered delays
 - Fonts: Inter (body), Outfit (product UI), Georgia (logo)
 
@@ -93,7 +101,7 @@ npm run start
 The site includes two JSON-LD schemas:
 
 1. **Organization** — Advayant Intelligence company info, address, founding date
-2. **SoftwareApplication** — FLUX AI as a free FinanceApplication with feature list
+2. **SoftwareApplication** — Pryz AI as a free FinanceApplication with feature list
 
 Regional hreflang tags cover `en`, `hi`, and `x-default`.
 
@@ -101,10 +109,10 @@ Regional hreflang tags cover `en`, `hi`, and `x-default`.
 
 | Feature | Status |
 |---------|--------|
-| Open Financial Intelligence API | Developer Beta |
-| On-Device Prediction Models | R&D Phase |
-| NPCI FiMI Ecosystem Integration | Exploring |
-| Multilingual Voice Intelligence | 2026 Roadmap |
+| PryzSDK — Embedded Intelligence | Beta |
+| On-Device Financial AI | R&D Phase |
+| Klaryx DNS Proxy | Shipping |
+| NPCI FiMI Integration | Exploring |
 
 ## Contact
 

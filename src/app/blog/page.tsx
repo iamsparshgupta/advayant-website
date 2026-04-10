@@ -18,19 +18,37 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "eu-ai-act-compliance-24-hours",
+    title: "EU AI Act Compliance in 24 Hours with Klaryx",
+    excerpt:
+      "The EU AI Act is here and enforcement is real. Learn how Klaryx's six compliance report templates, evidence vault, and SIEM integration can make your organization compliant in a single day.",
+    category: "Compliance",
+    readTime: "8 min read",
+    date: "2026-04-08",
+  },
+  {
+    slug: "pryz-230-cards-38-banks",
+    title: "Pryz Now Covers 230+ Cards Across 38 Indian Banks",
+    excerpt:
+      "From PSU banks to fintech co-brands to foreign issuers — Pryz's card database has tripled. Here's what changed, how MCC-aware routing works, and why 18 Kautilya AI tools matter.",
+    category: "Product Deep Dive",
+    readTime: "5 min read",
+    date: "2026-04-06",
+  },
+  {
     slug: "rise-of-shadow-ai-enterprises",
     title: "The Rise of Shadow AI in Modern Enterprises",
     excerpt:
-      "Employees are pasting sensitive corporate data into unsanctioned public LLMs. We measure the actual cost of Shadow AI and how Klaryx's agentic monitoring can instantly illuminate your blind spots.",
+      "Employees are pasting sensitive corporate data into unsanctioned public LLMs. We measure the actual cost of Shadow AI and how Klaryx's AISPM platform can instantly illuminate your blind spots.",
     category: "AI Security",
     readTime: "6 min read",
     date: "2026-03-24",
   },
   {
-    slug: "how-pryz-ai-saves-you-money",
-    title: "How Pryz AI Saves You Money on Every Transaction",
+    slug: "whatsapp-telegram-expense-circles",
+    title: "Managing Shared Expenses via WhatsApp & Telegram Bots",
     excerpt:
-      "Most Indians leave thousands of rupees on the table every year by swiping the wrong card. Here's how Pryz AI's 3-layer intelligence engine finds the optimal card for every purchase — automatically.",
+      "Create circles, add expenses, settle up — all from your chat app. Pryz's messaging bots bring full financial circle management to the platforms you already use every day.",
     category: "Product Deep Dive",
     readTime: "4 min read",
     date: "2026-03-18",
@@ -57,7 +75,7 @@ const posts = [
     slug: "securing-corporate-data-rogue-prompts",
     title: "Securing Corporate R&D from Rogue Prompts",
     excerpt:
-      "A single prompt can expose months of proprietary research. Learn how Klaryx implements instantaneous RBAC controls to govern exactly what code can be passed to AI models.",
+      "A single prompt can expose months of proprietary research. Learn how Klaryx implements SAML SSO, semantic DLP, and MSSP portals to govern exactly what data flows to AI models.",
     category: "AI Security",
     readTime: "5 min read",
     date: "2026-02-28",
