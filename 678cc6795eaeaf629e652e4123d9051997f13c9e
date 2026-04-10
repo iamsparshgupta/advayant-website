@@ -1,0 +1,35 @@
+README.md
+  01d9537c687e8d3f 3,5,28,68-82,95,104,112-115
+src/app/page.tsx
+  01d9537c687e8d3f 162,273-274,280-281,287-288,343,368-369,375-376,382-383,433-434,491,493-494,504,513,515-516,524,526-527,594
+src/app/layout.tsx
+  01d9537c687e8d3f 109-111,128,139
+src/app/blog/page.tsx
+  01d9537c687e8d3f 21-37,42,48-49,51,78
+src/app/contact/page.tsx
+  01d9537c687e8d3f 159
+src/app/products/page.tsx
+  01d9537c687e8d3f 67,72-77,236,238-239,320,325-330
+src/app/about/page.tsx
+  01d9537c687e8d3f 87,195
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.8",
+  "base_commit_sha": "678cc6795eaeaf629e652e4123d9051997f13c9e",
+  "prompts": {
+    "01d9537c687e8d3f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "76006d0f-d97e-4ce4-a8e5-02006c2ece69",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Sparsh",
+      "messages": [],
+      "total_additions": 99,
+      "total_deletions": 68,
+      "accepted_lines": 99,
+      "overriden_lines": 0
+    }
+  }
+}
