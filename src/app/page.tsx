@@ -159,7 +159,7 @@ function ProductShowcase() {
                 </h2>
               </div>
               <p className="text-lg md:text-xl text-neutral-300 leading-relaxed font-light">
-                India&apos;s most advanced card optimization engine. 230+ cards across 38 banks, WhatsApp &amp; Telegram bots, expense circles, and 18 Kautilya AI financial intelligence tools.
+                Find money you didn&apos;t know you had. Pryz proactively detects wrong-card usage, expiring benefits, and milestone gaps across 230+ cards from 38 banks — with 31 Kautilya AI tools and self-healing data accuracy.
               </p>
             </div>
 
@@ -270,24 +270,24 @@ function ProductShowcase() {
               <div className="space-y-4">
                 {[
                   {
-                    title: "230+ Card Engine",
-                    desc: "Covers 38 banks including PSU, fintech, and foreign cards. MCC-aware routing finds the optimal card for any merchant instantly.",
+                    title: "Recovery System",
+                    desc: "Proactively detects wrong-card swaps, EMI-eligible transactions, fee-waiver milestone gaps, and expiring lounge or coupon benefits — with value shown per opportunity.",
                     icon: (
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" /></svg>
                     ),
                   },
                   {
-                    title: "Kautilya AI — 18 Tools",
-                    desc: "Fee waiver status, leakage reports, spending forecasts, anomaly detection, offer stacking, and more — conversational financial intelligence.",
+                    title: "Truth Reconciliation",
+                    desc: "Multi-source data engine reconciles bank PDFs, RBI MITC documents, user observations, and AI verifications — every recommendation backed by an honesty badge.",
                     icon: (
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" /></svg>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M9 12l2 2 4-4M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z" /></svg>
                     ),
                   },
                   {
-                    title: "WhatsApp & Telegram",
-                    desc: "Full circle management — create expenses, settle up, track balances — all from your messaging app with Kautilya AI built in.",
+                    title: "Circles — Split Smart",
+                    desc: "Splitwise CSV import, UPI deep-link settlement, item-wise receipts, food delivery auto-split, and recurring expenses — bundled with optimal card recommendations.",
                     icon: (
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2h7M16 5l3 3-3 3M19 8H9" /></svg>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" /><circle cx="9" cy="7" r="4" /></svg>
                     ),
                   },
                 ].map((f) => (
@@ -340,7 +340,7 @@ function KlaryxShowcase() {
                 </h2>
               </div>
               <p className="text-lg md:text-xl text-neutral-300 leading-relaxed font-light">
-                EU AI Act compliant in 24 hours. The enterprise AI governance platform with AISPM, SIEM integration, compliance reporting, and FinOps intelligence across your entire organization.
+                Zero-Trust AI. Absolute Governance. EU AI Act compliant in 24 hours — with semantic DLP, autonomous AI vendor discovery, LLM proxy gateway, and evidence vault for board-ready compliance reporting.
               </p>
             </div>
 
@@ -365,22 +365,22 @@ function KlaryxShowcase() {
               <div className="space-y-4">
                 {[
                   {
-                    title: "AISPM + SIEM",
-                    desc: "AI Security Posture Management with Splunk and Azure Sentinel integration. Detect 200+ AI tools across browsers, CLI, and IDEs.",
+                    title: "Semantic DLP",
+                    desc: "ONNX transformer models redact PII at the endpoint before it leaves your network. Multi-browser extension (Chrome, Edge) plus DNS proxy for CLI and IDE coverage.",
                     icon: (
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M2 12A10 10 0 0 0 22 12" /><path d="M12 22A10 10 0 0 0 12 2" /><path d="M12 12m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /></svg>
                     ),
                   },
                   {
-                    title: "Compliance Reporting",
-                    desc: "Six report templates including EU AI Act and NIST AI RMF. Evidence vault with automated compliance workflows.",
+                    title: "LLM Proxy Gateway",
+                    desc: "OpenAI-compatible proxy routes every AI request through monitored telemetry. Cost tracking, request filtering, and Splunk, Sentinel, and Datadog SIEM streaming.",
                     icon: (
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>
                     ),
                   },
                   {
-                    title: "FinOps Intelligence",
-                    desc: "Centralize AI and cloud spend across AWS, GCP, and Azure. Real-time cost dashboards with per-team breakdowns.",
+                    title: "Evidence Vault",
+                    desc: "Six compliance templates spanning EU AI Act, ISO 42001, NIST AI RMF, and SOC 2. Pre-signed S3 evidence storage with auditor tokens for external review.",
                     icon: (
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12" /></svg>
                     ),
@@ -430,8 +430,8 @@ function KlaryxShowcase() {
                             <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
                           </span>
                           <div>
-                            <p className="font-medium text-lg tracking-tight">EU AI Act Violation Blocked</p>
-                            <p className="text-xs text-neutral-500 font-sans tracking-normal">Unsanctioned: DeepSeek-R1</p>
+                            <p className="font-medium text-lg tracking-tight">PII Redacted at Endpoint</p>
+                            <p className="text-xs text-neutral-500 font-sans tracking-normal">Semantic DLP · DeepSeek-R1</p>
                           </div>
                           <div className="ml-auto flex items-center gap-2 text-xs text-red-500">
                             <span className="px-2 py-1 rounded bg-red-500/10 border border-red-500/20">Critical</span>
@@ -594,7 +594,7 @@ function Numbers() {
               { value: "230+", label: "Indian Cards Supported", animate: true },
               { value: "100%", label: "Client-Side Encrypted", animate: true },
               { value: "Zero", label: "Data Sold to Anyone", animate: false },
-              { value: "3-Tier", label: "AI Intelligence Stack", animate: false },
+              { value: "31", label: "Kautilya AI Tools", animate: true },
             ].map((stat, i) => (
               <div key={stat.label} className={i % 2 === 0 ? "border-l-0" : ""}>
                 <p className="text-4xl md:text-5xl lg:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-br from-white to-neutral-500 mb-3 tracking-tighter">

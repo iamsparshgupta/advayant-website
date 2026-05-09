@@ -66,20 +66,25 @@ npm run start
 ## Key Features
 
 ### Pryz AI — Consumer Financial Intelligence
-- **Card Optimization** — Best card recommendation across 230+ cards from 38 Indian banks with MCC-aware routing
-- **Kautilya AI** — 18 financial intelligence tools: fee waiver, leakage reports, anomaly detection, offer stacking, and more
-- **WhatsApp & Telegram Bots** — Full circle management (create, expense, settle, join, leave) from messaging apps
-- **Email Auto-Import** — 18+ bank-specific parsers with PDF password hints and bank-specific few-shot AI
-- **Community & Social** — Posts, replies, voting, challenges, loyalty tracking, brand deals
+- **Recovery System** — Proactively detects wrong-card swaps, EMI-eligible transactions, fee-waiver milestone gaps, and expiring benefits with value shown per opportunity
+- **Truth Reconciliation Engine** — Multi-source data engine reconciling bank PDFs, RBI MITC documents, user observations, and AI verifications with honesty badges
+- **Card Optimization** — 230+ cards from 38 Indian banks with MCC-aware routing, tiered rewards, cap tracking, and category exclusions
+- **Kautilya AI** — 31 financial intelligence tools with sourced confidence and provenance
+- **Circles** — Splitwise CSV import, UPI deep-link settlement, item-wise receipts, food delivery auto-split, recurring expenses
+- **MITC Monitor** — Daily refresh from RBI-mandated bank PDFs for variant-specific accuracy
+- **WhatsApp & Telegram Bots** — Full circle management from messaging apps
 - **Multi-Platform** — Web, Android, iOS via Capacitor with Google OAuth
 
-### Klaryx — Enterprise AI Governance
-- **AISPM** — AI Security Posture Management detecting 200+ AI tools across browsers, CLI, and IDEs
-- **Compliance Reporting** — 6 templates including EU AI Act and NIST AI RMF with evidence vault
-- **FinOps Intelligence** — Cloud cost tracking across AWS, GCP, and Azure
-- **MSSP Portal** — Multi-tenant client management for managed security providers
-- **SIEM Integration** — Splunk and Azure Sentinel webhooks for alerting
-- **SAML & Entra ID** — Enterprise SSO with Microsoft Azure AD integration
+### Klaryx — Zero-Trust AI Governance
+- **Semantic DLP** — ONNX transformer models redact PII at the endpoint before it leaves your network (Chrome + Edge extension)
+- **LLM Proxy Gateway** — OpenAI-compatible proxy with cost tracking, request filtering, and SIEM streaming (Splunk, Sentinel, Datadog)
+- **AI Vendor Crawler** — Puppeteer-driven autonomous discovery of vendor policies and capabilities
+- **Compliance Engine** — EU AI Act, ISO 42001, NIST AI RMF, SOC 2 with 6 board-ready report templates
+- **Evidence Vault** — Pre-signed S3 storage with auditor tokens for external review
+- **MSSP Portal** — Multi-tenant white-label deployment for managed security providers
+- **FinOps Intelligence** — Real-time cost tracking across LLM providers with anomaly detection
+- **SAML & Entra ID** — Enterprise SSO, password reset, email verification flows
+- **DNS Proxy** — CLI and IDE coverage beyond browser extensions
 
 ### Website Features
 - **DPDPA Compliant** — Zero-knowledge architecture, fully compliant with India's Digital Personal Data Protection Act 2025
@@ -109,9 +114,11 @@ Regional hreflang tags cover `en`, `hi`, and `x-default`.
 
 | Feature | Status |
 |---------|--------|
-| PryzSDK — Embedded Intelligence | Beta |
-| On-Device Financial AI | R&D Phase |
-| Klaryx DNS Proxy | Shipping |
+| Pryz Recovery System | Live |
+| Truth Reconciliation Engine | Live |
+| Klaryx Semantic DLP (ONNX) | Live |
+| Klaryx LLM Proxy Gateway | Live |
+| Polymorphic Payment Architecture | Foundation Shipped |
 | NPCI FiMI Integration | Exploring |
 
 ## Contact

@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Advayant Intelligence",
     description:
-      "Building the next generation of personal and enterprise intelligence for India. Home of Pryz AI.",
+      "Pryz AI for consumers, Klaryx for enterprises. Building the next generation of personal and enterprise intelligence for India.",
     url: "https://advayant.com",
     siteName: "Advayant Intelligence",
     type: "website",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Advayant Intelligence",
     description:
-      "Building the next generation of personal and enterprise intelligence for India. Home of Pryz AI.",
+      "Pryz AI for consumers, Klaryx for enterprises. Building the next generation of personal and enterprise intelligence for India.",
     images: ["/twitter-image"],
   },
 };
@@ -125,7 +125,7 @@ export default function RootLayout({
               operatingSystem: "Web, Android, iOS",
               url: "https://pryz.advayant.com",
               description:
-                "India's most advanced card optimization engine. AI-powered rewards maximization across 230+ cards from 38 banks, with WhatsApp and Telegram bots, expense circles, and 18 Kautilya AI financial intelligence tools.",
+                "Find money you didn't know you had. Pryz proactively detects wrong-card usage, expiring benefits, and milestone gaps across 230+ cards from 38 Indian banks — with 31 Kautilya AI tools, self-healing data accuracy, and Circles for smart group spending.",
               offers: {
                 "@type": "Offer",
                 price: "0",
@@ -136,7 +136,7 @@ export default function RootLayout({
                 name: "Advayant Intelligence",
               },
               featureList:
-                "Credit Card Optimization, Kautilya AI (18 Tools), WhatsApp & Telegram Bots, Expense Circles, Email Auto-Import, Community, Loyalty Tracking, Credit Score, UPI-on-Credit, Google OAuth",
+                "Recovery System (Wrong-Card, EMI, Milestone, Expiring Benefits), Truth Reconciliation Engine, Kautilya AI (31 Tools), Circles (Splitwise Import, UPI Settlement, Item-Wise Receipts, Recurring Expenses), MITC Monitor, WhatsApp & Telegram Bots, Email Auto-Import, Polymorphic Payment Support",
             }),
           }}
         />

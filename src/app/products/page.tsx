@@ -64,17 +64,17 @@ export default function ProductsPage() {
                   </h2>
 
                   <p className="text-neutral-400 leading-relaxed mb-10 text-lg font-light">
-                    India&apos;s most advanced card optimization engine. AI-powered rewards maximization across 230+ cards from 38 banks, with WhatsApp &amp; Telegram bots, expense circles, and 18 Kautilya AI financial tools.
+                    Find money you didn&apos;t know you had. Pryz proactively detects wrong-card swaps, expiring benefits, and milestone gaps across 230+ cards from 38 banks — with 31 Kautilya AI tools, self-healing data accuracy, and Circles for smart group spending.
                   </p>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
                     {[
-                      { label: "230+ Card Engine", desc: "38 banks, MCC-aware routing" },
-                      { label: "Kautilya AI", desc: "18 financial intelligence tools" },
+                      { label: "Recovery System", desc: "Wrong-card, EMI, milestone detection" },
+                      { label: "Truth Engine", desc: "Self-healing data with honesty badges" },
+                      { label: "Kautilya AI", desc: "31 financial intelligence tools" },
+                      { label: "Circles", desc: "Splitwise import, UPI settlement, recurring" },
+                      { label: "MITC Monitor", desc: "Daily refresh from RBI bank PDFs" },
                       { label: "WhatsApp & Telegram", desc: "Full circle management bots" },
-                      { label: "Email Auto-Import", desc: "18+ bank-specific parsers" },
-                      { label: "Community & Loyalty", desc: "Social + reward tracking" },
-                      { label: "Google OAuth", desc: "One-tap sign-in + UPI" },
                     ].map((f) => (
                       <div key={f.label} className="flex items-start gap-3 p-3 rounded-xl hover:bg-white/5 transition-colors group">
                         <div className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-pryz-400 shrink-0 group-hover:bg-pryz-500/20 transition-all">
@@ -317,17 +317,17 @@ export default function ProductsPage() {
                   </h2>
 
                   <p className="text-neutral-400 leading-relaxed mb-10 text-lg font-light">
-                    EU AI Act compliant in 24 hours. The enterprise AISPM platform with compliance reporting, SIEM integration, FinOps intelligence, MSSP portal, and DLP enforcement — deployed in a single day.
+                    Zero-Trust AI. Absolute Governance. EU AI Act compliant in 24 hours — with semantic DLP at the endpoint, autonomous AI vendor discovery, LLM proxy gateway, evidence vault, and FinOps intelligence built for board-ready reporting.
                   </p>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
                     {[
-                      { label: "AISPM + SIEM", desc: "Splunk & Sentinel integration" },
-                      { label: "Compliance Vault", desc: "EU AI Act & NIST reports" },
-                      { label: "FinOps Dashboard", desc: "AWS, GCP, Azure cost tracking" },
-                      { label: "MSSP Portal", desc: "Multi-tenant client management" },
-                      { label: "Semantic DLP", desc: "AI-powered PII redaction" },
-                      { label: "SAML & Entra ID", desc: "Enterprise SSO integration" },
+                      { label: "Semantic DLP", desc: "ONNX endpoint redaction" },
+                      { label: "LLM Proxy Gateway", desc: "OpenAI-compatible monitoring" },
+                      { label: "AI Vendor Crawler", desc: "Autonomous policy discovery" },
+                      { label: "Evidence Vault", desc: "EU AI Act, ISO 42001, NIST, SOC 2" },
+                      { label: "MSSP Portal", desc: "Multi-tenant white-label" },
+                      { label: "SAML & Entra ID", desc: "Enterprise SSO + SCIM" },
                     ].map((f) => (
                       <div key={f.label} className="flex items-start gap-3 p-3 rounded-xl hover:bg-white/5 transition-colors group">
                         <div className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-klaryx-400 shrink-0 group-hover:bg-klaryx-500/20 transition-all">

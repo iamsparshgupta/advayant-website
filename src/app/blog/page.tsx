@@ -18,6 +18,33 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "pryz-recovery-system-money-on-table",
+    title: "Pryz Recovery: Find Money You Didn't Know You Had",
+    excerpt:
+      "Most card optimizers tell you which card to swipe. Pryz Recovery finds the money already slipping through your fingers — wrong-card swaps, EMI-eligible transactions, fee-waiver gaps, and expiring benefits — before they cost you.",
+    category: "Product Deep Dive",
+    readTime: "6 min read",
+    date: "2026-05-04",
+  },
+  {
+    slug: "klaryx-zero-trust-ai-governance",
+    title: "Zero-Trust AI: Why Detection Alone Is No Longer Enough",
+    excerpt:
+      "Shadow AI detection is table stakes. The new bar is endpoint redaction, autonomous vendor discovery, and LLM proxy gateways. Here's how Klaryx delivers Zero-Trust AI governance that auditors actually accept.",
+    category: "AI Security",
+    readTime: "7 min read",
+    date: "2026-04-30",
+  },
+  {
+    slug: "truth-reconciliation-self-healing-data",
+    title: "Truth Reconciliation: How Pryz Keeps Itself Honest",
+    excerpt:
+      "Card reward structures change without notice. Pryz reconciles bank PDFs, RBI MITC documents, user observations, and AI verifications into a single confidence-scored truth — and auto-corrects when it's wrong.",
+    category: "Engineering",
+    readTime: "8 min read",
+    date: "2026-04-25",
+  },
+  {
     slug: "eu-ai-act-compliance-24-hours",
     title: "EU AI Act Compliance in 24 Hours with Klaryx",
     excerpt:
@@ -30,7 +57,7 @@ const posts = [
     slug: "pryz-230-cards-38-banks",
     title: "Pryz Now Covers 230+ Cards Across 38 Indian Banks",
     excerpt:
-      "From PSU banks to fintech co-brands to foreign issuers — Pryz's card database has tripled. Here's what changed, how MCC-aware routing works, and why 18 Kautilya AI tools matter.",
+      "From PSU banks to fintech co-brands to foreign issuers — Pryz's card database has tripled. Here's what changed, how MCC-aware routing works, and why 31 Kautilya AI tools matter.",
     category: "Product Deep Dive",
     readTime: "5 min read",
     date: "2026-04-06",

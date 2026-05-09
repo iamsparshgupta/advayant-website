@@ -77,14 +77,11 @@ export default function AboutPage() {
               </div>
 
               <p>
-                Our consumer flagship, <strong className="text-white font-semibold flex items-center inline-flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-indigo-500 animate-pulse" />Pryz AI</strong>, uses state-of-the-art predictive
-                intelligence to instantly compute which card to use for any
-                purchase — maximizing your rewards natively, without the spreadsheet
-                gymnastics.
+                Our consumer flagship, <strong className="text-white font-semibold flex items-center inline-flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-indigo-500 animate-pulse" />Pryz AI</strong>, doesn&apos;t just optimize the next swipe — it actively finds money you didn&apos;t know you had. Recovery detects wrong-card usage, expiring benefits, and milestone gaps. Truth Reconciliation keeps every recommendation honest.
               </p>
               <br />
               <p>
-                Simultaneously, our enterprise platform, <strong className="text-white font-semibold flex items-center inline-flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-klaryx-500 shadow-[0_0_8px_theme(colors.klaryx.500/80)]" />Klaryx</strong>, is a compliance-first AISPM platform that makes enterprises EU AI Act compliant in 24 hours — with SIEM integration, FinOps intelligence, MSSP portals, and semantic DLP enforcement.
+                Simultaneously, our enterprise platform, <strong className="text-white font-semibold flex items-center inline-flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-klaryx-500 shadow-[0_0_8px_theme(colors.klaryx.500/80)]" />Klaryx</strong>, delivers Zero-Trust AI governance — making enterprises EU AI Act compliant in 24 hours through semantic DLP, autonomous vendor discovery, LLM proxy gateway, and a board-ready evidence vault.
               </p>
               <br />
               <p>
@@ -194,7 +191,7 @@ export default function AboutPage() {
               { title: "Zero-Knowledge Architecture", desc: "Your data is encrypted client-side with your password. We cannot read your financial data — even if compelled by law." },
               { title: "India-Specific Intelligence", desc: "Our models understand UPI, RuPay, HDFC SmartBuy, Axis GrabDeals, and 230+ card structures across 38 Indian banks." },
               { title: "No Data Selling. No Ads.", desc: "We make money by building products worth paying for. Your data is absolutely never sold, shared, or brokered." },
-              { title: "Open & Transparent", desc: "We're building the Open Reward Intelligence API — a free, open database of every card's dynamic reward structure." },
+              { title: "Self-Healing Accuracy", desc: "Truth Reconciliation reconciles bank PDFs, RBI MITC documents, user observations, and AI verifications — every recommendation backed by an honesty badge." },
             ].map((item, i) => (
               <ScrollReveal key={item.title} delay={i * 80} className="h-full">
                 <div className="glass-card bg-neutral-900/40 rounded-2xl p-6 border border-white/10 h-full backdrop-blur-md hover:bg-white/[0.04] transition-colors">
