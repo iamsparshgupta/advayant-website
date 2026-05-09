@@ -1,0 +1,42 @@
+src/app/page.tsx
+  s_01d9537c687e8d::t_0446a92a3e3e14 343
+  s_01d9537c687e8d::t_796c817e64e262 162
+  s_01d9537c687e8d::t_9e348cc23fb8dc 368-369,375-376,382-383
+  s_01d9537c687e8d::t_bd1b33b89f4955 433-434
+  s_01d9537c687e8d::t_793b4b02e6b9b0 597
+  s_01d9537c687e8d::t_b641e7043f55a4 273-274,280-281,283,287-288,290
+src/app/about/page.tsx
+  s_01d9537c687e8d::t_ed784f5de4ede2 80
+  s_01d9537c687e8d::t_b69463cbe16252 84
+  s_01d9537c687e8d::t_835fc3637970c1 194
+src/app/layout.tsx
+  s_01d9537c687e8d::t_d0cb6c74ad2862 139
+  s_01d9537c687e8d::t_a2f959d2e20d18 30,48
+  s_01d9537c687e8d::t_e156742a7cc452 128
+src/app/products/page.tsx
+  s_01d9537c687e8d::t_ce24b565d83cd5 325-330
+  s_01d9537c687e8d::t_4af7124e299613 67
+  s_01d9537c687e8d::t_66ce9318a535aa 72-76
+  s_01d9537c687e8d::t_a2c1600ca534c2 320
+src/app/blog/page.tsx
+  s_01d9537c687e8d::t_3bd4564fa21cb2 21-46,60
+README.md
+  s_01d9537c687e8d::t_d8f06ff8ae517d 69-75,78-87
+  s_01d9537c687e8d::t_76b496fa151b57 117-121
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.4",
+  "base_commit_sha": "0979aa1eea15f5eebb1442ce1e45bf7b10818108",
+  "prompts": {},
+  "sessions": {
+    "s_01d9537c687e8d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "76006d0f-d97e-4ce4-a8e5-02006c2ece69",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Sparsh <iamsparshgupta@yahoo.com>"
+    }
+  }
+}
