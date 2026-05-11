@@ -1,0 +1,27 @@
+src/components/RecoveryDemo.tsx
+  s_01d9537c687e8d::t_7ddcde0654ce53 1-8,11-23,25,39,56,88,99-101,110,112-113,129,132,135-136,140,162-163,166,170,203,285-288
+  s_01d9537c687e8d::t_04768eee121095 9-10,24,26-38,40-55,57-87,89-98,102-109,111,114-128,130-131,133-134,137-139,141-161,164-165,167-169,171-202,204-284
+src/app/page.tsx
+  s_01d9537c687e8d::t_ba44af4bdbaafd 201-204
+  s_01d9537c687e8d::t_55f848c6040aed 207,209
+  s_01d9537c687e8d::t_e713b0a3b58239 10
+src/lib/recoveryDemo.ts
+  s_01d9537c687e8d::t_abef358d52fcdc 1-206,225-228,237,240-248,257-259,262-266
+  s_01d9537c687e8d::t_3edf26b7a1c72c 207-224,229-236,238-239,249-256,260-261
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.4",
+  "base_commit_sha": "b51225c2d7b8cf44dabc2a3824f55a20f9919aa6",
+  "prompts": {},
+  "sessions": {
+    "s_01d9537c687e8d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "76006d0f-d97e-4ce4-a8e5-02006c2ece69",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Sparsh <iamsparshgupta@yahoo.com>"
+    }
+  }
+}
