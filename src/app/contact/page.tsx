@@ -56,7 +56,7 @@ export default function ContactPage() {
                 </svg>
               </div>
               <h3 className="font-bold text-white mb-2 text-lg">HQ Location</h3>
-              <p className="text-sm text-neutral-400 tracking-tight">Bengaluru, India</p>
+              <p className="text-sm text-neutral-400 tracking-tight">Uttar Pradesh, India</p>
             </div>
           </ScrollReveal>
         </div>
@@ -176,7 +176,7 @@ export default function ContactPage() {
           <div className="max-w-xl mx-auto text-center">
             <div className="w-16 h-16 bg-gradient-to-br from-primary-900 to-black rounded-full flex items-center justify-center mx-auto mb-6 border border-white/10 shadow-lg relative">
               <div className="absolute inset-0 bg-primary-500/20 blur-xl rounded-full -z-10" />
-              <span className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-br from-white to-neutral-500">RG</span>
+              <span className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-br from-white to-neutral-500">SG</span>
             </div>
             <p className="text-neutral-400 leading-relaxed italic text-lg font-light mb-8">
               &ldquo;I review every single transmission personally. Whether it&apos;s architectural feedback,
@@ -185,7 +185,7 @@ export default function ContactPage() {
             </p>
             <div className="inline-flex flex-col items-center">
               <p className="text-base font-bold text-white mb-1">
-                Rajeev Gupta
+                Sparsh Gupta
               </p>
               <p className="text-[10px] text-primary-400 font-bold uppercase tracking-widest">Founder, Advayant Intelligence</p>
             </div>

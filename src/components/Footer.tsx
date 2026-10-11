@@ -112,7 +112,7 @@ export function Footer() {
         {/* Bottom */}
         <div className="mt-16 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-neutral-600">
-            &copy; {year} Advayant Intelligence Pvt. Ltd.
+            &copy; {year} Advayant Intelligence
           </p>
           <a href="mailto:hello@advayant.com" className="text-xs text-neutral-600 hover:text-neutral-400 transition-colors">
             hello@advayant.com

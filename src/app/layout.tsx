@@ -97,7 +97,7 @@ export default function RootLayout({
               foundingDate: "2025",
               address: {
                 "@type": "PostalAddress",
-                addressLocality: "Bengaluru",
+                addressRegion: "Uttar Pradesh",
                 addressCountry: "IN",
               },
               sameAs: [],

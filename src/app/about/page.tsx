@@ -223,9 +223,9 @@ export default function AboutPage() {
             <div className="glass-card bg-neutral-900/40 rounded-3xl p-8 border border-white/10 text-left max-w-sm w-full hover:bg-white/[0.04] transition-colors relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-32 h-32 bg-primary-500/10 rounded-full blur-2xl group-hover:bg-primary-500/20 transition-colors" />
               <div className="w-16 h-16 bg-gradient-to-br from-primary-900 to-black border border-white/10 rounded-2xl flex items-center justify-center mb-6 relative z-10 shadow-lg">
-                <span className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-br from-white to-neutral-500 tracking-tighter">RG</span>
+                <span className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-br from-white to-neutral-500 tracking-tighter">SG</span>
               </div>
-              <h3 className="text-2xl font-bold text-white mb-1">Rajeev Gupta</h3>
+              <h3 className="text-2xl font-bold text-white mb-1">Sparsh Gupta</h3>
               <p className="text-[11px] text-primary-400 font-bold uppercase tracking-widest mb-4">Founder</p>
               <p className="text-sm text-neutral-400 leading-relaxed font-light">
                 Architecting at the technical intersection of predictive AI and consumer technology for the Indian ecosystem.
@@ -246,7 +246,7 @@ export default function AboutPage() {
               Ready to stop leaving <br className="hidden sm:block" /><span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-accent-400">money on the table?</span>
             </h2>
             <p className="text-neutral-400 mb-10 max-w-xl mx-auto text-lg font-light leading-relaxed">
-              Join thousands of Indians deploying Pryz AI to orchestrate and maximize their credit card rewards — automatically, securely, and completely free.
+              Use Pryz AI to maximize your credit card rewards — automatically, securely, and completely free.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
